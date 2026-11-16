@@ -1,0 +1,29 @@
+[
+  {
+    "name": "G0-dense",
+    "retriever": "dense",
+    "top_k": 3,
+    "budget_chars": 3000,
+    "max_searches": 3,
+    "description": "Baseline: chỉ dense retrieval Day 6 (Qdrant day06_rhm_b), top-3, context 3000 ký tự, tối đa 3 lượt search.",
+    "hypothesis": "Mốc so sánh. Dense là phương pháp Day 6 đã chọn."
+  },
+  {
+    "name": "G1-hybrid",
+    "retriever": "hybrid",
+    "top_k": 3,
+    "budget_chars": 3000,
+    "max_searches": 3,
+    "description": "Thay dense bằng hybrid RRF (dense + BM25 tách từ có ghép tên bệnh/mục), giữ nguyên top-k và budget.",
+    "hypothesis": "Hybrid có Hit@1 18/24 so với 16/24 của dense và cứu được câu hỏi mơ hồ như t02, nên context đúng ngay lượt đầu nhiều hơn và điểm trả lời tăng."
+  },
+  {
+    "name": "G2-hybrid-k5",
+    "retriever": "hybrid",
+    "top_k": 5,
+    "budget_chars": 6000,
+    "max_searches": 3,
+    "description": "Hybrid với top-5 và context 6000 ký tự.",
+    "hypothesis": "Hybrid đạt Hit@5 24/24; lấy 5 đoạn mỗi lượt đưa được evidence của các câu hạng 4-5 (d05, d14) vào context, đổi lại tốn token hơn và có thể nhiễu hơn với câu thiếu bằng chứng."
+  }
+]

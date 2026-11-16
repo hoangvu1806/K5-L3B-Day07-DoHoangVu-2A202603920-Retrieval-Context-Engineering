@@ -1,0 +1,78 @@
+{
+  "G0-dense": {
+    "auto": {
+      "runs": 26,
+      "errors": 0,
+      "context_evidence_rate": "21/24 (88%)",
+      "context_evidence_n": 21,
+      "context_misses": [
+        "d02",
+        "d03",
+        "t02"
+      ],
+      "answered": 22,
+      "abstained": 4,
+      "search_count_distribution": {
+        "1": 2,
+        "2": 18,
+        "3": 6
+      },
+      "mean_searches": 2.15,
+      "mean_context_chars": 1876,
+      "mean_seconds": 14.8,
+      "median_seconds": 5.72,
+      "total_llm_cost_usd": 0.01233,
+      "mean_prompt_tokens": 3018,
+      "invalid_citation_refs": 0
+    }
+  },
+  "G1-hybrid": {
+    "auto": {
+      "runs": 26,
+      "errors": 0,
+      "context_evidence_rate": "22/24 (92%)",
+      "context_evidence_n": 22,
+      "context_misses": [
+        "d18",
+        "t02"
+      ],
+      "answered": 23,
+      "abstained": 3,
+      "search_count_distribution": {
+        "1": 1,
+        "2": 19,
+        "3": 6
+      },
+      "mean_searches": 2.19,
+      "mean_context_chars": 2042,
+      "mean_seconds": 7.19,
+      "median_seconds": 4.06,
+      "total_llm_cost_usd": 0.01192,
+      "mean_prompt_tokens": 3110,
+      "invalid_citation_refs": 0
+    }
+  },
+  "G2-hybrid-k5": {
+    "auto": {
+      "runs": 26,
+      "errors": 0,
+      "context_evidence_rate": "24/24 (100%)",
+      "context_evidence_n": 24,
+      "context_misses": [],
+      "answered": 24,
+      "abstained": 2,
+      "search_count_distribution": {
+        "1": 4,
+        "2": 19,
+        "3": 3
+      },
+      "mean_searches": 1.96,
+      "mean_context_chars": 3292,
+      "mean_seconds": 4.66,
+      "median_seconds": 4.22,
+      "total_llm_cost_usd": 0.01376,
+      "mean_prompt_tokens": 3596,
+      "invalid_citation_refs": 0
+    }
+  }
+}

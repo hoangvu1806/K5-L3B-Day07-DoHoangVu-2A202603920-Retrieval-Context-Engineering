@@ -1,0 +1,4443 @@
+[
+ {
+  "query_id": "d01",
+  "question": "Khi đã xác định răng khôn hàm dưới mọc lệch thì nên xử trí thế nào, và vì sao?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "**Nên nhổ bỏ càng sớm càng tốt** khi đã xác định răng khôn hàm dưới mọc lệch [S1].\n\nLý do: để không làm mất xương phía xa răng hàm lớn thứ hai [S1]. Ngoài ra, răng khôn mọc lệch là tình trạng mọc bất thường về trục, hướng và vị trí, làm răng không có chức năng ăn nhai và **có thể gây biến chứng** [S2].\n\nVề nguyên tắc khi nhổ: lấy được răng khôn ra khỏi huyệt ổ răng mà không làm tổn thương răng kế cận; trường hợp cần thiết phải cắt thân răng hoặc phối hợp chia tách chân răng; một số trường hợp phải tạo vạt niêm mạc và mở xương để lấy răng [S1].",
+  "citations": [
+   "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+   "f1eff811-f53a-54a2-bc48-5ff72d8260ec"
+  ],
+  "citation_refs": [
+   "S1",
+   "S2"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "răng khôn hàm dưới mọc lệch xử trí",
+    "filter": null,
+    "top_k": 3,
+    "ms": 24819.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+      "page": 9,
+      "disease_no": 1,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "f1eff811-f53a-54a2-bc48-5ff72d8260ec",
+      "page": 8,
+      "disease_no": 1,
+      "score": 0.03202
+     },
+     {
+      "rank": 3,
+      "id": "4a2a3aa0-9871-5a53-9d62-874a5674b8c2",
+      "page": 123,
+      "disease_no": 31,
+      "score": 0.03058
+     }
+    ],
+    "added_refs": {
+     "S1": "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+     "S2": "f1eff811-f53a-54a2-bc48-5ff72d8260ec",
+     "S3": "4a2a3aa0-9871-5a53-9d62-874a5674b8c2"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 869
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "răng khôn mọc lệch chỉ định nhổ",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1111.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "f1eff811-f53a-54a2-bc48-5ff72d8260ec",
+      "page": 8,
+      "disease_no": 1,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+      "page": 9,
+      "disease_no": 1,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "20e597b2-2642-5099-901e-8dd8013fe8ce",
+      "page": 8,
+      "disease_no": 1,
+      "score": 0.0315
+     }
+    ],
+    "added_refs": {
+     "S4": "20e597b2-2642-5099-901e-8dd8013fe8ce"
+    },
+    "skipped_duplicate": [
+     "f1eff811-f53a-54a2-bc48-5ff72d8260ec",
+     "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1285
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "điều trị răng khôn mọc lệch phẫu thuật nhổ răng",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1533.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+      "page": 9,
+      "disease_no": 1,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "f1eff811-f53a-54a2-bc48-5ff72d8260ec",
+      "page": 8,
+      "disease_no": 1,
+      "score": 0.03175
+     },
+     {
+      "rank": 3,
+      "id": "e365d1ce-3706-5e1c-bb88-6794ba7036e1",
+      "page": 117,
+      "disease_no": 29,
+      "score": 0.03055
+     }
+    ],
+    "added_refs": {
+     "S5": "e365d1ce-3706-5e1c-bb88-6794ba7036e1"
+    },
+    "skipped_duplicate": [
+     "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+     "f1eff811-f53a-54a2-bc48-5ff72d8260ec"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1484
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S1",
+     "S2"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+    "page": 9,
+    "pages": [
+     9
+    ],
+    "disease_no": 1,
+    "text": "IV. ĐIỀU TRỊ\n1. Nguyên tắc\n- Khi đã xác định được răng khôn hàm dưới mọc lệch thì nên nhổ bỏ càng sớm\ncàng tốt để không làm mất xương phía xa răng hàm lớn thứ hai.\n- Lấy được răng khôn ra khỏi huyệt ổ răng mà không làm tổn thương răng kế\ncận. Trường hợp cần thiết, phải cắt thân răng hoặc phối hợp với chia tách chân răng.\n- Trong một số trường hợp phải tạo vạt niêm mạc và mở xương để lấy răng."
+   },
+   {
+    "ref": "S2",
+    "id": "f1eff811-f53a-54a2-bc48-5ff72d8260ec",
+    "page": 8,
+    "pages": [
+     8
+    ],
+    "disease_no": 1,
+    "text": "1. RĂNG KHÔN MỌC LỆCH\nI. ĐỊNH NGHĨA\nLà tình trạng mọc bất thường về trục, hướng và vị trí của răng khôn, làm cho\nrăng không có chức năng ăn nhai và có thể gây biến chứng."
+   },
+   {
+    "ref": "S3",
+    "id": "4a2a3aa0-9871-5a53-9d62-874a5674b8c2",
+    "page": 123,
+    "pages": [
+     123
+    ],
+    "disease_no": 31,
+    "text": "VI. PHÒNG BỆNH\nKhám răng miệng định kỳ để phát hiện các răng sâu, tổn thương viêm quanh\nrăng, răng khôn mọc lệch để điều trị kịp thời."
+   },
+   {
+    "ref": "S4",
+    "id": "20e597b2-2642-5099-901e-8dd8013fe8ce",
+    "page": 8,
+    "pages": [
+     8,
+     9
+    ],
+    "disease_no": 1,
+    "text": "2. Cận lâm sàng\nPhim X quang: phim sau huyệt ổ răng, Panorama, hàm dưới chếch, Conebeam\nCT…\n- Có hình ảnh răng mọc lệch trục, hướng và vị trí.\n- Có thể có hình ảnh tổn thương mất mô cứng mặt xa răng hàm lớn thứ hai.\nc. Chẩn đoán phân biệt\nRăng khôn mọc lệch luôn có các biểu hiện trên lâm sàng và X quang rõ rệt, vì\nvậy không cần chẩn đoán phân biệt."
+   },
+   {
+    "ref": "S5",
+    "id": "e365d1ce-3706-5e1c-bb88-6794ba7036e1",
+    "page": 117,
+    "pages": [
+     117
+    ],
+    "disease_no": 29,
+    "text": "VI. PHÒNG BỆNH\nKhám răng miệng định kỳ để phát hiện các răng sâu, tổn thương viêm quanh\nrăng, răng khôn mọc lệch để điều trị kịp thời."
+   }
+  ],
+  "usage": {
+   "llm_calls": 3,
+   "prompt_tokens": 3826,
+   "completion_tokens": 496,
+   "llm_cost_usd": 0.000729366
+  },
+  "seconds": 75.26,
+  "error": null
+ },
+ {
+  "query_id": "d02",
+  "question": "Răng khôn mọc lệch đang bị viêm quanh thân răng cấp thì khi nào mới tiến hành nhổ?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Theo tài liệu, với răng khôn mọc lệch đã có biến chứng viêm quanh thân răng cấp, hướng xử trí là:\n\n- Trước tiên điều trị biến chứng viêm quanh thân răng cấp: dùng kháng sinh toàn thân, bơm rửa túi quanh răng và chăm sóc tại chỗ [S6].\n- **Sau khi hết giai đoạn nhiễm trùng cấp tính** thì mới tiến hành nhổ răng khôn lệch theo các bước như trường hợp không có biến chứng [S6].\n\nLưu ý thêm: nguyên tắc chung là khi đã xác định răng khôn hàm dưới mọc lệch thì nên nhổ bỏ càng sớm càng tốt để không làm mất xương phía xa răng hàm lớn thứ hai [S1].",
+  "citations": [
+   "fe6dfae6-eeb4-5eab-9ec9-c02825ea6854",
+   "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478"
+  ],
+  "citation_refs": [
+   "S6",
+   "S1"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "viêm quanh thân răng cấp răng khôn mọc lệch thời điểm nhổ răng",
+    "filter": null,
+    "top_k": 3,
+    "ms": 93.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+      "page": 9,
+      "disease_no": 1,
+      "score": 0.03226
+     },
+     {
+      "rank": 2,
+      "id": "f1eff811-f53a-54a2-bc48-5ff72d8260ec",
+      "page": 8,
+      "disease_no": 1,
+      "score": 0.03175
+     },
+     {
+      "rank": 3,
+      "id": "2f61e4d3-511e-5750-a587-f8b389dc165d",
+      "page": 10,
+      "disease_no": 1,
+      "score": 0.03154
+     }
+    ],
+    "added_refs": {
+     "S1": "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+     "S2": "f1eff811-f53a-54a2-bc48-5ff72d8260ec",
+     "S3": "2f61e4d3-511e-5750-a587-f8b389dc165d"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 942
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "răng khôn mọc lệch chỉ định nhổ răng khôn",
+    "filter": null,
+    "top_k": 3,
+    "ms": 95.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "f1eff811-f53a-54a2-bc48-5ff72d8260ec",
+      "page": 8,
+      "disease_no": 1,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+      "page": 9,
+      "disease_no": 1,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "20e597b2-2642-5099-901e-8dd8013fe8ce",
+      "page": 8,
+      "disease_no": 1,
+      "score": 0.03126
+     }
+    ],
+    "added_refs": {
+     "S4": "20e597b2-2642-5099-901e-8dd8013fe8ce"
+    },
+    "skipped_duplicate": [
+     "f1eff811-f53a-54a2-bc48-5ff72d8260ec",
+     "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1358
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "viêm quanh thân răng cấp điều trị nội khoa kháng sinh chờ nhổ răng khôn",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1196.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "2f61e4d3-511e-5750-a587-f8b389dc165d",
+      "page": 10,
+      "disease_no": 1,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "8790c0da-5420-527e-b1e5-790e9323219b",
+      "page": 56,
+      "disease_no": 12,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "fe6dfae6-eeb4-5eab-9ec9-c02825ea6854",
+      "page": 9,
+      "disease_no": 1,
+      "score": 0.03083
+     }
+    ],
+    "added_refs": {
+     "S5": "8790c0da-5420-527e-b1e5-790e9323219b",
+     "S6": "fe6dfae6-eeb4-5eab-9ec9-c02825ea6854"
+    },
+    "skipped_duplicate": [
+     "2f61e4d3-511e-5750-a587-f8b389dc165d"
+    ],
+    "skipped_budget": [],
+    "context_chars": 2387
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S6",
+     "S1"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+    "page": 9,
+    "pages": [
+     9
+    ],
+    "disease_no": 1,
+    "text": "IV. ĐIỀU TRỊ\n1. Nguyên tắc\n- Khi đã xác định được răng khôn hàm dưới mọc lệch thì nên nhổ bỏ càng sớm\ncàng tốt để không làm mất xương phía xa răng hàm lớn thứ hai.\n- Lấy được răng khôn ra khỏi huyệt ổ răng mà không làm tổn thương răng kế\ncận. Trường hợp cần thiết, phải cắt thân răng hoặc phối hợp với chia tách chân răng.\n- Trong một số trường hợp phải tạo vạt niêm mạc và mở xương để lấy răng."
+   },
+   {
+    "ref": "S2",
+    "id": "f1eff811-f53a-54a2-bc48-5ff72d8260ec",
+    "page": 8,
+    "pages": [
+     8
+    ],
+    "disease_no": 1,
+    "text": "1. RĂNG KHÔN MỌC LỆCH\nI. ĐỊNH NGHĨA\nLà tình trạng mọc bất thường về trục, hướng và vị trí của răng khôn, làm cho\nrăng không có chức năng ăn nhai và có thể gây biến chứng."
+   },
+   {
+    "ref": "S3",
+    "id": "2f61e4d3-511e-5750-a587-f8b389dc165d",
+    "page": 10,
+    "pages": [
+     10
+    ],
+    "disease_no": 1,
+    "text": "2. Biến chứng\n- Viêm quanh thân răng cấp.\n- Tổn thương răng hàm lớn thứ hai.\n- Áp xe vùng má, áp xe vùng cơ cắn, áp xe vùng dưới hàm, áp xe quanh hàm\nngoài….\n- Viêm tấy tỏa lan vùng hàm mặt.\n- Nhiễm trùng huyết."
+   },
+   {
+    "ref": "S4",
+    "id": "20e597b2-2642-5099-901e-8dd8013fe8ce",
+    "page": 8,
+    "pages": [
+     8,
+     9
+    ],
+    "disease_no": 1,
+    "text": "2. Cận lâm sàng\nPhim X quang: phim sau huyệt ổ răng, Panorama, hàm dưới chếch, Conebeam\nCT…\n- Có hình ảnh răng mọc lệch trục, hướng và vị trí.\n- Có thể có hình ảnh tổn thương mất mô cứng mặt xa răng hàm lớn thứ hai.\nc. Chẩn đoán phân biệt\nRăng khôn mọc lệch luôn có các biểu hiện trên lâm sàng và X quang rõ rệt, vì\nvậy không cần chẩn đoán phân biệt."
+   },
+   {
+    "ref": "S5",
+    "id": "8790c0da-5420-527e-b1e5-790e9323219b",
+    "page": 56,
+    "pages": [
+     56
+    ],
+    "disease_no": 12,
+    "text": "2. Phác đồ điều trị\nNhững răng bị viêm quanh cuống cấp hoặc bán cấp: dẫn lưu buồng tủy. Sau đó\ndùng kháng sinh có tác dụng với vi khuẩn yếm khí và Gram (-), kết hợp với giảm\nđau, nâng cao thể trạng để tiến hành điều trị nội nha."
+   },
+   {
+    "ref": "S6",
+    "id": "fe6dfae6-eeb4-5eab-9ec9-c02825ea6854",
+    "page": 9,
+    "pages": [
+     9
+    ],
+    "disease_no": 1,
+    "text": "2. Điều trị cụ thể\na. Răng khôn lệch không có biến chứng\n- Vô cảm.\n- Tạo vạt nếu cần.\n- Mở xương bộc lộ răng nếu cần.\n- Cắt thân răng, và chia cắt chân răng nếu cần.\n- Lấy răng ra khỏi huyệt ổ răng bằng dụng cụ thích hợp.\n- Kiểm soát huyệt ổ răng.\n- Khâu phục hồi niêm mạc hoặc cắn gạc cầm máu.\n- Hướng dẫn bệnh nhân dùng kháng sinh, chống viêm, giảm đau nếu cần.\nb. Răng khôn lệch đã có biến chứng\n- Điều trị biến chứng viêm quanh thân răng cấp hoặc nhiễm trùng khác:\n+ Kháng sinh toàn thân.\n+ Bơm rửa túi quanh răng và chăm sóc tại chỗ khác….\n- Sau khi hết giai đoạn nhiễm trùng cấp tính thì điều trị nhổ răng khôn lệch\ntheo các bước đã trình bày ở mục 4.2.1."
+   }
+  ],
+  "usage": {
+   "llm_calls": 3,
+   "prompt_tokens": 4320,
+   "completion_tokens": 517,
+   "llm_cost_usd": 0.000769522
+  },
+  "seconds": 5.26,
+  "error": null
+ },
+ {
+  "query_id": "d03",
+  "question": "Trong sâu răng sữa, môi trường quanh răng có pH bao nhiêu thì gây hủy khoáng mô cứng?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Trong sâu răng sữa, khi môi trường quanh răng có **pH < 5** thì gây tổn thương hủy khoáng làm mất mô cứng của răng và gây sâu răng [S2].\n\n(Lưu ý: với bệnh sâu răng nói chung ở người lớn, tài liệu ghi ngưỡng pH < 5,5 [S3].)",
+  "citations": [
+   "5f583728-fca8-5e47-84db-4f89b3ba7005",
+   "66d3d211-0358-5b96-ab3a-82a1b1087bcf"
+  ],
+  "citation_refs": [
+   "S2",
+   "S3"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "sâu răng sữa pH hủy khoáng mô cứng",
+    "filter": null,
+    "top_k": 3,
+    "ms": 101.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "9a1326d6-f1e6-5f05-ac3c-4ef1330420a6",
+      "page": 18,
+      "disease_no": 4,
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "5f583728-fca8-5e47-84db-4f89b3ba7005",
+      "page": 18,
+      "disease_no": 4,
+      "score": 0.03078
+     },
+     {
+      "rank": 3,
+      "id": "66d3d211-0358-5b96-ab3a-82a1b1087bcf",
+      "page": 40,
+      "disease_no": 9,
+      "score": 0.03037
+     }
+    ],
+    "added_refs": {
+     "S1": "9a1326d6-f1e6-5f05-ac3c-4ef1330420a6",
+     "S2": "5f583728-fca8-5e47-84db-4f89b3ba7005",
+     "S3": "66d3d211-0358-5b96-ab3a-82a1b1087bcf"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1404
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S2",
+     "S3"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "9a1326d6-f1e6-5f05-ac3c-4ef1330420a6",
+    "page": 18,
+    "pages": [
+     18
+    ],
+    "disease_no": 4,
+    "text": "4. SÂU RĂNG SỮA\nI. ĐỊNH NGHĨA\nSâu răng sữa là một bệnh gây tổn thương mất mô cứng của răng do quá trình\nhủy khoáng gây ra bởi vi khuẩn ở mảng bám răng."
+   },
+   {
+    "ref": "S2",
+    "id": "5f583728-fca8-5e47-84db-4f89b3ba7005",
+    "page": 18,
+    "pages": [
+     18
+    ],
+    "disease_no": 4,
+    "text": "II. NGUYÊN NHÂN\nDo các men của vi khuẩn ở mảng bám răng tác động lên các thức ăn có nguồn\ngốc Gluxit còn dính lại ở bề mặt răng, chuyển hóa thành axit. Khi môi trường có\npH< 5 thì gây ra tổn thương hủy khoáng làm mất mô cứng của răng và gây ra sâu\nrăng.\n- Chủng vi khuẩn có khả năng gây sâu răng cao nhất trong nghiên cứu thực\nnghiệm là Streptococus mutans. Một số chủng vi khuẩn khác như Actinomyces,\nLactobacillus... cũng được xác định có khả năng gây ra sâu răng."
+   },
+   {
+    "ref": "S3",
+    "id": "66d3d211-0358-5b96-ab3a-82a1b1087bcf",
+    "page": 40,
+    "pages": [
+     40
+    ],
+    "disease_no": 9,
+    "text": "9. BỆNH SÂU RĂNG\n( Tooth Decay/ Dental caries )\nI. ĐỊNH NGHĨA\nSâu răng là tình trạng tổn thương mất mô cứng của răng do quá trình hủy\nkhoáng gây ra bởi vi khuẩn ở mảng bám răng.\nII . NGUYÊN NHÂN\nDo các men của vi khuẩn ở mảng bám răng tác động lên các thức ăn có nguồn\ngốc Gluxit còn dính lại ở bề mặt răng, chuyển hóa thành axit. Khi môi trường axit\ncó\npH < 5,5 thì gây ra tổn thương hủy khoáng làm mất mô cứng của răng và gây ra sâu\nrăng.\n- Chủng vi khuẩn có khả năng gây sâu răng cao nhất trong nghiên cứu thực\nnghiệm là Streptococus mutans. Một số chủng vi khuẩn khác như Actinomyces,\nLactobacillus... cũng được xác định có khả năng gây ra sâu răng."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2318,
+   "completion_tokens": 193,
+   "llm_cost_usd": 0.000513048
+  },
+  "seconds": 1.78,
+  "error": null
+ },
+ {
+  "query_id": "d04",
+  "question": "Loại vi khuẩn nào được cho là gây sâu răng sữa mạnh nhất trong các nghiên cứu thực nghiệm?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "**Streptococcus mutans** (viết trong tài liệu là *Streptococus mutans*) là chủng vi khuẩn có khả năng gây sâu răng cao nhất trong nghiên cứu thực nghiệm [S1][S2]. Một số chủng khác như *Actinomyces*, *Lactobacillus*... cũng được xác định có khả năng gây sâu răng [S1][S2].",
+  "citations": [
+   "5f583728-fca8-5e47-84db-4f89b3ba7005",
+   "66d3d211-0358-5b96-ab3a-82a1b1087bcf"
+  ],
+  "citation_refs": [
+   "S1",
+   "S2"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "vi khuẩn gây sâu răng sữa mạnh nhất nghiên cứu thực nghiệm",
+    "filter": null,
+    "top_k": 3,
+    "ms": 105.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "5f583728-fca8-5e47-84db-4f89b3ba7005",
+      "page": 18,
+      "disease_no": 4,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "66d3d211-0358-5b96-ab3a-82a1b1087bcf",
+      "page": 40,
+      "disease_no": 9,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "9a1326d6-f1e6-5f05-ac3c-4ef1330420a6",
+      "page": 18,
+      "disease_no": 4,
+      "score": 0.032
+     }
+    ],
+    "added_refs": {
+     "S1": "5f583728-fca8-5e47-84db-4f89b3ba7005",
+     "S2": "66d3d211-0358-5b96-ab3a-82a1b1087bcf",
+     "S3": "9a1326d6-f1e6-5f05-ac3c-4ef1330420a6"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1404
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "sâu răng sữa vi khuẩn Streptococcus mutans",
+    "filter": null,
+    "top_k": 3,
+    "ms": 98.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "9a1326d6-f1e6-5f05-ac3c-4ef1330420a6",
+      "page": 18,
+      "disease_no": 4,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "5f583728-fca8-5e47-84db-4f89b3ba7005",
+      "page": 18,
+      "disease_no": 4,
+      "score": 0.03202
+     },
+     {
+      "rank": 3,
+      "id": "66d3d211-0358-5b96-ab3a-82a1b1087bcf",
+      "page": 40,
+      "disease_no": 9,
+      "score": 0.03175
+     }
+    ],
+    "added_refs": {},
+    "skipped_duplicate": [
+     "9a1326d6-f1e6-5f05-ac3c-4ef1330420a6",
+     "5f583728-fca8-5e47-84db-4f89b3ba7005",
+     "66d3d211-0358-5b96-ab3a-82a1b1087bcf"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1404
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S1",
+     "S2"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "5f583728-fca8-5e47-84db-4f89b3ba7005",
+    "page": 18,
+    "pages": [
+     18
+    ],
+    "disease_no": 4,
+    "text": "II. NGUYÊN NHÂN\nDo các men của vi khuẩn ở mảng bám răng tác động lên các thức ăn có nguồn\ngốc Gluxit còn dính lại ở bề mặt răng, chuyển hóa thành axit. Khi môi trường có\npH< 5 thì gây ra tổn thương hủy khoáng làm mất mô cứng của răng và gây ra sâu\nrăng.\n- Chủng vi khuẩn có khả năng gây sâu răng cao nhất trong nghiên cứu thực\nnghiệm là Streptococus mutans. Một số chủng vi khuẩn khác như Actinomyces,\nLactobacillus... cũng được xác định có khả năng gây ra sâu răng."
+   },
+   {
+    "ref": "S2",
+    "id": "66d3d211-0358-5b96-ab3a-82a1b1087bcf",
+    "page": 40,
+    "pages": [
+     40
+    ],
+    "disease_no": 9,
+    "text": "9. BỆNH SÂU RĂNG\n( Tooth Decay/ Dental caries )\nI. ĐỊNH NGHĨA\nSâu răng là tình trạng tổn thương mất mô cứng của răng do quá trình hủy\nkhoáng gây ra bởi vi khuẩn ở mảng bám răng.\nII . NGUYÊN NHÂN\nDo các men của vi khuẩn ở mảng bám răng tác động lên các thức ăn có nguồn\ngốc Gluxit còn dính lại ở bề mặt răng, chuyển hóa thành axit. Khi môi trường axit\ncó\npH < 5,5 thì gây ra tổn thương hủy khoáng làm mất mô cứng của răng và gây ra sâu\nrăng.\n- Chủng vi khuẩn có khả năng gây sâu răng cao nhất trong nghiên cứu thực\nnghiệm là Streptococus mutans. Một số chủng vi khuẩn khác như Actinomyces,\nLactobacillus... cũng được xác định có khả năng gây ra sâu răng."
+   },
+   {
+    "ref": "S3",
+    "id": "9a1326d6-f1e6-5f05-ac3c-4ef1330420a6",
+    "page": 18,
+    "pages": [
+     18
+    ],
+    "disease_no": 4,
+    "text": "4. SÂU RĂNG SỮA\nI. ĐỊNH NGHĨA\nSâu răng sữa là một bệnh gây tổn thương mất mô cứng của răng do quá trình\nhủy khoáng gây ra bởi vi khuẩn ở mảng bám răng."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2409,
+   "completion_tokens": 248,
+   "llm_cost_usd": 0.000368286
+  },
+  "seconds": 2.57,
+  "error": null
+ },
+ {
+  "query_id": "d05",
+  "question": "Khi gõ răng bị viêm tủy răng sữa không hồi phục, gõ dọc và gõ ngang cho kết quả thế nào?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Với viêm tủy răng sữa không hồi phục:\n\n- **Gõ dọc: đau nhẹ** [S3][S2]\n- **Gõ ngang: đau nhiều** [S3][S2]\n\nNgoài ra, răng không đổi màu, không lung lay [S3].",
+  "citations": [
+   "c27c05a2-0409-5057-93d9-6974a4609568",
+   "7174eb2d-3c72-5c67-ada7-420221b98eae"
+  ],
+  "citation_refs": [
+   "S3",
+   "S2"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "viêm tủy răng sữa không hồi phục gõ dọc gõ ngang",
+    "filter": null,
+    "top_k": 3,
+    "ms": 106.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "620461aa-5cdd-5b62-8bfc-c2cd1a6e6c5e",
+      "page": 23,
+      "disease_no": 5,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "7174eb2d-3c72-5c67-ada7-420221b98eae",
+      "page": 26,
+      "disease_no": 5,
+      "score": 0.03202
+     },
+     {
+      "rank": 3,
+      "id": "c27c05a2-0409-5057-93d9-6974a4609568",
+      "page": 24,
+      "disease_no": 5,
+      "score": 0.03175
+     }
+    ],
+    "added_refs": {
+     "S1": "620461aa-5cdd-5b62-8bfc-c2cd1a6e6c5e",
+     "S2": "7174eb2d-3c72-5c67-ada7-420221b98eae",
+     "S3": "c27c05a2-0409-5057-93d9-6974a4609568"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 2345
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "viêm tủy răng sữa không hồi phục chẩn đoán triệu chứng",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1202.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "620461aa-5cdd-5b62-8bfc-c2cd1a6e6c5e",
+      "page": 23,
+      "disease_no": 5,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "c27c05a2-0409-5057-93d9-6974a4609568",
+      "page": 24,
+      "disease_no": 5,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "14a4e7cf-d950-5d05-b1d2-92fcd5b4643e",
+      "page": 25,
+      "disease_no": 5,
+      "score": 0.03102
+     }
+    ],
+    "added_refs": {},
+    "skipped_duplicate": [
+     "620461aa-5cdd-5b62-8bfc-c2cd1a6e6c5e",
+     "c27c05a2-0409-5057-93d9-6974a4609568"
+    ],
+    "skipped_budget": [
+     "14a4e7cf-d950-5d05-b1d2-92fcd5b4643e"
+    ],
+    "context_chars": 2345
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S3",
+     "S2"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "620461aa-5cdd-5b62-8bfc-c2cd1a6e6c5e",
+    "page": 23,
+    "pages": [
+     23
+    ],
+    "disease_no": 5,
+    "text": "III. CHẨN ĐOÁN\n1. Viêm tủy răng sữa có hồi phục\nViêm tủy có hồi phục là tình trạng viêm mô tủy nhưng có khả năng hồi phục\nkhi loại bỏ được các yếu tố bệnh nguyên.\na. Lâm sàng\n- Triệu chứng cơ năng\nĐau: bệnh nhân có cảm giác đau tự nhiên, nhẹ thoáng qua, cơn đau ngắn. Khi\năn các chất kích thích nóng, lạnh, chua, ngọt… thì có cảm giác đau hoặc ê buốt tăng\nlên và sớm hết đau khi ngừng chất kích thích.\n- Triệu chứng thực thể\n+ Có tổn thương mô cứng của răng: có thể có lỗ sâu ở thân răng.\n+ Thử tủy: bệnh nhân có cảm giác đau ê buốt và sớm hết đau, ê buốt khi loại\nbỏ chất kích thích thử tủy.\n+ Răng không đổi màu\n+ Gõ: gõ dọc không đau, gõ ngang vùng thân răng có thể có đau nhẹ.\nb. Cận lâm sàng\nX quang: có biểu hiện các tổn thương mô cứng."
+   },
+   {
+    "ref": "S2",
+    "id": "7174eb2d-3c72-5c67-ada7-420221b98eae",
+    "page": 26,
+    "pages": [
+     26
+    ],
+    "disease_no": 5,
+    "text": "Gõ ngang\nĐau nhiều.\nCó thể đau nhẹ.\nĐau nhiều.\nGõ dọc\nĐau nhẹ.\nKhông đau.\nĐau nhiều.\nThử tủy\nĐau nhiều và còn\nkéo dài thêm khi\nngừng kích thích.\nCó đau, sớm hết\nđau khi hết kích\nthích.\nKhông đau.\nX quang\nCó hình ảnh tổn\nthương mô cứng: lỗ\nsâu sát tủy.\nVùng cuống răng\nbình thường.\nCó hình ảnh tổn\nthương mô cứng:\nlỗ sâu.\nVùng cuống răng\nbình thường.\nCó hình ảnh tổn\nthương mô cứng:\nlỗ sâu sát tủy.\nCó hình ảnh thấu\nquang vùng cuống."
+   },
+   {
+    "ref": "S3",
+    "id": "c27c05a2-0409-5057-93d9-6974a4609568",
+    "page": 24,
+    "pages": [
+     24,
+     25
+    ],
+    "disease_no": 5,
+    "text": "2. Viêm tủy răng sữa không hồi phục\nLà tình trạng tổn thương viêm cấp mô tủy răng sữa ở trẻ em không còn khả\nnăng hồi phục.\na. Lâm sàng\n- Triệu chứng cơ năng\n- Đau tự nhiên, từng cơn với các đặc điểm dưới đây:\n+ Thời gian cơn đau: có thể kéo dài hàng giờ hoặc đôi khi chỉ ngắn vài phút,\nlàm cho tính chất cơn đau gần như liên tục.\n+ Đau tăng khi kích thích bởi nóng, lạnh, chua, ngọt…hết kích thích đau vẫn\ncòn kéo dài.\n+ Đau tăng khi thay đổi tư thế: cúi đầu, nằm, về đêm.\n+ Đau lan nửa hàm, đôi khi không xác định được vị trí đau.\n- Triệu chứng thực thể:\n+ Tổn thương mô cứng của răng: có lỗ sâu, nhiều ngà mủn, làm sạch có thể\nthấy ánh hồng hoặc tủy hở.\n+ Gõ dọc: đau nhẹ.\n+ Gõ ngang: đau nhiều.\n+ Răng không đổi màu, không lung lay.\n+ Thử tủy: đau nhiều và kéo dài khi đã loại bỏ yếu tố kích thích. Tuy vậy, ở\ntrẻ em không có giá trị chắc chắn vì trẻ em đang đau sẽ rất cảnh giác và sợ hãi khi\nphản ứng lại với bất kì kích thích nào."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2925,
+   "completion_tokens": 261,
+   "llm_cost_usd": 0.000250698
+  },
+  "seconds": 3.47,
+  "error": null
+ },
+ {
+  "query_id": "d06",
+  "question": "Vì sao nghiệm pháp thử tủy ở trẻ em bị viêm tủy răng sữa không hồi phục lại không đáng tin cậy?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Theo tài liệu, nghiệm pháp thử tủy ở trẻ em bị viêm tủy răng sữa không hồi phục không đáng tin cậy vì: **trẻ em đang đau sẽ rất cảnh giác và sợ hãi, nên phản ứng lại với bất kì kích thích nào** — do đó kết quả thử tủy không có giá trị chắc chắn [S3].\n\n(Lưu ý: mặc dù về lý thuyết thử tủy trong viêm tủy không hồi phục là \"đau nhiều và kéo dài khi đã loại bỏ yếu tố kích thích\", nhưng ở trẻ em tiêu chuẩn này không đáng tin cậy vì lý do trên [S3].)",
+  "citations": [
+   "c27c05a2-0409-5057-93d9-6974a4609568"
+  ],
+  "citation_refs": [
+   "S3"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "nghiệm pháp thử tủy trẻ em viêm tủy răng sữa không hồi phục",
+    "filter": null,
+    "top_k": 3,
+    "ms": 91.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "9fda6299-9021-5908-b2f0-3906e609687f",
+      "page": 23,
+      "disease_no": 5,
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "620461aa-5cdd-5b62-8bfc-c2cd1a6e6c5e",
+      "page": 23,
+      "disease_no": 5,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "c27c05a2-0409-5057-93d9-6974a4609568",
+      "page": 24,
+      "disease_no": 5,
+      "score": 0.03202
+     }
+    ],
+    "added_refs": {
+     "S1": "9fda6299-9021-5908-b2f0-3906e609687f",
+     "S2": "620461aa-5cdd-5b62-8bfc-c2cd1a6e6c5e",
+     "S3": "c27c05a2-0409-5057-93d9-6974a4609568"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 2096
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "viêm tủy răng sữa không hồi phục chẩn đoán thử tủy",
+    "filter": null,
+    "top_k": 3,
+    "ms": 91.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "620461aa-5cdd-5b62-8bfc-c2cd1a6e6c5e",
+      "page": 23,
+      "disease_no": 5,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "c27c05a2-0409-5057-93d9-6974a4609568",
+      "page": 24,
+      "disease_no": 5,
+      "score": 0.03175
+     },
+     {
+      "rank": 3,
+      "id": "225ee490-eaef-57b9-8264-c67feb3c69a4",
+      "page": 27,
+      "disease_no": 5,
+      "score": 0.03033
+     }
+    ],
+    "added_refs": {
+     "S4": "225ee490-eaef-57b9-8264-c67feb3c69a4"
+    },
+    "skipped_duplicate": [
+     "620461aa-5cdd-5b62-8bfc-c2cd1a6e6c5e",
+     "c27c05a2-0409-5057-93d9-6974a4609568"
+    ],
+    "skipped_budget": [],
+    "context_chars": 2528
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S3"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "9fda6299-9021-5908-b2f0-3906e609687f",
+    "page": 23,
+    "pages": [
+     23
+    ],
+    "disease_no": 5,
+    "text": "5. VIÊM TỦY RĂNG SỮA\nI. ĐỊNH NGHĨA\nViêm tuỷ răng sữa là tình trạng tổn thương nhiễm trùng mô tuỷ răng sữa, làm\ntăng áp lực nội tuỷ, chèn ép vào các tận cùng thần kinh gây ra triệu chứng đau và\ntổn thương mô tuỷ răng ở trẻ em."
+   },
+   {
+    "ref": "S2",
+    "id": "620461aa-5cdd-5b62-8bfc-c2cd1a6e6c5e",
+    "page": 23,
+    "pages": [
+     23
+    ],
+    "disease_no": 5,
+    "text": "III. CHẨN ĐOÁN\n1. Viêm tủy răng sữa có hồi phục\nViêm tủy có hồi phục là tình trạng viêm mô tủy nhưng có khả năng hồi phục\nkhi loại bỏ được các yếu tố bệnh nguyên.\na. Lâm sàng\n- Triệu chứng cơ năng\nĐau: bệnh nhân có cảm giác đau tự nhiên, nhẹ thoáng qua, cơn đau ngắn. Khi\năn các chất kích thích nóng, lạnh, chua, ngọt… thì có cảm giác đau hoặc ê buốt tăng\nlên và sớm hết đau khi ngừng chất kích thích.\n- Triệu chứng thực thể\n+ Có tổn thương mô cứng của răng: có thể có lỗ sâu ở thân răng.\n+ Thử tủy: bệnh nhân có cảm giác đau ê buốt và sớm hết đau, ê buốt khi loại\nbỏ chất kích thích thử tủy.\n+ Răng không đổi màu\n+ Gõ: gõ dọc không đau, gõ ngang vùng thân răng có thể có đau nhẹ.\nb. Cận lâm sàng\nX quang: có biểu hiện các tổn thương mô cứng."
+   },
+   {
+    "ref": "S3",
+    "id": "c27c05a2-0409-5057-93d9-6974a4609568",
+    "page": 24,
+    "pages": [
+     24,
+     25
+    ],
+    "disease_no": 5,
+    "text": "2. Viêm tủy răng sữa không hồi phục\nLà tình trạng tổn thương viêm cấp mô tủy răng sữa ở trẻ em không còn khả\nnăng hồi phục.\na. Lâm sàng\n- Triệu chứng cơ năng\n- Đau tự nhiên, từng cơn với các đặc điểm dưới đây:\n+ Thời gian cơn đau: có thể kéo dài hàng giờ hoặc đôi khi chỉ ngắn vài phút,\nlàm cho tính chất cơn đau gần như liên tục.\n+ Đau tăng khi kích thích bởi nóng, lạnh, chua, ngọt…hết kích thích đau vẫn\ncòn kéo dài.\n+ Đau tăng khi thay đổi tư thế: cúi đầu, nằm, về đêm.\n+ Đau lan nửa hàm, đôi khi không xác định được vị trí đau.\n- Triệu chứng thực thể:\n+ Tổn thương mô cứng của răng: có lỗ sâu, nhiều ngà mủn, làm sạch có thể\nthấy ánh hồng hoặc tủy hở.\n+ Gõ dọc: đau nhẹ.\n+ Gõ ngang: đau nhiều.\n+ Răng không đổi màu, không lung lay.\n+ Thử tủy: đau nhiều và kéo dài khi đã loại bỏ yếu tố kích thích. Tuy vậy, ở\ntrẻ em không có giá trị chắc chắn vì trẻ em đang đau sẽ rất cảnh giác và sợ hãi khi\nphản ứng lại với bất kì kích thích nào."
+   },
+   {
+    "ref": "S4",
+    "id": "225ee490-eaef-57b9-8264-c67feb3c69a4",
+    "page": 27,
+    "pages": [
+     27
+    ],
+    "disease_no": 5,
+    "text": "2. Viêm tủy không hồi phục\n- Nguyên tắc\n+ Làm sạch và tạo hình hệ thống ống tủy.\n+ Hàn kín hệ thống ống tủy và phục hồi tổn thương mô cứng.\n- Điều trị cụ thể\n+ Vô cảm.\n+ Mở tủy.\n+ Sửa soạn hệ thống ống tủy.\n+ Tạo hình và làm sạch hệ thống ống tuỷ.\n+ Hàn kín hệ thống ống tủy bằng vật liệu thích hợp.\n+ Hàn phục hồi mô cứng thân răng bằng vật liệu thích hợp."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2994,
+   "completion_tokens": 423,
+   "llm_cost_usd": 0.00032495099999999997
+  },
+  "seconds": 3.11,
+  "error": null
+ },
+ {
+  "query_id": "d07",
+  "question": "Khi điều trị bằng Headgear, lực kéo mỗi bên và thời gian đeo trong ngày là bao nhiêu?",
+  "filter": {
+   "disease_no": 14
+  },
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Lực kéo Headgear mỗi bên: 350–450 gram [S1]. Thời gian đeo trong ngày: ít nhất 14 giờ/ngày [S1].\n\n(Ngoài ra, thời gian điều trị với Headgear thường khoảng 6–12 tháng [S1].)",
+  "citations": [
+   "4c50b4ce-5423-54d1-85c0-4f8e7219d59d"
+  ],
+  "citation_refs": [
+   "S1"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "Headgear lực kéo mỗi bên thời gian đeo trong ngày",
+    "filter": {
+     "disease_no": 14
+    },
+    "top_k": 3,
+    "ms": 86.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "4c50b4ce-5423-54d1-85c0-4f8e7219d59d",
+      "page": 64,
+      "disease_no": 14,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "e3281d0d-f12d-5d19-8f6d-0a65a7a09c88",
+      "page": 64,
+      "disease_no": 14,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "be05f3f4-07f0-523a-90fb-9ff40fcf39f3",
+      "page": 62,
+      "disease_no": 14,
+      "score": 0.03126
+     }
+    ],
+    "added_refs": {
+     "S1": "4c50b4ce-5423-54d1-85c0-4f8e7219d59d",
+     "S2": "e3281d0d-f12d-5d19-8f6d-0a65a7a09c88",
+     "S3": "be05f3f4-07f0-523a-90fb-9ff40fcf39f3"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1925
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "điều trị Headgear lực kéo thời gian đeo",
+    "filter": {
+     "disease_no": 14
+    },
+    "top_k": 3,
+    "ms": 1110.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "4c50b4ce-5423-54d1-85c0-4f8e7219d59d",
+      "page": 64,
+      "disease_no": 14,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "e3281d0d-f12d-5d19-8f6d-0a65a7a09c88",
+      "page": 64,
+      "disease_no": 14,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "e15e4962-343d-5a95-9a5c-c01344aad6d4",
+      "page": 65,
+      "disease_no": 14,
+      "score": 0.03175
+     }
+    ],
+    "added_refs": {
+     "S4": "e15e4962-343d-5a95-9a5c-c01344aad6d4"
+    },
+    "skipped_duplicate": [
+     "4c50b4ce-5423-54d1-85c0-4f8e7219d59d",
+     "e3281d0d-f12d-5d19-8f6d-0a65a7a09c88"
+    ],
+    "skipped_budget": [],
+    "context_chars": 2266
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S1"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "4c50b4ce-5423-54d1-85c0-4f8e7219d59d",
+    "page": 64,
+    "pages": [
+     64
+    ],
+    "disease_no": 14,
+    "text": "2. Điều trị cụ thể\na. Bệnh nhân còn trong thời kỳ tăng trưởng\n- Ngăn chặn sự phát triển của xương hàm trên bằng khí cụ Headgear tùy theo\ncác trường hợp :\n+ Sử dụng Headgear kéo cao nếu bệnh nhân có khớp cắn hở, kiểu mặt dài.\n+ Sử dụng Headgear kéo thấp nếu bệnh nhân có khớp cắn sâu.\n+ Sử dụng Headgear kéo phối hợp nếu độ cắn phủ bình thường.\n+ Lực kéo Headgear mỗi bên: 350- 450gram.\n+ Thời gian đeo Headgear trong ngày: ít nhất 14 h/ngày.\n+ Thời gian điều trị với Headgear: thường khoảng 6 tháng đến 12 tháng.\n- Đánh giá lại tương quan xương hai hàm trên phim X quang.\n- Tạo lập lại tương quan răng hai hàm:\n+ Gắn mắc cài hai hàm.\n+ Sắp xếp và làm thẳng các răng theo chiều ngang và chiều đứng.\n+ Hoàn thiện.\n+ Điều trị duy trì.\nb. Bệnh nhân đã hết thời kỳ tăng trưởng"
+   },
+   {
+    "ref": "S2",
+    "id": "e3281d0d-f12d-5d19-8f6d-0a65a7a09c88",
+    "page": 64,
+    "pages": [
+     64
+    ],
+    "disease_no": 14,
+    "text": "- Điều trị bù trừ (ngụy trang)\n+ Nhổ răng tạo khoảng\n+ Sắp xếp kéo lùi các răng trước.\n+ Điều chỉnh tương quan răng hai hàm cho tới khi đạt khớp cắn loại I, ít nhất\nphải đạt được tương quan răng nanh loại I.\n+ Hoàn thiện.\n+ Điều trị duy trì.\n- Phẫu thuật chỉnh hình xương hàm trên: áp dụng trong các trường hợp nặng\nkhông thể điều trị bù trừ bằng nắn chỉnh răng đơn thuần."
+   },
+   {
+    "ref": "S3",
+    "id": "be05f3f4-07f0-523a-90fb-9ff40fcf39f3",
+    "page": 62,
+    "pages": [
+     62,
+     63
+    ],
+    "disease_no": 14,
+    "text": "1.2. Cận lâm sàng\na. Trên mẫu hàm thạch cao\n- Tương quan răng hàm lớn thứ nhất loại II.\n- Tương quan răng nanh loại II.\n- Độ cắn chìa tăng.\nb. X quang phim sọ nghiêng (Cephalometrics)\n- Tương quan xương hai hàm loại II\n+ Số đo góc ANB tăng.\n+ Chỉ số Wits tăng.\n- Xương hàm trên nhô ra trước so với nền sọ\n+ Số đo góc SNA tăng.\n+ Chỉ số A-N Perp tăng.\n- Xương hàm dưới bình thường\n+ Số đo góc SNB nằm trong giá trị bình thường.\n+ Chỉ số Pog-NPerp bình thường.\n+ Góc trục mặt bình thường."
+   },
+   {
+    "ref": "S4",
+    "id": "e15e4962-343d-5a95-9a5c-c01344aad6d4",
+    "page": 65,
+    "pages": [
+     65
+    ],
+    "disease_no": 14,
+    "text": "2. Biến chứng\n- Sang chấn các răng trước hai hàm.\n- Đau khớp thái dương hàm.\n- Rối loạn khớp thái dương hàm.\nVI. PHÒNG BỆNH\n- Cần khám, phát hiện và điều trị sớm loại bỏ các thói quen xấu.\n- Điều trị sớm khi bệnh nhân còn trong thời kỳ tăng trưởng."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2838,
+   "completion_tokens": 196,
+   "llm_cost_usd": 0.0002884336
+  },
+  "seconds": 5.06,
+  "error": null
+ },
+ {
+  "query_id": "d08",
+  "question": "Khi thăm khám, dấu hiệu nào giúp phân biệt với áp xe tuyến dưới hàm?",
+  "filter": {
+   "disease_no": 31
+  },
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Dấu hiệu giúp phân biệt với áp xe tuyến dưới hàm là: **chảy mủ qua lỗ ống Wharton khi thăm khám** [S2].\n\n(Trong mục chẩn đoán phân biệt của bệnh 31 – Áp xe vùng dưới hàm, tài liệu còn nêu các dấu hiệu phân biệt với viêm hạch mủ dưới hàm và áp xe tuyến dưới lưỡi [S2].)",
+  "citations": [
+   "eb159eeb-b879-5252-8212-72930c642f77"
+  ],
+  "citation_refs": [
+   "S2"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "phân biệt áp xe tuyến dưới hàm thăm khám dấu hiệu",
+    "filter": {
+     "disease_no": 31
+    },
+    "top_k": 3,
+    "ms": 1304.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "204e5d40-c5e1-577d-ba8a-0b0c26e0212c",
+      "page": 121,
+      "disease_no": 31,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "eb159eeb-b879-5252-8212-72930c642f77",
+      "page": 122,
+      "disease_no": 31,
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "141149ba-1684-5161-8e68-e6859e6d7c8b",
+      "page": 121,
+      "disease_no": 31,
+      "score": 0.0315
+     }
+    ],
+    "added_refs": {
+     "S1": "204e5d40-c5e1-577d-ba8a-0b0c26e0212c",
+     "S2": "eb159eeb-b879-5252-8212-72930c642f77",
+     "S3": "141149ba-1684-5161-8e68-e6859e6d7c8b"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1923
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "chẩn đoán phân biệt áp xe tuyến dưới hàm",
+    "filter": {
+     "disease_no": 31
+    },
+    "top_k": 3,
+    "ms": 169.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "eb159eeb-b879-5252-8212-72930c642f77",
+      "page": 122,
+      "disease_no": 31,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "204e5d40-c5e1-577d-ba8a-0b0c26e0212c",
+      "page": 121,
+      "disease_no": 31,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "d1eb705c-fe29-594d-957d-d871bb31a96f",
+      "page": 122,
+      "disease_no": 31,
+      "score": 0.0315
+     }
+    ],
+    "added_refs": {
+     "S4": "d1eb705c-fe29-594d-957d-d871bb31a96f"
+    },
+    "skipped_duplicate": [
+     "eb159eeb-b879-5252-8212-72930c642f77",
+     "204e5d40-c5e1-577d-ba8a-0b0c26e0212c"
+    ],
+    "skipped_budget": [],
+    "context_chars": 2383
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S2"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "204e5d40-c5e1-577d-ba8a-0b0c26e0212c",
+    "page": 121,
+    "pages": [
+     121
+    ],
+    "disease_no": 31,
+    "text": "31. ÁP XE VÙNG DƯỚI HÀM\nI. ĐỊNH NGHĨA\nLà áp xe khu trú ở vùng dưới hàm, nguyên nhân thường do răng.\nII. NGUYÊN NHÂN\n- Do răng\n+ Răng viêm quanh cuống không được điều trị.\n+ Răng có viêm quanh răng không được điều trị.\n+ Do biến chứng răng khôn.\n- Do nguyên nhân khác\n+ Do tai biến điều trị.\n+ Do chấn thương.\n+ Nhiễm trùng các vùng lân cận.\n+ Sỏi tuyến nước bọt nhiễm khuẩn."
+   },
+   {
+    "ref": "S2",
+    "id": "eb159eeb-b879-5252-8212-72930c642f77",
+    "page": 122,
+    "pages": [
+     122
+    ],
+    "disease_no": 31,
+    "text": "1.2. Cận lâm sàng\n- X quang thường quy\nCó thể có hình ảnh tổn thương răng nguyên nhân.\n- CT Scanner: có khối thấu quang ranh giới rõ ở vùng dưới hàm.\n2 Chẩn đoán phân biệt\n- Áp xe tuyến dưới hàm: dấu hiệu chảy mủ qua lỗ ống Wharton khi thăm\nkhám.\n- Viêm hạch mủ dưới hàm: bắt đầu dưới dạng nổi cục sưng đau, sau lan ra cả\nvùng, không có dấu hiệu khít hàm.\n- Áp xe tuyến dưới lưỡi: dấu hiệu ngoài miệng ít, sàn miệng bên bệnh sưng\ncứng, khít hàm ít."
+   },
+   {
+    "ref": "S3",
+    "id": "141149ba-1684-5161-8e68-e6859e6d7c8b",
+    "page": 121,
+    "pages": [
+     121,
+     122
+    ],
+    "disease_no": 31,
+    "text": "III. CHẨN ĐOÁN\n1. Chẩn đoán xác định\n1.1. Lâm sàng\na. Toàn thân\nCó biểu hiện nhiễm trùng: sốt cao, mạch nhanh, hơi thở hôi….\nb. Tại chỗ\n- Ngoài miệng\n+ Vùng dưới hàm có 1 khối sưng lớn, da trên khối sưng nóng đỏ hoặc tím,\ncăng, nề, có thể thâm nhiễm lan rộng lên trên phần thấp của má,phía trước lan đến\nvùng dưới cằm,phía sau lan đến vùng cổ bên,phía dưới lan xuống xương móng.Lồi\nbờ nền xương hàm dưới bị xóa.\n+ Giai đoạn đầu khối có mật độ cứng, về sau ấn lõm hoặc có dấu hiệu chuyển\nsóng. Bệnh nhân đau dữ dội khi sờ vào.\n- Trong miệng\n+ Dấu hiệu khít hàm dữ dội.\n+ Xung huyết,nề niêm mạc ngách tiền đình răng nguyên nhân.\n+ Rãnh bên lưỡi,vùng xa của sàn miệng sưng nề, xung huyết.\n+ Khi ấn tay vào khối sưng ở phía sau sàn miệng, mặt trong xương hàm thấy\nmềm, lún, chuyển sóng.\n+ Trụ trước amidan xung huyết, phần trước của sàn miệng bình thường.\n+ Răng nguyên nhân: có biểu hiện bệnh lý của răng nguyên nhân."
+   },
+   {
+    "ref": "S4",
+    "id": "d1eb705c-fe29-594d-957d-d871bb31a96f",
+    "page": 122,
+    "pages": [
+     122
+    ],
+    "disease_no": 31,
+    "text": "IV. ĐIỀU TRỊ\n1. Nguyên tắc\nDẫn lưu mủ và điều trị răng nguyên nhân.\n2. Điều trị cụ thể\n2.1. Điều trị toàn thân:\nKháng sinh và nâng cao thể trạng.\n2.2. Điều trị tại chỗ\n- Rạch dẫn lưu mủ theo đường ngoài mặt.\n- Kỹ thuật\n+ Vô cảm.\n+ Rạch da vùng dưới hàm.\n+ Bóc tách da và mô dưới da.\n+ Dùng kẹp Kocher thâm nhập vào vùng áp xe để dẫn lưu mủ.\n+ Bơm rửa.\n+ Đặt dẫn lưu.\n+ Điều trị răng nguyên nhân."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2977,
+   "completion_tokens": 317,
+   "llm_cost_usd": 0.0007869964
+  },
+  "seconds": 4.96,
+  "error": null
+ },
+ {
+  "query_id": "d09",
+  "question": "Khi kết hợp xương bằng nẹp vít, đường rạch ngách tiền đình hàm trên cách ranh giới lợi dính bao nhiêu?",
+  "filter": {
+   "disease_no": 55
+  },
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Khoảng **3 mm** [S2].\n\nCụ thể: trong phẫu thuật kết hợp xương hàm trên bằng nẹp vít, đường rạch ngách tiền đình hàm trên cách ranh giới lợi dính khoảng 3 mm, dùng để kết hợp xương ở trụ gò má và trụ hàm trên [S2].",
+  "citations": [
+   "0e0bdd95-2760-5634-bea4-581a3c7fe9ed"
+  ],
+  "citation_refs": [
+   "S2"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "kết hợp xương nẹp vít đường rạch ngách tiền đình hàm trên ranh giới lợi dính",
+    "filter": {
+     "disease_no": 55
+    },
+    "top_k": 3,
+    "ms": 92.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "0b43d40d-3808-598f-8010-0de8fd024573",
+      "page": 196,
+      "disease_no": 55,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "0e0bdd95-2760-5634-bea4-581a3c7fe9ed",
+      "page": 195,
+      "disease_no": 55,
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "1b38481c-7ef1-5977-b098-c61b9a2bf609",
+      "page": 194,
+      "disease_no": 55,
+      "score": 0.0308
+     }
+    ],
+    "added_refs": {
+     "S1": "0b43d40d-3808-598f-8010-0de8fd024573",
+     "S2": "0e0bdd95-2760-5634-bea4-581a3c7fe9ed",
+     "S3": "1b38481c-7ef1-5977-b098-c61b9a2bf609"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 2084
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "đường rạch ngách tiền đình hàm trên cách lợi dính",
+    "filter": {
+     "disease_no": 55
+    },
+    "top_k": 3,
+    "ms": 88.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "0e0bdd95-2760-5634-bea4-581a3c7fe9ed",
+      "page": 195,
+      "disease_no": 55,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "45a029a7-e429-5943-b63b-57bc9a4dd372",
+      "page": 193,
+      "disease_no": 55,
+      "score": 0.03126
+     },
+     {
+      "rank": 3,
+      "id": "0b43d40d-3808-598f-8010-0de8fd024573",
+      "page": 196,
+      "disease_no": 55,
+      "score": 0.03105
+     }
+    ],
+    "added_refs": {
+     "S4": "45a029a7-e429-5943-b63b-57bc9a4dd372"
+    },
+    "skipped_duplicate": [
+     "0e0bdd95-2760-5634-bea4-581a3c7fe9ed",
+     "0b43d40d-3808-598f-8010-0de8fd024573"
+    ],
+    "skipped_budget": [],
+    "context_chars": 2303
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S2"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "0b43d40d-3808-598f-8010-0de8fd024573",
+    "page": 196,
+    "pages": [
+     196
+    ],
+    "disease_no": 55,
+    "text": "- Nắn chỉnh và cố định.\n+ Dùng dụng cụ thích hợp nắn chỉnh các đầu xương gãy về vị trí giải phẫu.\n+ Cố định 2 hàm đúng khớp cắn bằng cung Tigeursted, hoặc nút Ivy, hoặc vít\nneo chặn.\n+ Kết hợp xương hàm trên bằng nẹp vít\n- Cầm máu.\n- Khâu đóng phần mềm theo các lớp giải phẫu.\nV TIÊN LƯỢNG VÀ BIẾN CHỨNG"
+   },
+   {
+    "ref": "S2",
+    "id": "0e0bdd95-2760-5634-bea4-581a3c7fe9ed",
+    "page": 195,
+    "pages": [
+     195,
+     196
+    ],
+    "disease_no": 55,
+    "text": "2. Điều trị cụ thể\na. Điều trị bằng phẫu thuật treo xương hàm trên.\n- Dùng bút chuyên dụng vẽ thiết kế các đường rạch trên da.\n- Rạch da đuôi cung mày.\n- Nắn chỉnh và cố định\n+ Dùng dụng cụ thích hợp nắn chỉnh các đầu xương gãy về vị trí giải phẫu.\n+ Cố định 2 hàm đúng khớp cắn bằng cung Tigeursted, hoặc nút Ivy, hoặc vít\nneo chặn.\n+ Treo xương hàm trên vào mấu ngoài ổ mắt\n- Cầm máu.\n- Khâu đóng phần mềm theo các lớp giải phẫu.\nb. Điều trị bằng phẫu thuật kết hợp xương hàm trên bằng nẹp vít\n- Dùng bút chuyên dụng vẽ thiết kế các đường rạch trên da và niêm mạc.\n+ Đường rạch ngách tiền đình hàm trên cách ranh giới lợi dính khoảng 3 mm\nđể kết hợp xương ở trụ gò má và trụ hàm trên.\n+ Đường rạch qua đuôi cung mày để kết hợp máu ngoài ổ mắt.\n+ Đường dưới mi dưới để kết hợp bờ dưới ổ mắt."
+   },
+   {
+    "ref": "S3",
+    "id": "1b38481c-7ef1-5977-b098-c61b9a2bf609",
+    "page": 194,
+    "pages": [
+     194
+    ],
+    "disease_no": 55,
+    "text": "1.2. Gãy toàn bộ\nBệnh nhân có thể bị choáng, hoặc kèm chấn thương sọ não. Tùy đường gãy mà\ncó các biểu hiện tại chỗ khác nhau.\na. Gãy dọc\n- Lâm sàng\n+ Chảy máu mũi, miệng.\n+ Khớp cắn sai.\n+ Khe giữa hai răng cửa giữa hoặc răng cửa bên rộng ra.\n+ Dọc giữa vòm miệng thấy đường bầm tím hoặc rách niêm mạc.\n+ Khám xương hàm trên thấy di động.\n- X quang : CT Scanner, Blondeau, Belot hàm trên: có hình ảnh tổn thương\ndọc giữa hay dọc bên xương hàm trên.\nb. Gãy ngang\nCó 3 thể gãy\n- Gãy Lefort I\n+ Bầm tím môi trên và nghách lợi.\n+ Khớp cắn sai, há miệng hạn chế.\n+ Đau khi ấn dọc từ gai mũi trước đến lồi củ xương hàm trên.\n+ Di động xương hàm trên khi khám.\n+ X-quang: CT Scanner, phim mặt thẳng và nghiêng: có hình ảnh đường gãy\nngang qua trên cuống răng. Gãy 1/3 dưới chân bướm."
+   },
+   {
+    "ref": "S4",
+    "id": "45a029a7-e429-5943-b63b-57bc9a4dd372",
+    "page": 193,
+    "pages": [
+     193
+    ],
+    "disease_no": 55,
+    "text": "55. GÃY XƯƠNG HÀM TRÊN\nI. ĐỊNH NGHĨA\nLà tổn thương gãy, làm mất sự liên tục của xương hàm trên.\nII. NGUYÊN NHÂN\n- Tai nạn giao thông.\n- Tai nạn lao động.\n- Tai nạn sinh hoạt."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2933,
+   "completion_tokens": 246,
+   "llm_cost_usd": 0.000463959
+  },
+  "seconds": 2.75,
+  "error": null
+ },
+ {
+  "query_id": "d10",
+  "question": "Bịt mũi bệnh nhân gãy xương hàm trên mà hơi thở thoát ra đằng miệng thì gợi ý tổn thương ở đâu?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Dấu hiệu bịt mũi mà hơi thở thoát ra ở miệng gợi ý tổn thương **gãy mỏm khẩu cái và vòm khẩu cái** (thuộc nhóm gãy một phần xương hàm trên) [S1].\n\nTrong mục này, ngoài dấu hiệu trên còn có: chảy máu miệng, máu mũi, sặc khi ăn; X quang/CT Scanner thấy hình ảnh tổn thương mỏm khẩu cái [S1].",
+  "citations": [
+   "5f72e31e-4b30-50cf-a0c3-38e6246b2fc8"
+  ],
+  "citation_refs": [
+   "S1"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "gãy xương hàm trên bịt mũi hơi thở thoát ra đằng miệng",
+    "filter": null,
+    "top_k": 3,
+    "ms": 91.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "5f72e31e-4b30-50cf-a0c3-38e6246b2fc8",
+      "page": 194,
+      "disease_no": 55,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "3ade2e42-d9f5-56d3-b2e3-2f78832a6098",
+      "page": 193,
+      "disease_no": 55,
+      "score": 0.0308
+     },
+     {
+      "rank": 3,
+      "id": "fd6d5d55-ad64-5ffd-be9f-ccacb70dd2c3",
+      "page": 195,
+      "disease_no": 55,
+      "score": 0.03078
+     }
+    ],
+    "added_refs": {
+     "S1": "5f72e31e-4b30-50cf-a0c3-38e6246b2fc8",
+     "S2": "3ade2e42-d9f5-56d3-b2e3-2f78832a6098",
+     "S3": "fd6d5d55-ad64-5ffd-be9f-ccacb70dd2c3"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1497
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "gãy xương hàm trên Le Fort chẩn đoán tổn thương",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1473.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "45a029a7-e429-5943-b63b-57bc9a4dd372",
+      "page": 193,
+      "disease_no": 55,
+      "score": 0.03154
+     },
+     {
+      "rank": 2,
+      "id": "3ade2e42-d9f5-56d3-b2e3-2f78832a6098",
+      "page": 193,
+      "disease_no": 55,
+      "score": 0.03151
+     },
+     {
+      "rank": 3,
+      "id": "5f72e31e-4b30-50cf-a0c3-38e6246b2fc8",
+      "page": 194,
+      "disease_no": 55,
+      "score": 0.03125
+     }
+    ],
+    "added_refs": {
+     "S4": "45a029a7-e429-5943-b63b-57bc9a4dd372"
+    },
+    "skipped_duplicate": [
+     "3ade2e42-d9f5-56d3-b2e3-2f78832a6098",
+     "5f72e31e-4b30-50cf-a0c3-38e6246b2fc8"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1716
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S1"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "5f72e31e-4b30-50cf-a0c3-38e6246b2fc8",
+    "page": 194,
+    "pages": [
+     194
+    ],
+    "disease_no": 55,
+    "text": "- Gãy mỏm khẩu cái và vòm khẩu cái\n+ Chảy máu miệng, máu mũi, sặc khi ăn.\n+ Bịt mũi khi bệnh nhân thở hơi thoát ra ở miệng.\n+ X quang: CT Scanner: thấy hình ảnh tổn thương mỏm khẩu cái."
+   },
+   {
+    "ref": "S2",
+    "id": "3ade2e42-d9f5-56d3-b2e3-2f78832a6098",
+    "page": 193,
+    "pages": [
+     193,
+     194
+    ],
+    "disease_no": 55,
+    "text": "III. CHẨN ĐOÁN\n1. Chẩn đoán xác định\n1.1. Gãy một phần\n- Gãy cành lên xương hàm trên\n+ Bầm tím góc trong mắt, sờ thấy có điểm đau chói hoặc hơi lõm nơi tổn\nthương.\n+ Chảy máu mũi.\n+ Có thể có chảy nước mắt do tắc ống lệ.\n+ X-quang: CT Scanner, mặt nghiêng, Blondeau. Thấy hình ảnh đường gãy\nvùng cành lên xương hàm trên.\n- Gãy hoặc lún thành trước xoang hàm\n+ Chảy máu mũi.\n+ Bầm tím bờ dưới ổ mắt.\n+ Có thể tê bì ở má bên tổn thương.\n+ Ấn vào vùng hố nanh có điểm đau chói hoặc có thể thấy tiếng lạo xạo, dấu\nhiệu vỡ nhiều mảnh.\n+ X quang: CT Scanner, Blondeau, Hirzt: Thấy hình ảnh tổn thương thành\ntrước xoang, mờ xoang hàm.\n- Gãy bờ dưới ổ mắt và sàn ổ mắt\n+ Chảy máu mũi.\n+ Xuất huyết kết mạc mi dưới.\n+ Tê bì vùng má, có thể có dấu hiệu nhìn song thị.\n+ Mắt lõm.\n+ Sờ bờ dưới hốc mắt thấy điểm đau chói hoặc có thể thấy khuyết bậc thang.\n+ X-quang: CT Scanner Blondeau: thấy hình ảnh tổn thương bờ dưới ổ mắt."
+   },
+   {
+    "ref": "S3",
+    "id": "fd6d5d55-ad64-5ffd-be9f-ccacb70dd2c3",
+    "page": 195,
+    "pages": [
+     195
+    ],
+    "disease_no": 55,
+    "text": "IV. ĐIỀU TRỊ GÃY XƯƠNG HÀM TRÊN\n1. Nguyên tắc\n- Nắn chỉnh lại xương gãy.\n- Cố định xương gãy.\n- Ngăn ngừa các biến chứng xảy ra.\n- Điều trị phải phục hồi chức năng và thẩm mỹ."
+   },
+   {
+    "ref": "S4",
+    "id": "45a029a7-e429-5943-b63b-57bc9a4dd372",
+    "page": 193,
+    "pages": [
+     193
+    ],
+    "disease_no": 55,
+    "text": "55. GÃY XƯƠNG HÀM TRÊN\nI. ĐỊNH NGHĨA\nLà tổn thương gãy, làm mất sự liên tục của xương hàm trên.\nII. NGUYÊN NHÂN\n- Tai nạn giao thông.\n- Tai nạn lao động.\n- Tai nạn sinh hoạt."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2644,
+   "completion_tokens": 389,
+   "llm_cost_usd": 0.0008849600000000001
+  },
+  "seconds": 5.54,
+  "error": null
+ },
+ {
+  "query_id": "d11",
+  "question": "Bệnh quai bị do loại virus nào gây ra?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Bệnh quai bị (viêm tuyến nước bọt mang tai do virus) do **virus thuộc nhóm Paramyxovirus** gây ra [S2]. Bệnh lây truyền trực tiếp qua trung gian nước bọt và có tính chất dịch tễ [S1].",
+  "citations": [
+   "9a5b1678-8659-56ea-b58e-954ce7ccc291",
+   "43f6a84e-3952-5cbc-a652-dc90994b5307"
+  ],
+  "citation_refs": [
+   "S2",
+   "S1"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "bệnh quai bị virus gây bệnh",
+    "filter": null,
+    "top_k": 3,
+    "ms": 92.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "43f6a84e-3952-5cbc-a652-dc90994b5307",
+      "page": 151,
+      "disease_no": 42,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "9a5b1678-8659-56ea-b58e-954ce7ccc291",
+      "page": 151,
+      "disease_no": 42,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "3c3fae60-fd11-591c-baf1-077b2583ced2",
+      "page": 152,
+      "disease_no": 42,
+      "score": 0.0303
+     }
+    ],
+    "added_refs": {
+     "S1": "43f6a84e-3952-5cbc-a652-dc90994b5307",
+     "S2": "9a5b1678-8659-56ea-b58e-954ce7ccc291",
+     "S3": "3c3fae60-fd11-591c-baf1-077b2583ced2"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 856
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "quai bị nguyên nhân",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1430.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "e6defe19-5956-5ba0-af51-d4b77aeb1672",
+      "page": 111,
+      "disease_no": 27,
+      "score": 0.03021
+     },
+     {
+      "rank": 2,
+      "id": "7a00f25a-8e9c-526f-8e96-9033c52e0cac",
+      "page": 108,
+      "disease_no": 26,
+      "score": 0.03009
+     },
+     {
+      "rank": 3,
+      "id": "081361c8-7fdb-5005-9cc5-97cc8918441b",
+      "page": 152,
+      "disease_no": 42,
+      "score": 0.02861
+     }
+    ],
+    "added_refs": {
+     "S4": "e6defe19-5956-5ba0-af51-d4b77aeb1672",
+     "S5": "7a00f25a-8e9c-526f-8e96-9033c52e0cac",
+     "S6": "081361c8-7fdb-5005-9cc5-97cc8918441b"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1529
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S2",
+     "S1"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "43f6a84e-3952-5cbc-a652-dc90994b5307",
+    "page": 151,
+    "pages": [
+     151
+    ],
+    "disease_no": 42,
+    "text": "42. VIÊM TUYẾN NƯỚC BỌT MANG TAI DO VIRUS\n(QUAI BỊ)\nI. ĐỊNH NGHĨA\nQuai bị là bệnh viêm tuyến nước bọt mang tai thường gặp ở trẻ em và thanh\nthiếu niên do virus gây ra, bệnh có thể lây truyền trực tiếp qua trung gian nước bọt\nvà có tính chất dịch tễ."
+   },
+   {
+    "ref": "S2",
+    "id": "9a5b1678-8659-56ea-b58e-954ce7ccc291",
+    "page": 151,
+    "pages": [
+     151
+    ],
+    "disease_no": 42,
+    "text": "II. NGUYÊN NHÂN\nBệnh do virus thuộc nhóm Paramyxo virus gây ra.\nIII. CHẨN ĐOÁN\n1. Chẩn đoán xác định\nChẩn đoán xác định dựa vào các triệu chứng lâm sàng, cận lâm sàng và tính\nchất dịch tễ."
+   },
+   {
+    "ref": "S3",
+    "id": "3c3fae60-fd11-591c-baf1-077b2583ced2",
+    "page": 152,
+    "pages": [
+     152
+    ],
+    "disease_no": 42,
+    "text": "V. TIÊN LƯỢNG VÀ BIẾN CHỨNG\n1. Tiên lượng\nBệnh tiến triển khoảng 8-10 ngày và tự khỏi.\n2. Biến chứng\n- Viêm tinh hoàn: là biến chứng hay gặp.\n- Viêm buồng trứng: hiếm gặp."
+   },
+   {
+    "ref": "S4",
+    "id": "e6defe19-5956-5ba0-af51-d4b77aeb1672",
+    "page": 111,
+    "pages": [
+     111
+    ],
+    "disease_no": 27,
+    "text": "II. NGUYÊN NHÂN\nNguyên nhân và cơ chế bệnh sinh đến nay vẫn chưa rõ ràng, một số tác giả cho\nrằng cơ chế gây nang là do ống tuyến nước bọt bị tắc, giãn phình."
+   },
+   {
+    "ref": "S5",
+    "id": "7a00f25a-8e9c-526f-8e96-9033c52e0cac",
+    "page": 108,
+    "pages": [
+     108
+    ],
+    "disease_no": 26,
+    "text": "II. NGUYÊN NHÂN\nNguyên nhân và cơ chế bệnh sinh đến nay vẫn chưa rõ ràng, một số tác giả cho\nrằng cơ chế gây nang là do ống một tuyến nước bọt bị tắc, giãn phình."
+   },
+   {
+    "ref": "S6",
+    "id": "081361c8-7fdb-5005-9cc5-97cc8918441b",
+    "page": 152,
+    "pages": [
+     152
+    ],
+    "disease_no": 42,
+    "text": "VI. PHÒNG BỆNH\n- Tiêm văcxin phòng quai bị cho trẻ em.\n- Cách ly người bệnh, ngăn ngừa lây nhiễm ra cộng đồng."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2481,
+   "completion_tokens": 187,
+   "llm_cost_usd": 0.00016547712
+  },
+  "seconds": 4.81,
+  "error": null
+ },
+ {
+  "query_id": "d12",
+  "question": "Viêm tuyến mang tai do virus hay để lại biến chứng gì nhất?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Viêm tuyến nước bọt mang tai do virus (quai bị) hay để lại biến chứng **viêm tinh hoàn** – đây là biến chứng hay gặp nhất [S1]. Ngoài ra tài liệu còn nêu viêm buồng trứng nhưng hiếm gặp [S1].\n\nBệnh thường tiến triển khoảng 8–10 ngày và tự khỏi [S1].",
+  "citations": [
+   "3c3fae60-fd11-591c-baf1-077b2583ced2"
+  ],
+  "citation_refs": [
+   "S1"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "viêm tuyến mang tai do virus biến chứng",
+    "filter": null,
+    "top_k": 3,
+    "ms": 97.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "3c3fae60-fd11-591c-baf1-077b2583ced2",
+      "page": 152,
+      "disease_no": 42,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "43f6a84e-3952-5cbc-a652-dc90994b5307",
+      "page": 151,
+      "disease_no": 42,
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "bda88ec3-602f-52dc-9a3d-46be731c1614",
+      "page": 154,
+      "disease_no": 43,
+      "score": 0.03083
+     }
+    ],
+    "added_refs": {
+     "S1": "3c3fae60-fd11-591c-baf1-077b2583ced2",
+     "S2": "43f6a84e-3952-5cbc-a652-dc90994b5307",
+     "S3": "bda88ec3-602f-52dc-9a3d-46be731c1614"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 838
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "viêm tuyến mang tai biến chứng",
+    "filter": null,
+    "top_k": 3,
+    "ms": 86.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+      "page": 153,
+      "disease_no": 43,
+      "score": 0.03175
+     },
+     {
+      "rank": 2,
+      "id": "80fedcba-7ff3-5e2d-aba7-b5b816e6695f",
+      "page": 153,
+      "disease_no": 43,
+      "score": 0.03151
+     },
+     {
+      "rank": 3,
+      "id": "bda88ec3-602f-52dc-9a3d-46be731c1614",
+      "page": 154,
+      "disease_no": 43,
+      "score": 0.0311
+     }
+    ],
+    "added_refs": {
+     "S4": "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+     "S5": "80fedcba-7ff3-5e2d-aba7-b5b816e6695f"
+    },
+    "skipped_duplicate": [
+     "bda88ec3-602f-52dc-9a3d-46be731c1614"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1413
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S1"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "3c3fae60-fd11-591c-baf1-077b2583ced2",
+    "page": 152,
+    "pages": [
+     152
+    ],
+    "disease_no": 42,
+    "text": "V. TIÊN LƯỢNG VÀ BIẾN CHỨNG\n1. Tiên lượng\nBệnh tiến triển khoảng 8-10 ngày và tự khỏi.\n2. Biến chứng\n- Viêm tinh hoàn: là biến chứng hay gặp.\n- Viêm buồng trứng: hiếm gặp."
+   },
+   {
+    "ref": "S2",
+    "id": "43f6a84e-3952-5cbc-a652-dc90994b5307",
+    "page": 151,
+    "pages": [
+     151
+    ],
+    "disease_no": 42,
+    "text": "42. VIÊM TUYẾN NƯỚC BỌT MANG TAI DO VIRUS\n(QUAI BỊ)\nI. ĐỊNH NGHĨA\nQuai bị là bệnh viêm tuyến nước bọt mang tai thường gặp ở trẻ em và thanh\nthiếu niên do virus gây ra, bệnh có thể lây truyền trực tiếp qua trung gian nước bọt\nvà có tính chất dịch tễ."
+   },
+   {
+    "ref": "S3",
+    "id": "bda88ec3-602f-52dc-9a3d-46be731c1614",
+    "page": 154,
+    "pages": [
+     154,
+     155
+    ],
+    "disease_no": 43,
+    "text": "V.TIÊN LƯỢNG VÀ BIẾN CHỨNG\n1. Tiên lượng\nNếu phát hiện sớm, điều trị nội khoa sẽ cho kết quả tốt.\n2. Biến chứng\n- Áp xe tuyến mang tai\n- Viêm tấy lan tỏa."
+   },
+   {
+    "ref": "S4",
+    "id": "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+    "page": 153,
+    "pages": [
+     153
+    ],
+    "disease_no": 43,
+    "text": "43. VIÊM TUYẾN NƯỚC BỌT MANG TAI MẠN TÍNH\nI. ĐỊNH NGHĨA\nViêm tuyến nước bọt mạn tính là loại viêm tuyến nước bọt thường gặp ở người\nlớn do nhiều nguyên nhân,hay gặp nhất là do vi khuẩn."
+   },
+   {
+    "ref": "S5",
+    "id": "80fedcba-7ff3-5e2d-aba7-b5b816e6695f",
+    "page": 153,
+    "pages": [
+     153
+    ],
+    "disease_no": 43,
+    "text": "II. NGUYÊN NHÂN\n- Vi khuẩn.\n- Sỏi tuyến mang tai.\n- Bệnh có thể được coi là biến chứng củ a những tổn thương tái phát do phản\nxạ, dị ứng, nội tiết củ a tuyến nước bọt.\n- Do những thâm nhiễm nguyên thủy tuyến mang tai củ a hội chứng Sjogren."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2443,
+   "completion_tokens": 268,
+   "llm_cost_usd": 0.00031939399999999997
+  },
+  "seconds": 2.99,
+  "error": null
+ },
+ {
+  "query_id": "d13",
+  "question": "Thuốc nào thường là lựa chọn đầu tiên khi điều trị nội khoa đau dây thần kinh V?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "**Carbamazepine** thường là lựa chọn đầu tiên khi điều trị nội khoa đau dây thần kinh V [S1].\n\n- Có thể thay thế bằng **Oxcarbazepine** hoặc **gabapentin** để giảm tác dụng phụ [S1].\n- Khởi đầu bằng liều thấp, tăng dần đến liều đáp ứng; sau khi đạt liều đáp ứng, duy trì 4–6 tuần rồi giảm dần về liều khởi đầu [S1].\n- Điều trị nội khoa là lựa chọn đầu tiên trong các trường hợp không xác định được nguyên nhân, trước khi tiến hành điều trị ngoại khoa [S1].",
+  "citations": [
+   "715f8e37-a1e1-5c33-a250-bcb91939f46a"
+  ],
+  "citation_refs": [
+   "S1"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "điều trị nội khoa đau dây thần kinh V thuốc",
+    "filter": null,
+    "top_k": 3,
+    "ms": 95.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "715f8e37-a1e1-5c33-a250-bcb91939f46a",
+      "page": 168,
+      "disease_no": 48,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "62e22775-4c9a-57e2-9ffa-be3ed3f45196",
+      "page": 166,
+      "disease_no": 48,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "0846d26a-f03c-5783-b3a1-67b3d0b282ed",
+      "page": 167,
+      "disease_no": 48,
+      "score": 0.03102
+     }
+    ],
+    "added_refs": {
+     "S1": "715f8e37-a1e1-5c33-a250-bcb91939f46a",
+     "S2": "62e22775-4c9a-57e2-9ffa-be3ed3f45196",
+     "S3": "0846d26a-f03c-5783-b3a1-67b3d0b282ed"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1398
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "đau dây thần kinh V carbamazepine",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1135.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "62e22775-4c9a-57e2-9ffa-be3ed3f45196",
+      "page": 166,
+      "disease_no": 48,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "715f8e37-a1e1-5c33-a250-bcb91939f46a",
+      "page": 168,
+      "disease_no": 48,
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "29fb3c80-b345-5585-905a-a11c3b396312",
+      "page": 166,
+      "disease_no": 48,
+      "score": 0.03151
+     }
+    ],
+    "added_refs": {
+     "S4": "29fb3c80-b345-5585-905a-a11c3b396312"
+    },
+    "skipped_duplicate": [
+     "62e22775-4c9a-57e2-9ffa-be3ed3f45196",
+     "715f8e37-a1e1-5c33-a250-bcb91939f46a"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1777
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S1"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "715f8e37-a1e1-5c33-a250-bcb91939f46a",
+    "page": 168,
+    "pages": [
+     168
+    ],
+    "disease_no": 48,
+    "text": "2.2. Điều trị triệu chứng\n2.2.1 Nội khoa\n- Chỉ định: trong các trường hợp không xác định được nguyên nhân thì điều trị\nnội khoa luôn là lựa chọn đầu tiên trước khi tiến hành điều trị ngoại khoa.\n- Phác đồ điều trị\n+ Carbamazepine thường là lựa chọn đầu tiên khi điều trị đau thần kinh V, có\nthể thay thế bằng Oxcarbazepine hoặc gabapentin để giảm tác dụng phụ.\n+ Khởi đầu bằng một liều thấp, tăng dần đến liều đáp ứng. Sau khi đạt liều\nđáp ứng, duy trì trong 4 – 6 tuần, sau đó giảm dần về liều khởi đầu.\n+ Trường hợp thuốc lựa chọn không đáp ứng thì lựa chọn giải pháp điều trị\nkhác."
+   },
+   {
+    "ref": "S2",
+    "id": "62e22775-4c9a-57e2-9ffa-be3ed3f45196",
+    "page": 166,
+    "pages": [
+     166
+    ],
+    "disease_no": 48,
+    "text": "48. ĐAU DÂY THẦN KINH V\nI. ĐỊNH NGHĨA\nĐau dây thần kinh V hay dây tam thoa là chứng đau nửa mặt với đặc trưng là\ncác cơn đau ngắn, dữ dội, xuất hiện tự nhiên hoặc do kích thích."
+   },
+   {
+    "ref": "S3",
+    "id": "0846d26a-f03c-5783-b3a1-67b3d0b282ed",
+    "page": 167,
+    "pages": [
+     167,
+     168
+    ],
+    "disease_no": 48,
+    "text": "2. Điều trị cụ thể\n2.1. Điều trị nguyên nhân\n- Chỉ định: Trong các trường hợp xác định được nguyên nhân gây đau dây V.\n- Kỹ thuật: Trường hợp dây V bị chèn ép thì phải phẫu thuật cắt bỏ các khối u\n(phẫu thuật giải áp thần kinh V):\n+ Vô cảm: thường thực hiện dưới gây mê.\n+ Phẫu thuật bộc lộ khối u.\n+ Cắt bỏ khối u, giải phóng dây thần kinh V.\n+ Cầm máu và kiểm sóat vùng phẫu thuật.\n+ Đặt dẫn lưu.\n+ Khâu phục hồi theo các lớp giải phẫu."
+   },
+   {
+    "ref": "S4",
+    "id": "29fb3c80-b345-5585-905a-a11c3b396312",
+    "page": 166,
+    "pages": [
+     166
+    ],
+    "disease_no": 48,
+    "text": "II. NGUYÊN NHÂN\n- Thường không xác định rõ được nguyên nhân gây đau dây V.\n- Trong một số trường hợp, có thể do:\n+ Chèn ép dây thần kinh V.\n+ Rối loạn khử myelin nguyên phát: bệnh xơ cứng rải rác.\n+ Dây thần kinh V bị xâm nhập vào vùng rễ thần kinh V hay hạch Gasser\ntrong một số bệnh: Carcinoma, Sarcoidosis..."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2514,
+   "completion_tokens": 327,
+   "llm_cost_usd": 0.000267159
+  },
+  "seconds": 3.59,
+  "error": null
+ },
+ {
+  "query_id": "d14",
+  "question": "Đau dây thần kinh V không rõ nguyên nhân thì khi nào được chỉ định điều trị ngoại khoa?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Đau dây thần kinh V khi **không xác định được nguyên nhân** thì được chỉ định điều trị ngoại khoa **khi điều trị nội khoa thất bại** [S5].\n\nKhi đó, tùy trường hợp có thể áp dụng một trong các phương pháp: phá hủy rễ thần kinh V (phá hủy một phần như xuyên da bằng Glycerol, bóng áp lực, nhiệt đông, hoặc phẫu thuật cắt rễ thần kinh; phá hủy hoàn toàn bằng microsurgical rhizotomy) và phá hủy thần kinh ngoại vi (tiêm Alcohol hoặc phẫu thuật cắt thần kinh V ngoại vi) [S5][S2].\n\nLưu ý phân biệt: với trường hợp **xác định được nguyên nhân** (dây V bị chèn ép), chỉ định là phẫu thuật cắt bỏ khối u – phẫu thuật giải áp thần kinh V [S1].",
+  "citations": [
+   "f1729ab8-793f-5fdf-853d-3271703da53d",
+   "3066c81d-0496-5a7f-bca5-13c7c4618157",
+   "0846d26a-f03c-5783-b3a1-67b3d0b282ed"
+  ],
+  "citation_refs": [
+   "S5",
+   "S2",
+   "S1"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "đau dây thần kinh V không rõ nguyên nhân điều trị ngoại khoa chỉ định",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1171.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "0846d26a-f03c-5783-b3a1-67b3d0b282ed",
+      "page": 167,
+      "disease_no": 48,
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "3066c81d-0496-5a7f-bca5-13c7c4618157",
+      "page": 169,
+      "disease_no": 48,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "29fb3c80-b345-5585-905a-a11c3b396312",
+      "page": 166,
+      "disease_no": 48,
+      "score": 0.03178
+     }
+    ],
+    "added_refs": {
+     "S1": "0846d26a-f03c-5783-b3a1-67b3d0b282ed",
+     "S2": "3066c81d-0496-5a7f-bca5-13c7c4618157",
+     "S3": "29fb3c80-b345-5585-905a-a11c3b396312"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1168
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "đau dây thần kinh V điều trị phẫu thuật",
+    "filter": null,
+    "top_k": 3,
+    "ms": 88.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "3066c81d-0496-5a7f-bca5-13c7c4618157",
+      "page": 169,
+      "disease_no": 48,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "0846d26a-f03c-5783-b3a1-67b3d0b282ed",
+      "page": 167,
+      "disease_no": 48,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "62e22775-4c9a-57e2-9ffa-be3ed3f45196",
+      "page": 166,
+      "disease_no": 48,
+      "score": 0.03126
+     }
+    ],
+    "added_refs": {
+     "S4": "62e22775-4c9a-57e2-9ffa-be3ed3f45196"
+    },
+    "skipped_duplicate": [
+     "3066c81d-0496-5a7f-bca5-13c7c4618157",
+     "0846d26a-f03c-5783-b3a1-67b3d0b282ed"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1391
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "đau dây thần kinh V ngoại khoa chỉ định thất bại nội khoa",
+    "filter": null,
+    "top_k": 3,
+    "ms": 86.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "f1729ab8-793f-5fdf-853d-3271703da53d",
+      "page": 168,
+      "disease_no": 48,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "715f8e37-a1e1-5c33-a250-bcb91939f46a",
+      "page": 168,
+      "disease_no": 48,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "0846d26a-f03c-5783-b3a1-67b3d0b282ed",
+      "page": 167,
+      "disease_no": 48,
+      "score": 0.03126
+     }
+    ],
+    "added_refs": {
+     "S5": "f1729ab8-793f-5fdf-853d-3271703da53d"
+    },
+    "skipped_duplicate": [
+     "0846d26a-f03c-5783-b3a1-67b3d0b282ed"
+    ],
+    "skipped_budget": [
+     "715f8e37-a1e1-5c33-a250-bcb91939f46a"
+    ],
+    "context_chars": 2360
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S5",
+     "S2",
+     "S1"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "0846d26a-f03c-5783-b3a1-67b3d0b282ed",
+    "page": 167,
+    "pages": [
+     167,
+     168
+    ],
+    "disease_no": 48,
+    "text": "2. Điều trị cụ thể\n2.1. Điều trị nguyên nhân\n- Chỉ định: Trong các trường hợp xác định được nguyên nhân gây đau dây V.\n- Kỹ thuật: Trường hợp dây V bị chèn ép thì phải phẫu thuật cắt bỏ các khối u\n(phẫu thuật giải áp thần kinh V):\n+ Vô cảm: thường thực hiện dưới gây mê.\n+ Phẫu thuật bộc lộ khối u.\n+ Cắt bỏ khối u, giải phóng dây thần kinh V.\n+ Cầm máu và kiểm sóat vùng phẫu thuật.\n+ Đặt dẫn lưu.\n+ Khâu phục hồi theo các lớp giải phẫu."
+   },
+   {
+    "ref": "S2",
+    "id": "3066c81d-0496-5a7f-bca5-13c7c4618157",
+    "page": 169,
+    "pages": [
+     169
+    ],
+    "disease_no": 48,
+    "text": "- Phẫu thuật cắt thần kinh V ngoại vi:\n+ Xác định vị trí vùng khởi phát và nhánh thần kinh V cần cắt bỏ.\n+ Vô cảm.\n+ Phẫu thuật bộc lộ nhánh thần kinh.\n+ Cắt bỏ đoạn nhánh dây V.\n+ Cầm máu.\n+ Khâu phục hồi."
+   },
+   {
+    "ref": "S3",
+    "id": "29fb3c80-b345-5585-905a-a11c3b396312",
+    "page": 166,
+    "pages": [
+     166
+    ],
+    "disease_no": 48,
+    "text": "II. NGUYÊN NHÂN\n- Thường không xác định rõ được nguyên nhân gây đau dây V.\n- Trong một số trường hợp, có thể do:\n+ Chèn ép dây thần kinh V.\n+ Rối loạn khử myelin nguyên phát: bệnh xơ cứng rải rác.\n+ Dây thần kinh V bị xâm nhập vào vùng rễ thần kinh V hay hạch Gasser\ntrong một số bệnh: Carcinoma, Sarcoidosis..."
+   },
+   {
+    "ref": "S4",
+    "id": "62e22775-4c9a-57e2-9ffa-be3ed3f45196",
+    "page": 166,
+    "pages": [
+     166
+    ],
+    "disease_no": 48,
+    "text": "48. ĐAU DÂY THẦN KINH V\nI. ĐỊNH NGHĨA\nĐau dây thần kinh V hay dây tam thoa là chứng đau nửa mặt với đặc trưng là\ncác cơn đau ngắn, dữ dội, xuất hiện tự nhiên hoặc do kích thích."
+   },
+   {
+    "ref": "S5",
+    "id": "f1729ab8-793f-5fdf-853d-3271703da53d",
+    "page": 168,
+    "pages": [
+     168
+    ],
+    "disease_no": 48,
+    "text": "2.2.2 Ngoại khoa\n- Chỉ định: khi không xác định được nguyên nhân và điều trị nội khoa thất bại.\n- Kỹ thuật: tùy trường hợp có thể áp dụng một trong các phương pháp dưới\nđây:\na. Phương pháp phá hủy rễ thần kinh V\nPhá huỷ rễ thần kinh có thể là phá huỷ một phần (phá hủy chọn lọc) hoặc phá\nhuỷ hoàn toàn (microsurgical rhizotomy).\n+ Phá hủy rễ thần kinh V một phần: có một số phương pháp sau:\n- Phương pháp xuyên da: có 3 kỹ thuật\n+ Phá hủy rễ thần kinh V bằng Glycerol.\n+ Phá hủy rễ thần kinh V bằng bóng áp lực.\n+ Phá hủy rễ thần kinh V bằng nhiệt đông.\n- Phẫu thuật cắt rễ thần kinh.\nb. Phương pháp phá hủy thần kinh ngoại vi\nPhá hủy thần kinh ngoại vi có thể thực hiện bằng tiêm Alcohol hoặc phẫu thuật\ncắt thần kinh V ngoại vi.\n- Tiêm Alcohol\n+ Tiêm Alcohol vào các vị trí: lỗ cằm, lỗ dưới ổ mắt, gai Spix, bờ trên ổ mắt:\nsử dụng Alcohol loại 100%, gây tê trước khi tiêm lượng Alcohol khoảng 1ml."
+   }
+  ],
+  "usage": {
+   "llm_calls": 3,
+   "prompt_tokens": 4240,
+   "completion_tokens": 600,
+   "llm_cost_usd": 0.0006022464
+  },
+  "seconds": 7.66,
+  "error": null
+ },
+ {
+  "query_id": "d15",
+  "question": "Trong tài liệu, MTA là viết tắt của gì và là vật liệu gì?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Theo danh mục từ viết tắt trong tài liệu:\n\n- **MTA** = **Mineral Trioxide Aggregate** [S2].\n- Đây là \"một hỗn hợp của xi măng Porland tinh chế và Bismuth oxit và cũng chứa một lượng nhỏ SiO2, CaO, MgO, K2SO4, và Na2SO4\" [S2].\n\nNgoài ra, tài liệu có nhắc MTA được dùng để hàn lót bảo vệ tủy trong điều trị viêm tủy có hồi phục (răng sữa) [S4].",
+  "citations": [
+   "38e261f4-2a14-5671-a45b-8ab5bea8ad57",
+   "036ea0bc-1de6-5160-9510-f173386fffb8"
+  ],
+  "citation_refs": [
+   "S2",
+   "S4"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "MTA viết tắt vật liệu trám bít ống tủy",
+    "filter": null,
+    "top_k": 3,
+    "ms": 99.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "5452a15f-1135-576b-84f1-e8db92b96a5c",
+      "page": 51,
+      "disease_no": 11,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "38e261f4-2a14-5671-a45b-8ab5bea8ad57",
+      "page": 7,
+      "disease_no": null,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "225ee490-eaef-57b9-8264-c67feb3c69a4",
+      "page": 27,
+      "disease_no": 5,
+      "score": 0.03178
+     }
+    ],
+    "added_refs": {
+     "S1": "5452a15f-1135-576b-84f1-e8db92b96a5c",
+     "S2": "38e261f4-2a14-5671-a45b-8ab5bea8ad57",
+     "S3": "225ee490-eaef-57b9-8264-c67feb3c69a4"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 2147
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "MTA là gì vật liệu",
+    "filter": null,
+    "top_k": 3,
+    "ms": 99.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "036ea0bc-1de6-5160-9510-f173386fffb8",
+      "page": 26,
+      "disease_no": 5,
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "225ee490-eaef-57b9-8264-c67feb3c69a4",
+      "page": 27,
+      "disease_no": 5,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "83d02dfd-d33c-5abe-a607-af315fa921d8",
+      "page": 50,
+      "disease_no": 11,
+      "score": 0.03178
+     }
+    ],
+    "added_refs": {
+     "S4": "036ea0bc-1de6-5160-9510-f173386fffb8"
+    },
+    "skipped_duplicate": [
+     "225ee490-eaef-57b9-8264-c67feb3c69a4"
+    ],
+    "skipped_budget": [
+     "83d02dfd-d33c-5abe-a607-af315fa921d8"
+    ],
+    "context_chars": 2504
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S2",
+     "S4"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "5452a15f-1135-576b-84f1-e8db92b96a5c",
+    "page": 51,
+    "pages": [
+     51
+    ],
+    "disease_no": 11,
+    "text": "- Bước 7: Chụp X quang kiểm tra.\n- Bước 8: Hàn kín hệ thống ống tuỷ bằng các kỹ thuật lèn dọc, lèn ngang với\ngutta-percha nóng, nguội.\n- Bước 9: Hàn kín buồng tủy và phục hồi thân răng bằng vật liệu thích hợp."
+   },
+   {
+    "ref": "S2",
+    "id": "38e261f4-2a14-5671-a45b-8ab5bea8ad57",
+    "page": 7,
+    "pages": [
+     7
+    ],
+    "disease_no": null,
+    "text": "DANH MỤC CÁC TỪ VIẾT TẮT\n- MTA (Mineral Trioxide Aggregate): một hỗn hợp của xi măng Porland tinh\nchế và Bismuth oxit và cũng chứa một lượng nhỏ SiO2, CaO, MgO, K2SO4, và\nNa2SO4.\n- GIC (Glass Ionomer Cement): là một loại xi măng thủy tinh được sử dụng\ntrong nha khoa phục hồi.\n- Ca(OH)2: Hydroxit Canxi.\n- Góc ANB: Góc tương quan hàm trên - hàm dưới.\n- Góc SNA: Góc xương hàm trên - nền sọ.\n- Góc SNB: Góc xương hàm dưới - nền sọ.\n- Chỉ số A-N Perp: Khoảng cách từ điểm A đến đường thẳng vuông góc với\nmặt phẳng Franfort đi qua điểm N.\n- Chỉ số Pog-N Perp: Khoảng cách từ điểm Pog tới đường thẳng vuông góc với\nmặt phẳng Franfort đi qua điểm N.\n- Điểm A: điểm sau nhất nằm trên đường vòng nối từ điểm gai mũi trước và bờ\nxương ổ răng của răng cửa giữa hàm trên.\n- Điểm PoG: điểm trước nhất của xương cằm.\n- Điểm N (Nasion): điểm trước nhất của đường khớp mũi - trán.\n- NST: Nhiễm sắc thể.\n- NF-1 (Neurofibromatosis 1): U xơ thần kinh ngoại vi còn gọi là Bệnh Von\nRecklinghausen (Von Recklinghausen disease).\n- NF-2 (Neurofibromatosis 2): U xơ thần kinh trung tâm.\n- TNM (Tumour Node Metastasis): Phân loại khối u theo tính chất khối u,\nhạch, mức độ di căn.\n- CT-Scanner (Computer Tomography Scanner): Chụp cắt lớp vi tính.\n- PET-CT (Positron Emission Tomography - Computer Tomography): Chụp\ncắt lớp đồng vị phóng xạ phát Positron.\n- MRI (Magnetic Resonace Imazing): Chụp phim cộng hưởng từ."
+   },
+   {
+    "ref": "S3",
+    "id": "225ee490-eaef-57b9-8264-c67feb3c69a4",
+    "page": 27,
+    "pages": [
+     27
+    ],
+    "disease_no": 5,
+    "text": "2. Viêm tủy không hồi phục\n- Nguyên tắc\n+ Làm sạch và tạo hình hệ thống ống tủy.\n+ Hàn kín hệ thống ống tủy và phục hồi tổn thương mô cứng.\n- Điều trị cụ thể\n+ Vô cảm.\n+ Mở tủy.\n+ Sửa soạn hệ thống ống tủy.\n+ Tạo hình và làm sạch hệ thống ống tuỷ.\n+ Hàn kín hệ thống ống tủy bằng vật liệu thích hợp.\n+ Hàn phục hồi mô cứng thân răng bằng vật liệu thích hợp."
+   },
+   {
+    "ref": "S4",
+    "id": "036ea0bc-1de6-5160-9510-f173386fffb8",
+    "page": 26,
+    "pages": [
+     26,
+     27
+    ],
+    "disease_no": 5,
+    "text": "IV. ĐIỀU TRỊ\n1. Viêm tủy có hồi phục\n- Nguyên tắc\n+ Loại bỏ các yếu tố nhiễm khuẩn\n+ Bảo tồn tủy.\n+ Bảo vệ tủy.\n+ Hàn phục hồi tổn thương mô cứng.\n- Điều trị cụ thể\n+ Chuẩn bị xoang hàn.\n+ Hàn lót bảo vệ tủy: Có thể dùng Canxi hydroxit, hoặc MTA…\n+ Hàn phục hồi xoang hàn bằng Composite, GIC,…"
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2824,
+   "completion_tokens": 263,
+   "llm_cost_usd": 0.000456886
+  },
+  "seconds": 2.69,
+  "error": null
+ },
+ {
+  "query_id": "d16",
+  "question": "Trẻ bị khe hở môi cần đạt cân nặng bao nhiêu thì đủ điều kiện phẫu thuật?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Trẻ bị khe hở môi đủ điều kiện phẫu thuật khi **cân nặng từ 6kg trở lên** (kèm điều kiện xét nghiệm máu đủ điều kiện cho phép) [S1].\n\nLưu ý phân biệt: với khe hở vòm miệng, điều kiện cân nặng là từ 10kg trở lên [S2].",
+  "citations": [
+   "c854d7d2-1987-5d77-947b-b5a53fc1b73d",
+   "c94b63c4-0f5b-505f-876a-a59ddac99195"
+  ],
+  "citation_refs": [
+   "S1",
+   "S2"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "khe hở môi cân nặng đủ điều kiện phẫu thuật",
+    "filter": null,
+    "top_k": 3,
+    "ms": 116.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "c854d7d2-1987-5d77-947b-b5a53fc1b73d",
+      "page": 100,
+      "disease_no": 23,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "c94b63c4-0f5b-505f-876a-a59ddac99195",
+      "page": 103,
+      "disease_no": 24,
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "e706204b-e6b1-57c1-adbe-47d6443be13e",
+      "page": 99,
+      "disease_no": 23,
+      "score": 0.03102
+     }
+    ],
+    "added_refs": {
+     "S1": "c854d7d2-1987-5d77-947b-b5a53fc1b73d",
+     "S2": "c94b63c4-0f5b-505f-876a-a59ddac99195",
+     "S3": "e706204b-e6b1-57c1-adbe-47d6443be13e"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1630
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "phẫu thuật khe hở môi chỉ định cân nặng trẻ",
+    "filter": null,
+    "top_k": 3,
+    "ms": 98.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "c854d7d2-1987-5d77-947b-b5a53fc1b73d",
+      "page": 100,
+      "disease_no": 23,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "c94b63c4-0f5b-505f-876a-a59ddac99195",
+      "page": 103,
+      "disease_no": 24,
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "9ff16620-8fb9-5ce3-b40f-44adf99cb6fd",
+      "page": 99,
+      "disease_no": 23,
+      "score": 0.0315
+     }
+    ],
+    "added_refs": {
+     "S4": "9ff16620-8fb9-5ce3-b40f-44adf99cb6fd"
+    },
+    "skipped_duplicate": [
+     "c854d7d2-1987-5d77-947b-b5a53fc1b73d",
+     "c94b63c4-0f5b-505f-876a-a59ddac99195"
+    ],
+    "skipped_budget": [],
+    "context_chars": 2027
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S1",
+     "S2"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "c854d7d2-1987-5d77-947b-b5a53fc1b73d",
+    "page": 100,
+    "pages": [
+     100
+    ],
+    "disease_no": 23,
+    "text": "IV. ĐIỀU TRỊ\n1. Nguyên tắc\n- Đóng kín khe hở.\n- Phục hồi cấu trúc giải phẫu môi.\n- Phục hồi chức năng và thẩm mỹ sau phẫu thuật.\n2. Điều trị cụ thể\na. Điều trị giai đoạn trước phẫu thuật: Điều trị nắn chỉnh trước phẫu thuật.\nb. Điều trị phẫu thuật\n- Điều kiện phẫu thuật\n+ Cân nặng: từ 6kg trở lên.\n+ Xét nghiệm máu: đủ điều kiện cho phép.\n- Các bước phẫu thuật\n+ Thiết kế đường rạch da và niêm mạc môi hai bên bờ khe hở theo phương\npháp đã lựa chọn.\n+ Rạch da và niêm mạc môi theo đường thiết kế.\n+ Bóc tách mép vết mổ hai bên bờ khe hở theo 3 lớp: da, cơ và niêm mạc\n+ Bóc tách giảm căng niêm mạc nghách tiền đình bên khe hở.\n+ Khâu phục hồi môi theo 3 lớp: niêm mạc, cơ và da\n+ Băng.\n+ Kháng sinh, giảm đau sau phẫu thuật.\nc. Điều trị sau phẫu thuật\n- Hướng dẫn và điều trị rối loạn phát âm.\n- Điều trị nắn chỉnh lệch lạc răng."
+   },
+   {
+    "ref": "S2",
+    "id": "c94b63c4-0f5b-505f-876a-a59ddac99195",
+    "page": 103,
+    "pages": [
+     103
+    ],
+    "disease_no": 24,
+    "text": "2. Điều trị cụ thể\n2.1. Phẫu thuật đóng khe hở vòm miệng\n- Điều kiện phẫu thuật\n+ Cân nặng: từ 10kg trở lên.\n+ Xét nghiệm máu: đủ điều kiện cho phép.\n- Các bước phẫu thuật\n+ Thiết kế đường rạch niêm mạc theo phương pháp đã lựa chọn.\n+ Rạch niêm mạc theo đường thiết kế.\n+ Bóc tách lớp niêm mạc vòm miệng, bảo tồn bó mạch khẩu cái sau.\n+ Bóc tách lớp niêm mạc nền mũi.\n+ Khâu phục hồi theo từng lớp niêm mạc mũi, khối cơ căng màn hầu, niêm\nmạc vòm miệng"
+   },
+   {
+    "ref": "S3",
+    "id": "e706204b-e6b1-57c1-adbe-47d6443be13e",
+    "page": 99,
+    "pages": [
+     99
+    ],
+    "disease_no": 23,
+    "text": "23. KHE HỞ MÔI\nI. ĐỊNH NGHĨA\nKhe hở môi là khuyết tật bẩm sinh, làm tách rời cấu trúc môi bao gồm da, cơ\nvòng môi, niêm mạc môi từ làn môi đỏ đến nền mũi. Có thể ở một bên hoặc cả hai\nbên."
+   },
+   {
+    "ref": "S4",
+    "id": "9ff16620-8fb9-5ce3-b40f-44adf99cb6fd",
+    "page": 99,
+    "pages": [
+     99,
+     100
+    ],
+    "disease_no": 23,
+    "text": "2. Chẩn đoán mức độ khe hở\nDựa vào lâm sàng mà có thể chẩn đoán khe hở môi một bên, hai bên, toàn bộ\nhoặc không toàn bộ. Trong đó:\n- Khe hở không toàn bộ: là khe hở bắt đầu từ làn môi đỏ, không tách rời hết\nchiều cao môi đến nền mũi.\n- Khe hở toàn bộ: là khe hở bắt đầu từ làn môi đỏ, tách rời hết chiều cao môi\nđến nền mũi."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2739,
+   "completion_tokens": 221,
+   "llm_cost_usd": 0.0001069632
+  },
+  "seconds": 4.86,
+  "error": null
+ },
+ {
+  "query_id": "d17",
+  "question": "U máu ở trẻ nhỏ thường xuất hiện lúc nào và diễn tiến theo thời gian ra sao?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "**U máu ở trẻ em** (Hemangiomas):\n\n**Thời điểm xuất hiện:** U máu trẻ em là u mạch máu do tăng sinh các tế bào nội mô mạch máu, thường xuất hiện trong những tuần đầu sau khi sinh [S1][S4].\n\n**Diễn tiến theo thời gian** gồm các giai đoạn [S4]:\n- **Giai đoạn tăng sinh:** U phát triển nhanh trong những tháng tiếp theo. Nếu điều trị nội khoa hoặc laser thì u thoái triển nhanh hơn.\n- **Giai đoạn ổn định:** U ngừng phát triển.\n- **Giai đoạn thoái triển:** Hầu hết các trường hợp u máu trẻ em thoái triển sau giai đoạn ngừng phát triển, thường để lại sẹo; trong một số trường hợp không để lại dấu vết.\n\nTóm lại, u xuất hiện trong những tuần đầu sau sinh, phát triển nhanh trong những tháng đầu, sau đó dừng phát triển và thoái triển [S1].",
+  "citations": [
+   "94b0e726-bfd5-5d9d-9296-446a3a05c3d3",
+   "e6b25518-272a-5029-9066-3020540c515a"
+  ],
+  "citation_refs": [
+   "S1",
+   "S4"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "u máu ở trẻ nhỏ xuất hiện và diễn tiến",
+    "filter": null,
+    "top_k": 3,
+    "ms": 112.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "94b0e726-bfd5-5d9d-9296-446a3a05c3d3",
+      "page": 144,
+      "disease_no": 39,
+      "score": 0.03226
+     },
+     {
+      "rank": 2,
+      "id": "61fbc121-bc33-5c10-9c4b-e0573ddab168",
+      "page": 144,
+      "disease_no": 39,
+      "score": 0.03154
+     },
+     {
+      "rank": 3,
+      "id": "f7d8f2b7-545f-5634-b3ea-74db114da695",
+      "page": 146,
+      "disease_no": 39,
+      "score": 0.0315
+     }
+    ],
+    "added_refs": {
+     "S1": "94b0e726-bfd5-5d9d-9296-446a3a05c3d3",
+     "S2": "61fbc121-bc33-5c10-9c4b-e0573ddab168",
+     "S3": "f7d8f2b7-545f-5634-b3ea-74db114da695"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1623
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "u máu trẻ em thời gian tiến triển",
+    "filter": null,
+    "top_k": 3,
+    "ms": 103.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "f7d8f2b7-545f-5634-b3ea-74db114da695",
+      "page": 146,
+      "disease_no": 39,
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "94b0e726-bfd5-5d9d-9296-446a3a05c3d3",
+      "page": 144,
+      "disease_no": 39,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "e6b25518-272a-5029-9066-3020540c515a",
+      "page": 145,
+      "disease_no": 39,
+      "score": 0.03178
+     }
+    ],
+    "added_refs": {
+     "S4": "e6b25518-272a-5029-9066-3020540c515a"
+    },
+    "skipped_duplicate": [
+     "f7d8f2b7-545f-5634-b3ea-74db114da695",
+     "94b0e726-bfd5-5d9d-9296-446a3a05c3d3"
+    ],
+    "skipped_budget": [],
+    "context_chars": 2156
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S1",
+     "S4"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "94b0e726-bfd5-5d9d-9296-446a3a05c3d3",
+    "page": 144,
+    "pages": [
+     144
+    ],
+    "disease_no": 39,
+    "text": "39. U MÁU Ở TRẺ EM\n(Hemangiomas )\nI. ĐỊNH NGHĨA\nU máu trẻ em là u mạch máu do tăng sinh các tế bào nội mô mạch máu,\nthường xuất hiện trong những tuần đầu sau khi sinh, phát triển nhanh chóng trong\nnhững tháng đầu, sau đó dừng phát triển và thoái triển."
+   },
+   {
+    "ref": "S2",
+    "id": "61fbc121-bc33-5c10-9c4b-e0573ddab168",
+    "page": 144,
+    "pages": [
+     144,
+     145
+    ],
+    "disease_no": 39,
+    "text": "III. CHẨN ĐOÁN\n1. Chẩn đoán xác định\nDựa vào lâm sàng và tiến triển u. Trong một số trường hợp dựa vào chẩn đoán\nhình ảnh và mô bệnh học.\n1.1. Lâm sàng\na. Tính chất u\n- U ở lớp nông\nXuất hiện ban đầu như một nốt nhỏ, mảng đỏ, lúc đầu nhẵn, về sau gồ lên có\nmầu sáng hơn giống như quả dâu tây.\n- U ở lớp sâu dưới da\nU gồ lên, không có mạch đập, ấn không xẹp, sờ chắc, ở dưới một lớp da bình\nthường. Da trên u có mầu xanh nhạt hoặc tím. Có thể thấy các tĩnh mạch, mao mạch\ngiãn trên bề mặt u.\n- Thể hỗn hợp\nBiểu hiện là mảng da đỏ xuất hiện đầu tiên. Sau đó thành phần u dưới da phát\ntriển nhô lên và vượt quá ranh giới vùng da đỏ, giống quả trứng trần.\nU thường đơn lẻ, đôi khi có 2 đến 3 u. Trong một số trường hợp hiếm gặp có\nthể gặp hàng chục đến hàng trăm u dạng phát ban, có thể phối hợp với u máu ở các\ntạng như ở gan.\nb. Vị trí u: Hay gặp ở vùng đầu cổ. Ít gặp hơn ở vùng thân và các chi.\nc. Kích thước u: Đa dạng, thường dưới 3 cm. Có khi u chỉ nhỏ như đầu kim hoặc u\nrất to."
+   },
+   {
+    "ref": "S3",
+    "id": "f7d8f2b7-545f-5634-b3ea-74db114da695",
+    "page": 146,
+    "pages": [
+     146
+    ],
+    "disease_no": 39,
+    "text": "V. TIÊN LƯỢNG VÀ BIẾN CHỨNG\n1. Tiên lượng\n- Đa phần các trường hợp u máu ở trẻ em tiến triển tốt.\n- Trong một số trường hợp u máu ở sâu, gây rối loạn chức năng hoặc biến\nchứng thì việc điều trị khá phức tạp."
+   },
+   {
+    "ref": "S4",
+    "id": "e6b25518-272a-5029-9066-3020540c515a",
+    "page": 145,
+    "pages": [
+     145
+    ],
+    "disease_no": 39,
+    "text": "d. Trong một số trường hợp có thể phối hợp với các dị dạng khác.\ne. Tiến triển\n- U xuất hiện: trong những tuần đầu sau khi sinh.\n- Giai đoạn tăng sinh: U phát triển nhanh trong những tháng tiếp theo. Nếu\nđiều trị nội khoa hoặc laser thì u thoái triển nhanh hơn.\n- Giai đoạn ổn định: u ngừng phát triển.\n- Giai đoạn thoái triển: hầu hết các trường hợp u máu trẻ em thoái triển sau giai\nđoạn ngừng phát triển, thường để lại sẹo. Trong một số trường hợp không để lại dấu\nvết."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2695,
+   "completion_tokens": 409,
+   "llm_cost_usd": 0.00028486799999999997
+  },
+  "seconds": 3.33,
+  "error": null
+ },
+ {
+  "query_id": "d18",
+  "question": "Ai là chủ biên của tài liệu hướng dẫn này?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "abstain",
+  "answer": "KHÔNG ĐỦ BẰNG CHỨNG\n\nTài liệu hiện có chỉ nêu: tài liệu \"Hướng dẫn chẩn đoán và điều trị một số bệnh về Răng Hàm Mặt\" do Bộ Y tế ban hành kèm Quyết định số 3108/QĐ-BYT ngày 28/7/2015, Hà Nội 2015 [S1][S2]. Không có đoạn nào nêu tên chủ biên/ban biên soạn của tài liệu.",
+  "citations": [],
+  "citation_refs": [],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "chủ biên tài liệu hướng dẫn chẩn đoán và điều trị Răng Hàm Mặt",
+    "filter": null,
+    "top_k": 3,
+    "ms": 102.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "11885c99-55d7-5b3e-b7c4-4ce44df99b9f",
+      "page": 2,
+      "disease_no": null,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "f3227df0-785f-5ae0-b963-1f27d7f6754b",
+      "page": 1,
+      "disease_no": null,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "94d48b28-72b6-5978-ac1d-4edbb673e15c",
+      "page": 12,
+      "disease_no": 2,
+      "score": 0.02813
+     }
+    ],
+    "added_refs": {
+     "S1": "11885c99-55d7-5b3e-b7c4-4ce44df99b9f",
+     "S2": "f3227df0-785f-5ae0-b963-1f27d7f6754b",
+     "S3": "94d48b28-72b6-5978-ac1d-4edbb673e15c"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 2232
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "ban biên soạn chủ biên",
+    "filter": null,
+    "top_k": 3,
+    "ms": 103.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "e9c8e995-c7a6-500f-a522-ad62a9b3f679",
+      "page": 3,
+      "disease_no": null,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "11885c99-55d7-5b3e-b7c4-4ce44df99b9f",
+      "page": 2,
+      "disease_no": null,
+      "score": 0.01613
+     },
+     {
+      "rank": 3,
+      "id": "ecf21064-e50a-5c4c-8d8d-218a0038b6c7",
+      "page": 37,
+      "disease_no": 8,
+      "score": 0.01613
+     }
+    ],
+    "added_refs": {},
+    "skipped_duplicate": [
+     "11885c99-55d7-5b3e-b7c4-4ce44df99b9f"
+    ],
+    "skipped_budget": [
+     "e9c8e995-c7a6-500f-a522-ad62a9b3f679",
+     "ecf21064-e50a-5c4c-8d8d-218a0038b6c7"
+    ],
+    "context_chars": 2232
+   },
+   {
+    "event": "answer",
+    "status": "abstain",
+    "refs": [
+     "S1",
+     "S2"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "11885c99-55d7-5b3e-b7c4-4ce44df99b9f",
+    "page": 2,
+    "pages": [
+     2
+    ],
+    "disease_no": null,
+    "text": "BỘ Y TẾ\nHƯỚNG DẪN\nCHẨN ĐOÁN VÀ ĐIỀU TRỊ\nMỘT SỐ BỆNH VỀ RĂNG HÀM MẶT\n(Ban hành kèm theo Quyết định số 3108/QĐ-BYT ngày 28/7/2015\ncủa Bộ trưởng Bộ Y tế)\nHÀ NỘI - 2015"
+   },
+   {
+    "ref": "S2",
+    "id": "f3227df0-785f-5ae0-b963-1f27d7f6754b",
+    "page": 1,
+    "pages": [
+     1
+    ],
+    "disease_no": null,
+    "text": "BỘ Y TẾ\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\nSố: 3108/QĐ-BYT\nHà Nội, ngày 28 tháng 7 năm 2015\nQUYẾT ĐỊNH\nVề việc ban hành tài liệu chuyên môn\n“Hướng dẫn chẩn đoán và điều trị một số bệnh về Răng Hàm Mặt”\nBỘ TRƯỞNG BỘ Y TẾ\nCăn cứ Luật khám bệnh, chữa bệnh năm 2009;\nCăn cứ Nghị định số 63/2012/NĐ-CP ngày 31/8/2012 của Chính Phủ quy\nđịnh chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế;\nTheo đề nghị của Cục trưởng Cục Quản lý Khám, chữa bệnh,\nQUYẾT ĐỊNH:\nĐiều 1. Ban hành kèm theo Quyết định này tài liệu chuyên môn “Hướng dẫn\nchẩn đoán và điều trị một số bệnh về Răng Hàm Mặt”.\nĐiều 2. Tài liệu “Hướng dẫn chẩn đoán và điều trị một số bệnh về Răng Hàm\nMặt” ban hành kèm theo Quyết định này được áp dụng tại các cơ sở khám bệnh,\nchữa bệnh có tổ chức khám bệnh, chữa bệnh về Răng Hàm Mặt.\nCăn cứ vào tài liệu này và điều kiện cụ thể của đơn vị, Giám đốc cơ sở khám\nbệnh, chữa bệnh xây dựng và ban hành tài liệu hướng dẫn chẩn đoán và điều trị\nmột số bệnh về Răng Hàm Mặt phù hợp để thực hiện tại đơn vị.\nĐiều 3. Quyết định này có hiệu lực kể từ ngày ký ban hành.\nĐiều 4. Các ông, bà: Chánh Văn phòng Bộ, Chánh Thanh tra Bộ, Cục trưởng\nCục Quản lý Khám, chữa bệnh, Cục trưởng và Vụ trưởng các Cục, Vụ thuộc Bộ Y\ntế, Giám đốc các bệnh viện trực thuộc Bộ Y tế, Giám đốc Sở Y tế các tỉnh, thành\nphố trực thuộc trung ương, Thủ trưởng Y tế các Bộ, Ngành và Thủ trưởng các đơn\nvị có liên quan chịu trách nhiệm thi hành Quyết định này./.\nNơi nhận:\n- Như Điều 4;\n- Bộ trưởng Bộ Y tế (để b/c);\n- Các Thứ trưởng BYT;\n- Bảo hiểm Xã hội Việt Nam (để phối hợp);\n- Cổng thông tin điện tử BYT;\n- Website Cục KCB;\n- Lưu VT, KCB.\nKT. BỘ TRƯỞNG\nTHỨ TRƯỞNG\nNguyễn Thị Xuyên"
+   },
+   {
+    "ref": "S3",
+    "id": "94d48b28-72b6-5978-ac1d-4edbb673e15c",
+    "page": 12,
+    "pages": [
+     12,
+     13
+    ],
+    "disease_no": 2,
+    "text": "VI. PHÒNG BỆNH\n- Hướng dẫn các biện pháp vệ sinh răng miệng, kiểm soát mảng bám để ngăn\nngừa sâu răng và viêm quanh răng.\n- Khám định kỳ để phát hiện sớm các bệnh của răng, quanh răng và điều trị kịp\nthời ngăn ngừa biến chứng gây mất răng."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2896,
+   "completion_tokens": 258,
+   "llm_cost_usd": 0.000331488
+  },
+  "seconds": 3.01,
+  "error": null
+ },
+ {
+  "query_id": "t01",
+  "question": "Khi nào thì rạch dẫn lưu ổ áp xe theo đường trong miệng?",
+  "filter": {
+   "disease_no": 30
+  },
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Rạch dẫn lưu ổ áp xe má theo đường trong miệng được chỉ định **khi áp xe tiến triển về phía niêm mạc miệng** [S1].\n\nKỹ thuật kèm theo: vô cảm, rạch niêm mạc ở chỗ thấp nhất và phồng nhất của ổ áp xe, bộc lộ ổ áp xe và dẫn lưu mủ, bơm rửa, đặt dẫn lưu, điều trị răng nguyên nhân [S1].\n\n(Đối chiếu: đường ngoài mặt chỉ định khi áp xe tiến triển về phía dưới da vùng má [S1].)",
+  "citations": [
+   "d20871e9-92e7-5183-bafb-d08e996ab974"
+  ],
+  "citation_refs": [
+   "S1"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "áp xe rạch dẫn lưu đường trong miệng chỉ định",
+    "filter": {
+     "disease_no": 30
+    },
+    "top_k": 3,
+    "ms": 85.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "d20871e9-92e7-5183-bafb-d08e996ab974",
+      "page": 119,
+      "disease_no": 30,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "2f51b7f0-054e-55b9-9371-bafe187be186",
+      "page": 118,
+      "disease_no": 30,
+      "score": 0.03202
+     },
+     {
+      "rank": 3,
+      "id": "42110461-f138-5613-9a57-9a4a01abede4",
+      "page": 120,
+      "disease_no": 30,
+      "score": 0.032
+     }
+    ],
+    "added_refs": {
+     "S1": "d20871e9-92e7-5183-bafb-d08e996ab974",
+     "S2": "2f51b7f0-054e-55b9-9371-bafe187be186",
+     "S3": "42110461-f138-5613-9a57-9a4a01abede4"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1347
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "áp xe vùng hàm mặt rạch dẫn lưu trong miệng",
+    "filter": {
+     "disease_no": 30
+    },
+    "top_k": 3,
+    "ms": 86.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "d20871e9-92e7-5183-bafb-d08e996ab974",
+      "page": 119,
+      "disease_no": 30,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "2f51b7f0-054e-55b9-9371-bafe187be186",
+      "page": 118,
+      "disease_no": 30,
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "652f3225-d97d-5106-aa51-736e011b83a6",
+      "page": 119,
+      "disease_no": 30,
+      "score": 0.03175
+     }
+    ],
+    "added_refs": {
+     "S4": "652f3225-d97d-5106-aa51-736e011b83a6"
+    },
+    "skipped_duplicate": [
+     "d20871e9-92e7-5183-bafb-d08e996ab974",
+     "2f51b7f0-054e-55b9-9371-bafe187be186"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1743
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S1"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "d20871e9-92e7-5183-bafb-d08e996ab974",
+    "page": 119,
+    "pages": [
+     119,
+     120
+    ],
+    "disease_no": 30,
+    "text": "IV. ĐIỀU TRỊ\n1. Nguyên tắc\nDẫn lưu mủ và điều trị răng nguyên nhân.\n2. Điều trị cụ thể\n2.1 Điều trị toàn thân\nKháng sinh và nâng cao thể trạng.\n2.2. Điều trị tại chỗ\na. Đường trong miệng\n- Chỉ định: khi áp xe tiến triển về phía niêm mạc miệng.\n- Kỹ thuật\n+ Vô cảm.\n+ Rạch niêm mạc ở chỗ thấp nhất và phồng nhất của ổ áp xe.\n+ Bộc lộ ổ áp xe và dẫn lưu mủ.\n+ Bơm rửa.\n+ Đặt dẫn lưu.\n+ Điều trị răng nguyên nhân.\nb.Đường ngoài mặt\n- Chỉ định: khi áp xe tiến triển về phía dưới da vùng má.\n- Kỹ thuật\n+ Vô cảm.\n+ Rạch da vùng dưới hàm.\n+ Bóc tách da và mô dưới da.\n+ Dùng kẹp Korche thâm nhập vào vùng áp xe để dẫn lưu mủ.\n+ Bơm rửa.\n+ Đặt dẫn lưu.\n+ Điều trị răng nguyên nhân."
+   },
+   {
+    "ref": "S2",
+    "id": "2f51b7f0-054e-55b9-9371-bafe187be186",
+    "page": 118,
+    "pages": [
+     118
+    ],
+    "disease_no": 30,
+    "text": "30. ÁP XE MÁ\nI. ĐỊNH NGHĨA\nLà áp xe khu trú ở vùng má, nguyên nhân thường do răng.\nII. NGUYÊN NHÂN\n- Do răng\n+ Răng viêm quanh cuống không được điều trị.\n+ Răng có viêm quanh răng không được điều trị.\n+ Do biến chứng răng khôn.\n- Do nguyên nhân khác\n+ Do tai biến điều trị.\n+ Do chấn thương.\n+ Nhiễm trùng các vùng lân cận."
+   },
+   {
+    "ref": "S3",
+    "id": "42110461-f138-5613-9a57-9a4a01abede4",
+    "page": 120,
+    "pages": [
+     120
+    ],
+    "disease_no": 30,
+    "text": "V. TIÊN LƯỢNG VÀ BIẾN CHỨNG\n1. Tiên lượng\nNếu dẫn lưu mủ phối hợp với điều trị răng nguyên nhân thì có kết quả điều trị\ntốt.\n2. Biến chứng\n- Viêm tấy tỏa lan vùng mặt.\n- Nhiễm trùng huyết."
+   },
+   {
+    "ref": "S4",
+    "id": "652f3225-d97d-5106-aa51-736e011b83a6",
+    "page": 119,
+    "pages": [
+     119
+    ],
+    "disease_no": 30,
+    "text": "1.2. Cận lâm sàng\n- X quang thường quy\nCó biểu hiện tổn thương răng nguyên nhân.\n- CT Scanner: có khối thấu quanh ranh giới rõ ở vùng má.\n2 Chẩn đoán phân biệt\n- Áp xe vùng cơ cắn: vị trí áp xe ở vùng cơ cắn và có dấu hiệu khít hàm.\n- Áp xe vùng mang tai: vị trí áp xe ở vùng mang tai và dấu hiệu chảy mủ qua\nlỗ ống Stenon khi thăm khám."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2644,
+   "completion_tokens": 338,
+   "llm_cost_usd": 0.000280026
+  },
+  "seconds": 2.45,
+  "error": null
+ },
+ {
+  "query_id": "t02",
+  "question": "Ở thể sai khớp cắn này, độ cắn chìa và độ cắn phủ thay đổi như thế nào?",
+  "filter": {
+   "disease_no": 18
+  },
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Bệnh 18 – Sai khớp cắn loại II tiểu loại II do răng:\n\n- Độ cắn chìa: bình thường (không tăng) [S1].\n- Độ cắn phủ: tăng [S1].\n\nNgoài ra, tương quan xương hai hàm cũng bình thường, chỉ khác ở tương quan răng hàm lớn: múi ngoài gần của răng hàm lớn vĩnh viễn thứ nhất hàm trên khớp về phía gần so với rãnh ngoài gần của răng hàm lớn vĩnh viễn thứ nhất hàm dưới [S1].",
+  "citations": [
+   "ba327499-be3c-571f-83a2-d7e9c685996b"
+  ],
+  "citation_refs": [
+   "S1"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "sai khớp cắn độ cắn chìa độ cắn phủ thay đổi",
+    "filter": {
+     "disease_no": 18
+    },
+    "top_k": 3,
+    "ms": 99.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ba327499-be3c-571f-83a2-d7e9c685996b",
+      "page": 78,
+      "disease_no": 18,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "474a5739-ed34-5bf3-b4bb-2614264bf65b",
+      "page": 79,
+      "disease_no": 18,
+      "score": 0.0315
+     },
+     {
+      "rank": 3,
+      "id": "c16dc047-1588-55ee-8f1a-2c25bb2706c8",
+      "page": 80,
+      "disease_no": 18,
+      "score": 0.03132
+     }
+    ],
+    "added_refs": {
+     "S1": "ba327499-be3c-571f-83a2-d7e9c685996b",
+     "S2": "474a5739-ed34-5bf3-b4bb-2614264bf65b",
+     "S3": "c16dc047-1588-55ee-8f1a-2c25bb2706c8"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 983
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "bệnh số 18 sai khớp cắn cắn chìa cắn phủ",
+    "filter": {
+     "disease_no": 18
+    },
+    "top_k": 3,
+    "ms": 1110.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ba327499-be3c-571f-83a2-d7e9c685996b",
+      "page": 78,
+      "disease_no": 18,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "474a5739-ed34-5bf3-b4bb-2614264bf65b",
+      "page": 79,
+      "disease_no": 18,
+      "score": 0.0315
+     },
+     {
+      "rank": 3,
+      "id": "c16dc047-1588-55ee-8f1a-2c25bb2706c8",
+      "page": 80,
+      "disease_no": 18,
+      "score": 0.03105
+     }
+    ],
+    "added_refs": {},
+    "skipped_duplicate": [
+     "ba327499-be3c-571f-83a2-d7e9c685996b",
+     "474a5739-ed34-5bf3-b4bb-2614264bf65b",
+     "c16dc047-1588-55ee-8f1a-2c25bb2706c8"
+    ],
+    "skipped_budget": [],
+    "context_chars": 983
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S1"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "ba327499-be3c-571f-83a2-d7e9c685996b",
+    "page": 78,
+    "pages": [
+     78
+    ],
+    "disease_no": 18,
+    "text": "18. SAI KHỚP CẮN LOẠI II TIỂU LOẠI II DO RĂNG\nI. ĐỊNH NGHĨA\nLà tình trạng sai khớp cắn mà ở tư thế cắn trung tâm, múi ngoài gần của răng\nhàm lớn vĩnh viễn thứ nhất hàm trên khớp về phía gần so với rãnh ngoài gần của\nrăng hàm lớn vĩnh viễn thứ nhất hàm dưới, độ cắn chìa bình thường, tương quan\nxương hai hàm bình thường nhưng độ cắn phủ tăng."
+   },
+   {
+    "ref": "S2",
+    "id": "474a5739-ed34-5bf3-b4bb-2614264bf65b",
+    "page": 79,
+    "pages": [
+     79
+    ],
+    "disease_no": 18,
+    "text": "IV. ĐIỀU TRỊ\n1. Nguyên tắc\n- Tạo lập lại tương quan hai hàm lý tưởng nhất là khớp cắn loại I cả răng hàm\nlớn và răng nanh, nếu không thì ít nhất phải đạt được tương quan răng nanh loại I.\n- Cải thiện về thẩm mỹ.\n- Đảm bảo độ ổn định."
+   },
+   {
+    "ref": "S3",
+    "id": "c16dc047-1588-55ee-8f1a-2c25bb2706c8",
+    "page": 80,
+    "pages": [
+     80
+    ],
+    "disease_no": 18,
+    "text": "2. Biến chứng\n- Sang chấn các răng trước hai hàm.\n- Đau khớp thái dương hàm.\n- Rối loạn khớp thái dương hàm.\nVI. PHÒNG BỆNH\nCần khám định kỳ, phát hiện và điều trị sớm."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2351,
+   "completion_tokens": 420,
+   "llm_cost_usd": 0.000402264
+  },
+  "seconds": 3.41,
+  "error": null
+ },
+ {
+  "query_id": "t03",
+  "question": "Trong viêm quanh Implant, xương bị tiêu đến mức nào thì nên tháo Implant ra?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Theo tài liệu: **Nếu xương bị mất quá ½ chiều dài của Implant thì tốt nhất nên tháo Implant ra**, sau đó phát triển xương tại chỗ và chờ để có thể đặt lại Implant [S2].\n\nĐể so sánh, nếu xương mất quá 2 mm nhưng chưa quá ½ chiều dài Implant thì điều trị phẫu thuật lấy bỏ tổ chức viêm, làm sạch bề mặt Implant và có thể ghép xương [S2].",
+  "citations": [
+   "fcf72383-5eb4-5c6d-8a2b-7a736bd657c7"
+  ],
+  "citation_refs": [
+   "S2"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "viêm quanh Implant tiêu xương tháo Implant",
+    "filter": null,
+    "top_k": 3,
+    "ms": 106.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ba5a13eb-2d0a-5fd4-8189-a64d9fea4670",
+      "page": 182,
+      "disease_no": 52,
+      "score": 0.03202
+     },
+     {
+      "rank": 2,
+      "id": "fcf72383-5eb4-5c6d-8a2b-7a736bd657c7",
+      "page": 183,
+      "disease_no": 52,
+      "score": 0.03202
+     },
+     {
+      "rank": 3,
+      "id": "3eee9c5c-c426-5cf9-88c7-5bb43209f472",
+      "page": 184,
+      "disease_no": 52,
+      "score": 0.03128
+     }
+    ],
+    "added_refs": {
+     "S1": "ba5a13eb-2d0a-5fd4-8189-a64d9fea4670",
+     "S2": "fcf72383-5eb4-5c6d-8a2b-7a736bd657c7",
+     "S3": "3eee9c5c-c426-5cf9-88c7-5bb43209f472"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 2052
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "viêm quanh implant điều trị phẫu thuật lấy bỏ implant",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1222.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "fcf72383-5eb4-5c6d-8a2b-7a736bd657c7",
+      "page": 183,
+      "disease_no": 52,
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "ba5a13eb-2d0a-5fd4-8189-a64d9fea4670",
+      "page": 182,
+      "disease_no": 52,
+      "score": 0.03178
+     },
+     {
+      "rank": 3,
+      "id": "36753f15-3481-513a-9946-6c386680de86",
+      "page": 183,
+      "disease_no": 52,
+      "score": 0.03151
+     }
+    ],
+    "added_refs": {
+     "S4": "36753f15-3481-513a-9946-6c386680de86"
+    },
+    "skipped_duplicate": [
+     "fcf72383-5eb4-5c6d-8a2b-7a736bd657c7",
+     "ba5a13eb-2d0a-5fd4-8189-a64d9fea4670"
+    ],
+    "skipped_budget": [],
+    "context_chars": 2305
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S2"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "ba5a13eb-2d0a-5fd4-8189-a64d9fea4670",
+    "page": 182,
+    "pages": [
+     182
+    ],
+    "disease_no": 52,
+    "text": "52. VIÊM QUANH IMPLANT\nI. ĐỊNH NGHĨA\nViêm quanh Implant là tình trạng viêm mô mềm, viêm và tiêu xương xung\nquanh Implant.\nII. NGUYÊN NHÂN\n- Vi khuẩn trong mảng bám.\n- Các yếu tố gây tích tụ mảng bám\n+ Cement gắn cầu, chụp trên Implant dư thừa quanh trụ Implant.\n+ Phục hình sai quy cách.\n+ Vị trí Implant không thích hợp.\n+ Thiếu mô lợi sừng hóa quanh Implant.\n+ Lỏng kết nối trụ phục hình với trụ Implant….\n- Quá tải lực nhai gây mất cân bằng về sinh cơ học từ đó gây tiêu xương quanh\nImplant."
+   },
+   {
+    "ref": "S2",
+    "id": "fcf72383-5eb4-5c6d-8a2b-7a736bd657c7",
+    "page": 183,
+    "pages": [
+     183,
+     184
+    ],
+    "disease_no": 52,
+    "text": "- Nếu xương đã bị mất quá 2 mm nhưng vẫn chưa quá ½ chiều dài của Implant\ncần điều trị phẫu thuật lấy bỏ tổ chức viêm nhiễm xung quanh Implant, làm sạch bề\nmặt Implant và có thể tiến hành ghép xương để tái tạo tổ chức xương đã mất. Bề\nmặt Implant có thể được làm sạch bằng các chất hóa học (Gel Metronidazole), các\nphương pháp cơ học sử dụng bàn chải và bột đánh bóng, sử dụng lazer cũng cho kết\nquả tốt. Sau khi bề mặt Implant được làm sạch có thể tiến hành ghép xương nhằm\nkhôi phục khối lượng xương đã mất. Nếu không ghép xương thì làm nhẵn bề mặt\nnhám của Implant đã bị bộc lộ nhằm giảm sự tích tụ mảng bám lên bề mặt Implant.\n- Nếu xương bị mất quá ½ chiều dài của Implant thì tốt nhất nên tháo Implant\nra, phát triển xương tại chỗ và chờ để có thể đặt lại Implant mặc dù trên lý thuyết có\nthể ghép lại xương vào phần xương đã tiêu tuy nhiên trên thực tế tỷ lệ thành công\ncủa phương pháp này rất thấp."
+   },
+   {
+    "ref": "S3",
+    "id": "3eee9c5c-c426-5cf9-88c7-5bb43209f472",
+    "page": 184,
+    "pages": [
+     184
+    ],
+    "disease_no": 52,
+    "text": "V. TIÊN LƯỢNG VÀ BIẾN CHỨNG\n1. Tiên lượng\nĐối với tình trạng viêm quanh Implant ở giai đoạn ban đầu có nguyên nhân do\ncấu trúc phục hình hoặc lực nhai quá tải thì tiên lượng điều trị rất khả quan, tuy\nnhiên đối với tình trạng viêm quanh Implant ở giai đoạn tiến triển trên bệnh nhân bị\nbệnh viêm quanh răng hoặc không xác định được nguyên nhân gây bệnh thì kết quả\nđiều trị ít khả quan và bệnh vẫn có nguy cơ tiến triển dẫn đến việc phải tháo bỏ\nImplant."
+   },
+   {
+    "ref": "S4",
+    "id": "36753f15-3481-513a-9946-6c386680de86",
+    "page": 183,
+    "pages": [
+     183
+    ],
+    "disease_no": 52,
+    "text": "IV. ĐIỀU TRỊ\n1. Nguyên tắc\n- Loại bỏ tác nhân gây bệnh và ổ viêm nhiễm xung quanh Implant.\n- Giảm độ sâu của túi quanh Implant.\n- Ghép xương trong trường hợp tiêu nhiều xương quanh Implant."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2709,
+   "completion_tokens": 277,
+   "llm_cost_usd": 0.00042135199999999995
+  },
+  "seconds": 4.15,
+  "error": null
+ },
+ {
+  "query_id": "t04",
+  "question": "Viêm tuyến nước bọt mang tai mạn tính trong trường hợp nào phải mổ, và mổ như thế nào?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "**Chỉ định mổ:** khi tuyến xơ hóa, không còn chức năng [S2].\n\n**Cách mổ:** phẫu thuật cắt toàn bộ tuyến mang tai, bảo tồn thần kinh VII [S2]. Kỹ thuật gồm [S2]:\n- Vô cảm\n- Rạch da theo đường Redon vùng mang tai\n- Bóc tách bộc lộ thần kinh VII\n- Cắt toàn bộ tuyến mang tai\n- Kiểm soát vùng phẫu thuật\n- Đặt dẫn lưu kín\n- Khâu phục hồi\n- Kháng sinh\n\n*Lưu ý: [S3] là kỹ thuật mổ u hỗn hợp tuyến mang tai (bệnh khác), không phải viêm mạn tính.*",
+  "citations": [
+   "9e7cd407-9bcb-55d6-b655-aa8b2f0ff68c",
+   "85fd419f-a762-50af-a48d-14b85412f540"
+  ],
+  "citation_refs": [
+   "S2",
+   "S3"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "viêm tuyến nước bọt mang tai mạn tính điều trị phẫu thuật",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1180.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+      "page": 153,
+      "disease_no": 43,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "9e7cd407-9bcb-55d6-b655-aa8b2f0ff68c",
+      "page": 154,
+      "disease_no": 43,
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "85fd419f-a762-50af-a48d-14b85412f540",
+      "page": 160,
+      "disease_no": 45,
+      "score": 0.03151
+     }
+    ],
+    "added_refs": {
+     "S1": "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+     "S2": "9e7cd407-9bcb-55d6-b655-aa8b2f0ff68c",
+     "S3": "85fd419f-a762-50af-a48d-14b85412f540"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1161
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "viêm tuyến mang tai mạn tính chỉ định mổ cắt tuyến",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1882.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "9e7cd407-9bcb-55d6-b655-aa8b2f0ff68c",
+      "page": 154,
+      "disease_no": 43,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+      "page": 153,
+      "disease_no": 43,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "85fd419f-a762-50af-a48d-14b85412f540",
+      "page": 160,
+      "disease_no": 45,
+      "score": 0.03151
+     }
+    ],
+    "added_refs": {},
+    "skipped_duplicate": [
+     "9e7cd407-9bcb-55d6-b655-aa8b2f0ff68c",
+     "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+     "85fd419f-a762-50af-a48d-14b85412f540"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1161
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S2",
+     "S3"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+    "page": 153,
+    "pages": [
+     153
+    ],
+    "disease_no": 43,
+    "text": "43. VIÊM TUYẾN NƯỚC BỌT MANG TAI MẠN TÍNH\nI. ĐỊNH NGHĨA\nViêm tuyến nước bọt mạn tính là loại viêm tuyến nước bọt thường gặp ở người\nlớn do nhiều nguyên nhân,hay gặp nhất là do vi khuẩn."
+   },
+   {
+    "ref": "S2",
+    "id": "9e7cd407-9bcb-55d6-b655-aa8b2f0ff68c",
+    "page": 154,
+    "pages": [
+     154
+    ],
+    "disease_no": 43,
+    "text": "2.2. Điều trị ngoại khoa\na. Chỉ định: Khi tuyến xơ hóa, không còn chức năng.\nb. Điều trị bằng phẫu thuật cắt toàn bộ tuyến mang tai, bảo tồn thần kinh VII.\n- Kỹ thuật\n+ Vô cảm.\n+ Rạch da theo đường Redon vùng mang tai.\n+ Bóc tách bộc lộ thần kinh VII.\n+ Cắt toàn bộ tuyến mang tai.\n+ Kiểm soát vùng phẫu thuật\n+ Đặt dẫn lưu kín.\n+ Khâu phục hồi.\n+ Kháng sinh."
+   },
+   {
+    "ref": "S3",
+    "id": "85fd419f-a762-50af-a48d-14b85412f540",
+    "page": 160,
+    "pages": [
+     160
+    ],
+    "disease_no": 45,
+    "text": "IV. ĐIỀU TRỊ\n1. Nguyên tắc\nPhẫu thuật cắt bỏ u và tuyến nước bọt mang tai, bảo tồn thần kinh VII.\n2. Điều trị cụ thể\n- Phẫu thuật u và tuyến nước bọt mang tai\n+ Vô cảm.\n+ Rạch da.\n+ Bộc lộ u và tuyến.\n+ Xác định các nhánh của dây thần kinh VII.\n+ Cắt bỏ toàn bộ u và tuyến mang tai, bảo tồn các nhánh dây thần\n+ kinh VII.\n+ Cầm máu.\n+ Đặt dẫn lưu.\n+ Khâu phục hồi theo giải phẫu."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2350,
+   "completion_tokens": 325,
+   "llm_cost_usd": 0.00025766099999999996
+  },
+  "seconds": 5.65,
+  "error": null
+ },
+ {
+  "query_id": "t05",
+  "question": "Dính khớp thái dương hàm ở mức độ nào thì chỉ cần điều trị bảo tồn, và điều trị bằng cách nào?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "**Mức độ chỉ cần điều trị bảo tồn:** Dính khớp thái dương hàm ở **mức độ 1** [S2]. (Theo X quang, độ 1 là lồi cầu có thể biến dạng nhưng còn hình ảnh khe khớp [S6].)\n\n**Cách điều trị bảo tồn:** Hướng dẫn bệnh nhân tập há miệng bằng dụng cụ banh miệng, tập vận động xương hàm dưới [S2].\n\nNguyên tắc điều trị chung là phục hồi sự vận động của khớp và phục hồi chức năng ăn nhai [S3].\n\n*Lưu ý:* Tài liệu chỉ nêu điều trị bảo tồn áp dụng cho mức độ 1; các đoạn hiện có không nêu chi tiết cách xử trí cho độ 2–4.",
+  "citations": [
+   "7e54b1db-578f-5c4c-9a33-2cc6efc26a18",
+   "6f9112f2-fcfd-58d0-ada3-5ccfd80cb646",
+   "83643e20-b665-56d0-b580-b1f067b94fd3"
+  ],
+  "citation_refs": [
+   "S2",
+   "S6",
+   "S3"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "dính khớp thái dương hàm điều trị bảo tồn",
+    "filter": null,
+    "top_k": 3,
+    "ms": 98.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "cd983cb9-15ab-590a-bb9e-f93e5749262b",
+      "page": 199,
+      "disease_no": 57,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "7e54b1db-578f-5c4c-9a33-2cc6efc26a18",
+      "page": 200,
+      "disease_no": 57,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "83643e20-b665-56d0-b580-b1f067b94fd3",
+      "page": 200,
+      "disease_no": 57,
+      "score": 0.03175
+     }
+    ],
+    "added_refs": {
+     "S1": "cd983cb9-15ab-590a-bb9e-f93e5749262b",
+     "S2": "7e54b1db-578f-5c4c-9a33-2cc6efc26a18",
+     "S3": "83643e20-b665-56d0-b580-b1f067b94fd3"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 822
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "dính khớp thái dương hàm mức độ phân loại điều trị",
+    "filter": null,
+    "top_k": 3,
+    "ms": 102.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "cd983cb9-15ab-590a-bb9e-f93e5749262b",
+      "page": 199,
+      "disease_no": 57,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "d05c8cf4-57b6-5b32-8568-1dcc616d471f",
+      "page": 199,
+      "disease_no": 57,
+      "score": 0.0315
+     },
+     {
+      "rank": 3,
+      "id": "08aca03f-9163-533e-a19c-fcb036ffb58f",
+      "page": 199,
+      "disease_no": 57,
+      "score": 0.03128
+     }
+    ],
+    "added_refs": {
+     "S4": "d05c8cf4-57b6-5b32-8568-1dcc616d471f",
+     "S5": "08aca03f-9163-533e-a19c-fcb036ffb58f"
+    },
+    "skipped_duplicate": [
+     "cd983cb9-15ab-590a-bb9e-f93e5749262b"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1708
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "dính khớp thái dương hàm mức độ 1 mức độ 2 mức độ 3 há miệng",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1202.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "6f9112f2-fcfd-58d0-ada3-5ccfd80cb646",
+      "page": 199,
+      "disease_no": 57,
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "7e54b1db-578f-5c4c-9a33-2cc6efc26a18",
+      "page": 200,
+      "disease_no": 57,
+      "score": 0.03202
+     },
+     {
+      "rank": 3,
+      "id": "cd983cb9-15ab-590a-bb9e-f93e5749262b",
+      "page": 199,
+      "disease_no": 57,
+      "score": 0.03175
+     }
+    ],
+    "added_refs": {
+     "S6": "6f9112f2-fcfd-58d0-ada3-5ccfd80cb646"
+    },
+    "skipped_duplicate": [
+     "7e54b1db-578f-5c4c-9a33-2cc6efc26a18",
+     "cd983cb9-15ab-590a-bb9e-f93e5749262b"
+    ],
+    "skipped_budget": [],
+    "context_chars": 2163
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S2",
+     "S6",
+     "S3"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "cd983cb9-15ab-590a-bb9e-f93e5749262b",
+    "page": 199,
+    "pages": [
+     199
+    ],
+    "disease_no": 57,
+    "text": "57. DÍNH KHỚP THÁI DƯƠNG HÀM\nI. ĐỊNH NGHĨA\nDính khớp thái dương hàm là tình trạng hạn chế hoặc mất vận động của khớp\ndo sự xơ hóa, vôi hóa các thành phần của khớp như lồi cầu, ổ chảo, hõm khớp, dây\nchằng ngoài bao khớp."
+   },
+   {
+    "ref": "S2",
+    "id": "7e54b1db-578f-5c4c-9a33-2cc6efc26a18",
+    "page": 200,
+    "pages": [
+     200
+    ],
+    "disease_no": 57,
+    "text": "2. Điều trị cụ thể\n2.1. Điều trị bảo tồn\nCác trường hợp dính khớp ở mức độ 1: Hướng dẫn bệnh nhân tập há miệng\nbằng dụng cụ banh miệng, tập vận động xương hàm dưới."
+   },
+   {
+    "ref": "S3",
+    "id": "83643e20-b665-56d0-b580-b1f067b94fd3",
+    "page": 200,
+    "pages": [
+     200
+    ],
+    "disease_no": 57,
+    "text": "2 Chẩn đoán phân biệt\nDính khớp thái dương hàm luôn có các triệu chứng lâm sàng và X quang rõ rệt\nnên không cần chẩn đoán phân biệt.\nIV. ĐIỀU TRỊ\n1. Nguyên tắc\n- Phục hồi được sự vận động của khớp.\n- Phục hồi được chức năng ăn nhai."
+   },
+   {
+    "ref": "S4",
+    "id": "d05c8cf4-57b6-5b32-8568-1dcc616d471f",
+    "page": 199,
+    "pages": [
+     199
+    ],
+    "disease_no": 57,
+    "text": "II. NGUYÊN NHÂN\n- Chấn thương\n+ Tai nạn giao thông.\n+ Tai nạn lao động.\n+ Tai nạn sinh hoạt…\n- Rối loạn sự phát triển của lồi cầu, lồi cầu quá phát hay giảm phát.\n- Viêm khớp thái dương hàm.\n- Viêm tuyến mang tai, biến chứng của viêm tai giữa…"
+   },
+   {
+    "ref": "S5",
+    "id": "08aca03f-9163-533e-a19c-fcb036ffb58f",
+    "page": 199,
+    "pages": [
+     199
+    ],
+    "disease_no": 57,
+    "text": "III. CHẨN ĐOÁN\n3.1. Chẩn đoán xác định\n1.1. Lâm sàng\n- Toàn thân thể trạng gầy yếu do hạn chế há miệng ăn nhai kém\n- Ăn uống khó.\n- Mặt ở tư thế thẳng mặt bất cân xứng cằm lệch về một bên, giảm phát tầng\ndưới mặt.\n- Mặt ở tư thế nghiêng cằm tụt ra sau (dấu hiệu cằm mỏ chim).\n- Hạn chế há miệng. Tùy mức độ dính có thể hạn mức độ há miệng từ 1 tới 2\ncm hay khít hàm hoàn toàn.\n- Sờ khớp thái dương hàm thấy lồi cầu hạn chế vận động hoặc thành khối dính\nvới cung tiếp không vận động.\n- Khớp cắn sâu."
+   },
+   {
+    "ref": "S6",
+    "id": "6f9112f2-fcfd-58d0-ada3-5ccfd80cb646",
+    "page": 199,
+    "pages": [
+     199,
+     200
+    ],
+    "disease_no": 57,
+    "text": "1.2. Cận lâm sàng\nX quang: Panorama, mặt thẳng, CT scanner, Conebeam CT.\nCó hình ảnh tổn thương khớp ở bốn mức độ:\n- Độ 1\n+ Lồi cầu có thể biến dạng.\n+ Còn hình ảnh khe khớp.\n- Độ 2\n+ Có hình ảnh dính một phần của khớp.\n+ Còn hình ảnh khe khớp nhưng hẹp hơn độ I.\n- Độ 3: Có hình ảnh cầu xương giữa lồi cầu và hõm khớp.\n- Độ 4: Có hình ảnh xương dính liền một khối với nền sọ."
+   }
+  ],
+  "usage": {
+   "llm_calls": 3,
+   "prompt_tokens": 4461,
+   "completion_tokens": 536,
+   "llm_cost_usd": 0.000610843
+  },
+  "seconds": 7.36,
+  "error": null
+ },
+ {
+  "query_id": "t06",
+  "question": "Quyết định ban hành tài liệu hướng dẫn này có hiệu lực từ khi nào?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Quyết định số 3108/QĐ-BYT có hiệu lực kể từ ngày ký ban hành [S2], tức ngày 28/7/2015 (Hà Nội, ngày 28 tháng 7 năm 2015) [S2].",
+  "citations": [
+   "f3227df0-785f-5ae0-b963-1f27d7f6754b"
+  ],
+  "citation_refs": [
+   "S2"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "Quyết định 3108/QĐ-BYT hiệu lực thi hành",
+    "filter": null,
+    "top_k": 3,
+    "ms": 104.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "11885c99-55d7-5b3e-b7c4-4ce44df99b9f",
+      "page": 2,
+      "disease_no": null,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "f3227df0-785f-5ae0-b963-1f27d7f6754b",
+      "page": 1,
+      "disease_no": null,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "e9c8e995-c7a6-500f-a522-ad62a9b3f679",
+      "page": 3,
+      "disease_no": null,
+      "score": 0.01587
+     }
+    ],
+    "added_refs": {
+     "S1": "11885c99-55d7-5b3e-b7c4-4ce44df99b9f",
+     "S2": "f3227df0-785f-5ae0-b963-1f27d7f6754b",
+     "S3": "e9c8e995-c7a6-500f-a522-ad62a9b3f679"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 2929
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "quyết định ban hành tài liệu hướng dẫn chẩn đoán điều trị răng hàm mặt",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1149.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "11885c99-55d7-5b3e-b7c4-4ce44df99b9f",
+      "page": 2,
+      "disease_no": null,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "f3227df0-785f-5ae0-b963-1f27d7f6754b",
+      "page": 1,
+      "disease_no": null,
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "f430a803-b2e5-5f5b-85da-d543813851b2",
+      "page": 22,
+      "disease_no": 4,
+      "score": 0.02685
+     }
+    ],
+    "added_refs": {},
+    "skipped_duplicate": [
+     "11885c99-55d7-5b3e-b7c4-4ce44df99b9f",
+     "f3227df0-785f-5ae0-b963-1f27d7f6754b"
+    ],
+    "skipped_budget": [
+     "f430a803-b2e5-5f5b-85da-d543813851b2"
+    ],
+    "context_chars": 2929
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S2"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "11885c99-55d7-5b3e-b7c4-4ce44df99b9f",
+    "page": 2,
+    "pages": [
+     2
+    ],
+    "disease_no": null,
+    "text": "BỘ Y TẾ\nHƯỚNG DẪN\nCHẨN ĐOÁN VÀ ĐIỀU TRỊ\nMỘT SỐ BỆNH VỀ RĂNG HÀM MẶT\n(Ban hành kèm theo Quyết định số 3108/QĐ-BYT ngày 28/7/2015\ncủa Bộ trưởng Bộ Y tế)\nHÀ NỘI - 2015"
+   },
+   {
+    "ref": "S2",
+    "id": "f3227df0-785f-5ae0-b963-1f27d7f6754b",
+    "page": 1,
+    "pages": [
+     1
+    ],
+    "disease_no": null,
+    "text": "BỘ Y TẾ\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\nSố: 3108/QĐ-BYT\nHà Nội, ngày 28 tháng 7 năm 2015\nQUYẾT ĐỊNH\nVề việc ban hành tài liệu chuyên môn\n“Hướng dẫn chẩn đoán và điều trị một số bệnh về Răng Hàm Mặt”\nBỘ TRƯỞNG BỘ Y TẾ\nCăn cứ Luật khám bệnh, chữa bệnh năm 2009;\nCăn cứ Nghị định số 63/2012/NĐ-CP ngày 31/8/2012 của Chính Phủ quy\nđịnh chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Y tế;\nTheo đề nghị của Cục trưởng Cục Quản lý Khám, chữa bệnh,\nQUYẾT ĐỊNH:\nĐiều 1. Ban hành kèm theo Quyết định này tài liệu chuyên môn “Hướng dẫn\nchẩn đoán và điều trị một số bệnh về Răng Hàm Mặt”.\nĐiều 2. Tài liệu “Hướng dẫn chẩn đoán và điều trị một số bệnh về Răng Hàm\nMặt” ban hành kèm theo Quyết định này được áp dụng tại các cơ sở khám bệnh,\nchữa bệnh có tổ chức khám bệnh, chữa bệnh về Răng Hàm Mặt.\nCăn cứ vào tài liệu này và điều kiện cụ thể của đơn vị, Giám đốc cơ sở khám\nbệnh, chữa bệnh xây dựng và ban hành tài liệu hướng dẫn chẩn đoán và điều trị\nmột số bệnh về Răng Hàm Mặt phù hợp để thực hiện tại đơn vị.\nĐiều 3. Quyết định này có hiệu lực kể từ ngày ký ban hành.\nĐiều 4. Các ông, bà: Chánh Văn phòng Bộ, Chánh Thanh tra Bộ, Cục trưởng\nCục Quản lý Khám, chữa bệnh, Cục trưởng và Vụ trưởng các Cục, Vụ thuộc Bộ Y\ntế, Giám đốc các bệnh viện trực thuộc Bộ Y tế, Giám đốc Sở Y tế các tỉnh, thành\nphố trực thuộc trung ương, Thủ trưởng Y tế các Bộ, Ngành và Thủ trưởng các đơn\nvị có liên quan chịu trách nhiệm thi hành Quyết định này./.\nNơi nhận:\n- Như Điều 4;\n- Bộ trưởng Bộ Y tế (để b/c);\n- Các Thứ trưởng BYT;\n- Bảo hiểm Xã hội Việt Nam (để phối hợp);\n- Cổng thông tin điện tử BYT;\n- Website Cục KCB;\n- Lưu VT, KCB.\nKT. BỘ TRƯỞNG\nTHỨ TRƯỞNG\nNguyễn Thị Xuyên"
+   },
+   {
+    "ref": "S3",
+    "id": "e9c8e995-c7a6-500f-a522-ad62a9b3f679",
+    "page": 3,
+    "pages": [
+     3,
+     4
+    ],
+    "disease_no": null,
+    "text": "Chủ biên\nPGS.TS. Nguyễn Thị Xuyên\nĐồng chủ biên\nGS.TS.Trịnh Đình Hải\nPGS.TS. Lương Ngọc Khuê\nDanh sách biên soạn và thẩm định\nGS. TS. Trịnh Đình Hải\nPGS. TS. Lâm Hoài Phương\nPGS. TS. Lê Văn Sơn\nTS. Ngô Đồng Khanh\nTS. Nguyễn Toại\nTS. Võ Thị Thúy Hồng\nTS. Phạm Dương Châu\nTS. Nguyễn Đức Thắng\nTS. Phạm Thị Thu Hiền\nTS. Chu Thị Quỳnh Hương\nTS. Phạm Thanh Hà\nTS. Nguyễn Hồng Minh\nTS. Lê Ngọc Tuyến\nTS. Phạm Hoàng Tuấn\nBSCKII. Trần Minh Thịnh\nBSCKII. Vũ Đình Minh\nBSCKII. Đồng Văn Biểu\nBSCKII. Nguyễn Văn Dỹ\nBSCKII. Nguyễn Mạnh Hà\nThS. Lê Trung Chánh\nThS. Hoàng Thị Bạch Dương\nThS. Bùi Hữu Lâm\nThS. Nguyễn Anh Tùng\nThS. Phó Bích Hà\nThS. Nguyễn Tường Nga\nThS. Phùng Thị Thanh Lý\nThS. Nguyễn Thị Vân Anh\nThS. Hồ Thị Quỳnh Minh\nThS. Bùi Thị Thanh Tâm\nThS. Nguyễn Thanh Huyền\nThS. Đặng Thị Vỹ\nThS. Trần Hải Hà\nThS. Nguyễn Tấn Văn\nThS. Vũ Tuấn Hùng\nBSCKI. Đồng Khắc Trí\nThư ký\nThs. Nguyễn Đức Tiến\nThs. Trần Văn Phú\nThs. DS. Ngô Thị Bích Hà\nThs. Trương Lê Vân Ngọc"
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 3329,
+   "completion_tokens": 235,
+   "llm_cost_usd": 0.000427124
+  },
+  "seconds": 3.97,
+  "error": null
+ },
+ {
+  "query_id": "u01",
+  "question": "Khi tẩy trắng răng bị nhiễm màu tetracycline thì nên dùng hydrogen peroxide nồng độ bao nhiêu?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "abstain",
+  "answer": "KHÔNG ĐỦ BẰNG CHỨNG\n\nTài liệu chỉ nêu trong điều trị tổn thương do rối loạn phát triển răng (bao gồm răng nhiễm màu, kể cả nhiễm tetracycline) là: \"Có thể tiến hành tẩy trắng răng khi răng bị nhiễm màu\" [S2], và phần chẩn đoán chỉ mô tả đặc điểm màu sắc răng nhiễm tetracycline (màu vàng, nâu xám sậm hoặc xanh lơ, đỏ tía tùy mức độ) [S1].\n\nTài liệu không đề cập loại/nồng độ thuốc tẩy trắng (hydrogen peroxide hay carbamide peroxide) cũng như nồng độ cụ thể dùng cho răng nhiễm màu tetracycline.",
+  "citations": [],
+  "citation_refs": [],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "tẩy trắng răng nhiễm màu tetracycline hydrogen peroxide nồng độ",
+    "filter": null,
+    "top_k": 3,
+    "ms": 86.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "bcb40447-4ef6-52ad-be3b-3c995782b1ca",
+      "page": 46,
+      "disease_no": 10,
+      "score": 0.03154
+     },
+     {
+      "rank": 2,
+      "id": "d9099611-170b-5968-b1ab-bb71f764c113",
+      "page": 47,
+      "disease_no": 10,
+      "score": 0.0315
+     },
+     {
+      "rank": 3,
+      "id": "98198178-0ad5-5239-a38f-d5fc1e34293d",
+      "page": 42,
+      "disease_no": 9,
+      "score": 0.02983
+     }
+    ],
+    "added_refs": {
+     "S1": "bcb40447-4ef6-52ad-be3b-3c995782b1ca",
+     "S2": "d9099611-170b-5968-b1ab-bb71f764c113",
+     "S3": "98198178-0ad5-5239-a38f-d5fc1e34293d"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 2353
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "tẩy trắng răng nội khoa hydrogen peroxide nồng độ",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1130.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "d9099611-170b-5968-b1ab-bb71f764c113",
+      "page": 47,
+      "disease_no": 10,
+      "score": 0.03154
+     },
+     {
+      "rank": 2,
+      "id": "9ba5ad78-41a5-53c3-b1d1-c5a2d6f514dc",
+      "page": 39,
+      "disease_no": 8,
+      "score": 0.01639
+     },
+     {
+      "rank": 3,
+      "id": "28a5bb28-7bfb-5d09-b882-f02f9471c4d0",
+      "page": 144,
+      "disease_no": 39,
+      "score": 0.01613
+     }
+    ],
+    "added_refs": {
+     "S4": "9ba5ad78-41a5-53c3-b1d1-c5a2d6f514dc"
+    },
+    "skipped_duplicate": [
+     "d9099611-170b-5968-b1ab-bb71f764c113"
+    ],
+    "skipped_budget": [
+     "28a5bb28-7bfb-5d09-b882-f02f9471c4d0"
+    ],
+    "context_chars": 2661
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "tẩy trắng răng nhiễm màu tetracycline điều trị",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1197.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "d9099611-170b-5968-b1ab-bb71f764c113",
+      "page": 47,
+      "disease_no": 10,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "bcb40447-4ef6-52ad-be3b-3c995782b1ca",
+      "page": 46,
+      "disease_no": 10,
+      "score": 0.03178
+     },
+     {
+      "rank": 3,
+      "id": "8fe02f34-c4a0-53e6-99e3-5f4993c50b9d",
+      "page": 45,
+      "disease_no": 10,
+      "score": 0.02963
+     }
+    ],
+    "added_refs": {},
+    "skipped_duplicate": [
+     "d9099611-170b-5968-b1ab-bb71f764c113",
+     "bcb40447-4ef6-52ad-be3b-3c995782b1ca"
+    ],
+    "skipped_budget": [
+     "8fe02f34-c4a0-53e6-99e3-5f4993c50b9d"
+    ],
+    "context_chars": 2661
+   },
+   {
+    "event": "answer",
+    "status": "abstain",
+    "refs": [
+     "S2",
+     "S1"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "bcb40447-4ef6-52ad-be3b-3c995782b1ca",
+    "page": 46,
+    "pages": [
+     46
+    ],
+    "disease_no": 10,
+    "text": "III. CHẨN ĐOÁN\n1.Lâm sàng\na. Mòn răng: mòn từ rìa cắn răng cửa trước sau đó mòn đến múi chịu các răng hàm\n- Tốc độ của ngà nhanh hơn tốc độ mòn men nên tổn thương có dạng hình lõm\nđáy chén\n- Các tổn thương của hai răng đối đầu thường khớp khít vào nhau.\n- Mức độ mòn nhiều gây nhạy cảm răng\n- Tổn thương mòn hóa học nằm ở các răng gần nhau nơi có axit phá hủy, làm\nbề mặt men trở nên trong suốt.\n- Tiêu cổ răng là tổn thương lõm hình chêm ở cổ răng tại đường ranh giới xi\nmăng- ngà.\nb. Tổn thương do rối loạn phát triển răng\n- Men răng mỏng như thủy tinh, để lộ màu ngà răng (thiểu sản men).\n- Men răng mềm, tính chất như phấn, nhanh chóng bị mòn để lộ ngà trên bề\nmặt (men răng kém khoáng hóa hoặc chưa trưởng thành).\n- Răng có màu từ xám xanh đến nâu hổ phách (thiểu sản ngà, tạo ngà không\nhoàn chỉnh..).\n- Nhiễm màu răng: răng có màu nâu đỏ do nhiễm porphyrin, màu từ vàng, nâu\nxám sậm hoặc xanh lơ, đỏ tía tùy mức độ nhiễm tetracycline…"
+   },
+   {
+    "ref": "S2",
+    "id": "d9099611-170b-5968-b1ab-bb71f764c113",
+    "page": 47,
+    "pages": [
+     47
+    ],
+    "disease_no": 10,
+    "text": "3. Điều trị cụ thể\n- Mòn răng:\n+ Sử dụng máng chống nghiến cho bệnh nhân nghiến răng, điều chỉnh các\nđiểm cản trở cắn và các điểm chạm sớm.\n+ Thay đổi thói quen xấu trong chải răng.\n+ Thay đổi chế độ ăn, loại bỏ thức ăn, đồ uống có axit.\n+ Tiến hành phục hồi tổ chức răng đã mất bằng phương pháp phù hợp như hàn\nrăng, làm chụp bọc, Inlay, Onlay…\n- Tổn thương do rối loạn phát triển răng:\n+ Dự phòng các biến chứng như mòn răng, vỡ răng, hở tủy và đảm bảo tính\nthẩm mỹ bằng phương pháp phù hợp như hàn Composite, phục hình bằng chụp,\nVeneer, Inlay, Onlay.\n+ Điều trị biến chứng hở tủy nếu có.\n+ Có thể tiến hành tẩy trắng răng khi răng bị nhiễm màu.\n+ Nứt vỡ răng: phục hồi thân răng và điều trị tủy nếu hở tủy.\n+ Tiêu chân răng: loại bỏ u hạt, điều trị tủy, hàn phục hồi …"
+   },
+   {
+    "ref": "S3",
+    "id": "98198178-0ad5-5239-a38f-d5fc1e34293d",
+    "page": 42,
+    "pages": [
+     42
+    ],
+    "disease_no": 9,
+    "text": "2. Chẩn đoán phân biệt\nCác tổn thương sâu răng sớm chẩn đoán phân biệt với thay đổi màu sắc răng\nkhông do sâu răng dựa vào các triệu chứng dưới đây:\nTriệu chứng\nSâu răng sữa giai đoạn sớm\nThay đổi màu sắc răng\nkhông do sâu\nMàu sắc\nMàu trắng đục, nâu vàng trên\nmen răng.\nMàu trắng đục, nâu vàng trên\nmen, ngà răng.\nVị trí\n- Hố rãnh mặt nhai, mặt\ngần, xa, mặt ngoài hoặc mặt\ntrong các răng hàm sữa."
+   },
+   {
+    "ref": "S4",
+    "id": "9ba5ad78-41a5-53c3-b1d1-c5a2d6f514dc",
+    "page": 39,
+    "pages": [
+     39
+    ],
+    "disease_no": 8,
+    "text": "3. Lần 3: Sau lần 2 từ 1 đến 2 ngày.\n- Lấy cao răng và làm nhẵn chân răng.\n- Hướng dẫn bệnh nhân:\n+ Ngừng xúc miệng nước Ôxy già.\n+ Duy trì xúc miệng Chlohexidine 0,12% thêm 2 đến 3 tuần.\n+ Thực hiện các biện pháp kiểm soát mảng bám răng."
+   }
+  ],
+  "usage": {
+   "llm_calls": 3,
+   "prompt_tokens": 5063,
+   "completion_tokens": 522,
+   "llm_cost_usd": 0.0009749124
+  },
+  "seconds": 8.51,
+  "error": null
+ },
+ {
+  "query_id": "u02",
+  "question": "Bệnh nấm miệng do Candida ở trẻ nhỏ được điều trị bằng thuốc gì?",
+  "filter": null,
+  "config": "G1-hybrid",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "abstain",
+  "answer": "KHÔNG ĐỦ BẰNG CHỨNG\n\nTài liệu không có nội dung về bệnh nấm miệng do Candida ở trẻ nhỏ, cũng không nêu thuốc điều trị cho bệnh này.\n\nCác đoạn tìm được chỉ liên quan đến bệnh khác: viêm lợi loét hoại tử cấp tính với hướng dẫn xúc miệng Ôxy già ấm và Chlohexidine 0,12% [S1], viêm tủy răng sữa [S5], khe hở vòm miệng [S3], u máu ở trẻ em [S4], cùng một số bệnh vùng sàn miệng [S7][S8][S9] — không có thông tin về nấm miệng Candida.",
+  "citations": [],
+  "citation_refs": [],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "nấm miệng Candida trẻ nhỏ điều trị thuốc",
+    "filter": null,
+    "top_k": 3,
+    "ms": 99.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "fa0218cb-53ed-57a3-96f0-bb7992e24195",
+      "page": 39,
+      "disease_no": 8,
+      "score": 0.03101
+     },
+     {
+      "rank": 2,
+      "id": "2200da4f-0290-58eb-9ec8-3c4c752ad310",
+      "page": 172,
+      "disease_no": 49,
+      "score": 0.03041
+     },
+     {
+      "rank": 3,
+      "id": "5fb5e966-1401-5d47-a296-474edfa84989",
+      "page": 102,
+      "disease_no": 24,
+      "score": 0.02983
+     }
+    ],
+    "added_refs": {
+     "S1": "fa0218cb-53ed-57a3-96f0-bb7992e24195",
+     "S2": "2200da4f-0290-58eb-9ec8-3c4c752ad310",
+     "S3": "5fb5e966-1401-5d47-a296-474edfa84989"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 869
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "nấm Candida miệng trẻ em điều trị",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1120.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "94b0e726-bfd5-5d9d-9296-446a3a05c3d3",
+      "page": 144,
+      "disease_no": 39,
+      "score": 0.03132
+     },
+     {
+      "rank": 2,
+      "id": "9fda6299-9021-5908-b2f0-3906e609687f",
+      "page": 23,
+      "disease_no": 5,
+      "score": 0.02957
+     },
+     {
+      "rank": 3,
+      "id": "d0fbdc49-8bd4-5897-9460-f19d9a8eb692",
+      "page": 84,
+      "disease_no": 20,
+      "score": 0.02826
+     }
+    ],
+    "added_refs": {
+     "S4": "94b0e726-bfd5-5d9d-9296-446a3a05c3d3",
+     "S5": "9fda6299-9021-5908-b2f0-3906e609687f",
+     "S6": "d0fbdc49-8bd4-5897-9460-f19d9a8eb692"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1995
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "hybrid-rrf(dense+bm25-word-title)",
+    "query": "nấm miệng Candida",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1151.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "71d7f398-54b8-5712-bbb2-b59005243def",
+      "page": 108,
+      "disease_no": 26,
+      "score": 0.02996
+     },
+     {
+      "rank": 2,
+      "id": "7088f861-8701-529c-8d38-4bd11b66d1da",
+      "page": 174,
+      "disease_no": 50,
+      "score": 0.02921
+     },
+     {
+      "rank": 3,
+      "id": "e13ff8ce-15fc-5e40-8b21-88feba66f01e",
+      "page": 125,
+      "disease_no": 32,
+      "score": 0.02878
+     }
+    ],
+    "added_refs": {
+     "S7": "71d7f398-54b8-5712-bbb2-b59005243def",
+     "S8": "7088f861-8701-529c-8d38-4bd11b66d1da",
+     "S9": "e13ff8ce-15fc-5e40-8b21-88feba66f01e"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 2941
+   },
+   {
+    "event": "answer",
+    "status": "abstain",
+    "refs": [
+     "S1",
+     "S5",
+     "S3",
+     "S4",
+     "S7",
+     "S8",
+     "S9"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "fa0218cb-53ed-57a3-96f0-bb7992e24195",
+    "page": 39,
+    "pages": [
+     39
+    ],
+    "disease_no": 8,
+    "text": "- Hướng dẫn bệnh nhân:\n+ Xúc miệng bằng hỗn dịch nước Ôxy già ấm 2 giờ/1 lần theo công thức trộn\nmột cốc nước ấm với Ôxy già 3% theo tỷ lệ 1:1.\n+ Xúc miệng Chlohexidine 0,12%, mỗi ngày 2 lần.\n+ Không hút thuốc, không uống rượu, không ăn đồ gia vị.\n+ Hạn chế chải răng.\n+ Tránh gắng sức quá mức."
+   },
+   {
+    "ref": "S2",
+    "id": "2200da4f-0290-58eb-9ec8-3c4c752ad310",
+    "page": 172,
+    "pages": [
+     172
+    ],
+    "disease_no": 49,
+    "text": "3. Chẩn đoán phân biệt\n- Áp tơ (Aphthe): thường là các vết loét nhỏ và tự khỏi sau 1 tuần.\n- Ecpet (Herpes) : thường có nhiều vết loét nhỏ và cũng tự khỏi sau 1 tuần."
+   },
+   {
+    "ref": "S3",
+    "id": "5fb5e966-1401-5d47-a296-474edfa84989",
+    "page": 102,
+    "pages": [
+     102
+    ],
+    "disease_no": 24,
+    "text": "III. CHẨN ĐOÁN\n1. Chẩn đoán có khe hở vòm miệng\nDựa vào các triệu chứng lâm sàng\n- Cơ năng\n+ Sặc khi bú hoặc khi ăn.\n+ Trường hợp trẻ đã biết nói thì có biểu hiện nói ngọng.\n- Thực thể\nCó khe hở ở vòm miệng."
+   },
+   {
+    "ref": "S4",
+    "id": "94b0e726-bfd5-5d9d-9296-446a3a05c3d3",
+    "page": 144,
+    "pages": [
+     144
+    ],
+    "disease_no": 39,
+    "text": "39. U MÁU Ở TRẺ EM\n(Hemangiomas )\nI. ĐỊNH NGHĨA\nU máu trẻ em là u mạch máu do tăng sinh các tế bào nội mô mạch máu,\nthường xuất hiện trong những tuần đầu sau khi sinh, phát triển nhanh chóng trong\nnhững tháng đầu, sau đó dừng phát triển và thoái triển."
+   },
+   {
+    "ref": "S5",
+    "id": "9fda6299-9021-5908-b2f0-3906e609687f",
+    "page": 23,
+    "pages": [
+     23
+    ],
+    "disease_no": 5,
+    "text": "5. VIÊM TỦY RĂNG SỮA\nI. ĐỊNH NGHĨA\nViêm tuỷ răng sữa là tình trạng tổn thương nhiễm trùng mô tuỷ răng sữa, làm\ntăng áp lực nội tuỷ, chèn ép vào các tận cùng thần kinh gây ra triệu chứng đau và\ntổn thương mô tuỷ răng ở trẻ em."
+   },
+   {
+    "ref": "S6",
+    "id": "d0fbdc49-8bd4-5897-9460-f19d9a8eb692",
+    "page": 84,
+    "pages": [
+     84
+    ],
+    "disease_no": 20,
+    "text": "II. NGUYÊN NHÂN\n1. Loại cắn hở do răng\n- Do thói quen xấu bất lợi cho hàm răng\n+ Thói quen mút ngón tay kéo dài: Trẻ em có thói quen mút tay kéo dài sau 4\ntuổi.\n+ Thói quen đẩy lưỡi: Khi lưỡi đặt ở vị trí ra trước và giữa các răng cửa trên\nvà răng cửa dưới thường xuyên sẽ gây ra khớp cắn hở.\n- Do các bệnh gây trở ngại đường thở qua mũi\n+ Thở miệng do viêm amiđan.\n+ Thở miệng do VA.\n+ Thở miệng do thói quen và do các bệnh lý khác …\n- Cản trở mọc răng: Do cứng khớp, răng không mọc đủ chiều cao thân răng."
+   },
+   {
+    "ref": "S7",
+    "id": "71d7f398-54b8-5712-bbb2-b59005243def",
+    "page": 108,
+    "pages": [
+     108
+    ],
+    "disease_no": 26,
+    "text": "26. NANG NHÁI SÀN MIỆNG\nI. ĐỊNH NGHĨA\nNang nhái sàn miệng là nang nhầy, khu trú ở sàn miệng. Lòng nang chứa dịch\nnhầy có nguồn gốc từ tuyến nước bọt dưới lưỡi, hoặc tuyến dưới hàm, hoặc tuyến\nnước bọt phụ ở sàn miệng."
+   },
+   {
+    "ref": "S8",
+    "id": "7088f861-8701-529c-8d38-4bd11b66d1da",
+    "page": 174,
+    "pages": [
+     174
+    ],
+    "disease_no": 50,
+    "text": "50. UNG THƯ SÀN MIỆNG\nI. ĐỊNH NGHĨA\nLà ung thư biểu mô phát sinh ở vùng niêm mạc, thường ở phần trước của vùng\nsàn miệng giữa mặt trong cung răng và mặt dưới lưỡi. Ung thư sàn miệng phát triển\nnhanh và xâm lấn vào mô xung quanh."
+   },
+   {
+    "ref": "S9",
+    "id": "e13ff8ce-15fc-5e40-8b21-88feba66f01e",
+    "page": 125,
+    "pages": [
+     125
+    ],
+    "disease_no": 32,
+    "text": "2. Chẩn đoán phân biệt\n- Áp xe tuyến dưới hàm:dấu hiệu chảy mủ qua lỗ ống Wharton khi thăm khám.\n- Áp xe nông quanh hàm trong (dưới lưỡi, dưới niêm mạc): áp xe nông ngay\nchân răng nguyên nhân. Sàn miệng bình thường.\n- Phlegmon sàn miệng: sưng, thâm nhiễm toàn bộ sàn miệng hai bên, tình\ntrạng toàn thân suy yếu, nhiễm khuẩn, nhiễm độc."
+   }
+  ],
+  "usage": {
+   "llm_calls": 3,
+   "prompt_tokens": 4932,
+   "completion_tokens": 467,
+   "llm_cost_usd": 0.000630116
+  },
+  "seconds": 8.61,
+  "error": null
+ }
+]

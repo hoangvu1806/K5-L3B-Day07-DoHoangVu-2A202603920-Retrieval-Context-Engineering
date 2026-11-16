@@ -1,0 +1,1034 @@
+[
+ {
+  "query_id": "d01",
+  "query": "Khi đã xác định răng khôn hàm dưới mọc lệch thì nên xử trí thế nào, và vì sao?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+    "page": 9,
+    "disease_no": 1,
+    "score": 0.8033
+   },
+   {
+    "rank": 2,
+    "id": "20e597b2-2642-5099-901e-8dd8013fe8ce",
+    "page": 8,
+    "disease_no": 1,
+    "score": 0.7764
+   },
+   {
+    "rank": 3,
+    "id": "f1eff811-f53a-54a2-bc48-5ff72d8260ec",
+    "page": 8,
+    "disease_no": 1,
+    "score": 0.77509
+   },
+   {
+    "rank": 4,
+    "id": "fe6dfae6-eeb4-5eab-9ec9-c02825ea6854",
+    "page": 9,
+    "disease_no": 1,
+    "score": 0.77189
+   },
+   {
+    "rank": 5,
+    "id": "bb8164b0-7faa-5613-bd92-bec4ab1f0e69",
+    "page": 126,
+    "disease_no": 32,
+    "score": 0.74534
+   }
+  ]
+ },
+ {
+  "query_id": "d02",
+  "query": "Răng khôn mọc lệch đang bị viêm quanh thân răng cấp thì khi nào mới tiến hành nhổ?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "fe6dfae6-eeb4-5eab-9ec9-c02825ea6854",
+    "page": 9,
+    "disease_no": 1,
+    "score": 0.74963
+   },
+   {
+    "rank": 2,
+    "id": "a778c2c3-9ee0-5cb9-b6a6-3a55996d7478",
+    "page": 9,
+    "disease_no": 1,
+    "score": 0.74689
+   },
+   {
+    "rank": 3,
+    "id": "2f61e4d3-511e-5750-a587-f8b389dc165d",
+    "page": 10,
+    "disease_no": 1,
+    "score": 0.73307
+   },
+   {
+    "rank": 4,
+    "id": "e365d1ce-3706-5e1c-bb88-6794ba7036e1",
+    "page": 117,
+    "disease_no": 29,
+    "score": 0.72615
+   },
+   {
+    "rank": 5,
+    "id": "4a2a3aa0-9871-5a53-9d62-874a5674b8c2",
+    "page": 123,
+    "disease_no": 31,
+    "score": 0.72615
+   }
+  ]
+ },
+ {
+  "query_id": "d03",
+  "query": "Trong sâu răng sữa, môi trường quanh răng có pH bao nhiêu thì gây hủy khoáng mô cứng?",
+  "filter": null,
+  "hit_rank": 2,
+  "top": [
+   {
+    "rank": 1,
+    "id": "9a1326d6-f1e6-5f05-ac3c-4ef1330420a6",
+    "page": 18,
+    "disease_no": 4,
+    "score": 0.79129
+   },
+   {
+    "rank": 2,
+    "id": "5f583728-fca8-5e47-84db-4f89b3ba7005",
+    "page": 18,
+    "disease_no": 4,
+    "score": 0.75026
+   },
+   {
+    "rank": 3,
+    "id": "66d3d211-0358-5b96-ab3a-82a1b1087bcf",
+    "page": 40,
+    "disease_no": 9,
+    "score": 0.74462
+   },
+   {
+    "rank": 4,
+    "id": "8f51e0d3-85e2-597e-a84a-d7d19e9b8801",
+    "page": 40,
+    "disease_no": 9,
+    "score": 0.7395
+   },
+   {
+    "rank": 5,
+    "id": "9622a3da-7f3e-5cd2-ae99-86b53acfe6af",
+    "page": 18,
+    "disease_no": 4,
+    "score": 0.73892
+   }
+  ]
+ },
+ {
+  "query_id": "d04",
+  "query": "Loại vi khuẩn nào được cho là gây sâu răng sữa mạnh nhất trong các nghiên cứu thực nghiệm?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "5f583728-fca8-5e47-84db-4f89b3ba7005",
+    "page": 18,
+    "disease_no": 4,
+    "score": 0.73856
+   },
+   {
+    "rank": 2,
+    "id": "9a1326d6-f1e6-5f05-ac3c-4ef1330420a6",
+    "page": 18,
+    "disease_no": 4,
+    "score": 0.72136
+   },
+   {
+    "rank": 3,
+    "id": "66d3d211-0358-5b96-ab3a-82a1b1087bcf",
+    "page": 40,
+    "disease_no": 9,
+    "score": 0.70294
+   },
+   {
+    "rank": 4,
+    "id": "8f51e0d3-85e2-597e-a84a-d7d19e9b8801",
+    "page": 40,
+    "disease_no": 9,
+    "score": 0.70142
+   },
+   {
+    "rank": 5,
+    "id": "9622a3da-7f3e-5cd2-ae99-86b53acfe6af",
+    "page": 18,
+    "disease_no": 4,
+    "score": 0.6992
+   }
+  ]
+ },
+ {
+  "query_id": "d05",
+  "query": "Khi gõ răng bị viêm tủy răng sữa không hồi phục, gõ dọc và gõ ngang cho kết quả thế nào?",
+  "filter": null,
+  "hit_rank": 4,
+  "top": [
+   {
+    "rank": 1,
+    "id": "7174eb2d-3c72-5c67-ada7-420221b98eae",
+    "page": 26,
+    "disease_no": 5,
+    "score": 0.774
+   },
+   {
+    "rank": 2,
+    "id": "df9c9b34-e3c5-5e3f-bc4d-e13b92191452",
+    "page": 42,
+    "disease_no": 9,
+    "score": 0.77201
+   },
+   {
+    "rank": 3,
+    "id": "620461aa-5cdd-5b62-8bfc-c2cd1a6e6c5e",
+    "page": 23,
+    "disease_no": 5,
+    "score": 0.7502
+   },
+   {
+    "rank": 4,
+    "id": "c27c05a2-0409-5057-93d9-6974a4609568",
+    "page": 24,
+    "disease_no": 5,
+    "score": 0.73982
+   },
+   {
+    "rank": 5,
+    "id": "9fda6299-9021-5908-b2f0-3906e609687f",
+    "page": 23,
+    "disease_no": 5,
+    "score": 0.73246
+   }
+  ]
+ },
+ {
+  "query_id": "d06",
+  "query": "Vì sao nghiệm pháp thử tủy ở trẻ em bị viêm tủy răng sữa không hồi phục lại không đáng tin cậy?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "c27c05a2-0409-5057-93d9-6974a4609568",
+    "page": 24,
+    "disease_no": 5,
+    "score": 0.76219
+   },
+   {
+    "rank": 2,
+    "id": "9fda6299-9021-5908-b2f0-3906e609687f",
+    "page": 23,
+    "disease_no": 5,
+    "score": 0.76124
+   },
+   {
+    "rank": 3,
+    "id": "620461aa-5cdd-5b62-8bfc-c2cd1a6e6c5e",
+    "page": 23,
+    "disease_no": 5,
+    "score": 0.75738
+   },
+   {
+    "rank": 4,
+    "id": "99f95b73-54bb-56c1-8415-ec3aa97ec77f",
+    "page": 41,
+    "disease_no": 9,
+    "score": 0.74248
+   },
+   {
+    "rank": 5,
+    "id": "8d47c543-d920-5c01-a3e3-b56be32115f2",
+    "page": 48,
+    "disease_no": 11,
+    "score": 0.73895
+   }
+  ]
+ },
+ {
+  "query_id": "d07",
+  "query": "Khi điều trị bằng Headgear, lực kéo mỗi bên và thời gian đeo trong ngày là bao nhiêu?",
+  "filter": null,
+  "hit_rank": 2,
+  "top": [
+   {
+    "rank": 1,
+    "id": "7d03e56b-c404-52a2-8b9d-cd0842f3bbff",
+    "page": 72,
+    "disease_no": 16,
+    "score": 0.71973
+   },
+   {
+    "rank": 2,
+    "id": "4c50b4ce-5423-54d1-85c0-4f8e7219d59d",
+    "page": 64,
+    "disease_no": 14,
+    "score": 0.70101
+   },
+   {
+    "rank": 3,
+    "id": "c031a65f-a8fe-5d04-9537-28b8991e0930",
+    "page": 72,
+    "disease_no": 16,
+    "score": 0.69878
+   },
+   {
+    "rank": 4,
+    "id": "9661e0ca-3181-59c1-9fbc-6c24bba6a889",
+    "page": 97,
+    "disease_no": 22,
+    "score": 0.69497
+   },
+   {
+    "rank": 5,
+    "id": "e5e788ee-ccd9-5ac1-af7c-4cbb1537f445",
+    "page": 73,
+    "disease_no": 16,
+    "score": 0.68664
+   }
+  ]
+ },
+ {
+  "query_id": "d08",
+  "query": "Khi thăm khám, dấu hiệu nào giúp phân biệt với áp xe tuyến dưới hàm?",
+  "filter": null,
+  "hit_rank": 2,
+  "top": [
+   {
+    "rank": 1,
+    "id": "e13ff8ce-15fc-5e40-8b21-88feba66f01e",
+    "page": 125,
+    "disease_no": 32,
+    "score": 0.82058
+   },
+   {
+    "rank": 2,
+    "id": "eb159eeb-b879-5252-8212-72930c642f77",
+    "page": 122,
+    "disease_no": 31,
+    "score": 0.80157
+   },
+   {
+    "rank": 3,
+    "id": "5953f1ab-d5ef-5c75-8d62-241b390b8812",
+    "page": 128,
+    "disease_no": 33,
+    "score": 0.78499
+   },
+   {
+    "rank": 4,
+    "id": "204e5d40-c5e1-577d-ba8a-0b0c26e0212c",
+    "page": 121,
+    "disease_no": 31,
+    "score": 0.78338
+   },
+   {
+    "rank": 5,
+    "id": "652f3225-d97d-5106-aa51-736e011b83a6",
+    "page": 119,
+    "disease_no": 30,
+    "score": 0.76991
+   }
+  ]
+ },
+ {
+  "query_id": "d09",
+  "query": "Khi kết hợp xương bằng nẹp vít, đường rạch ngách tiền đình hàm trên cách ranh giới lợi dính bao nhiêu?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "0e0bdd95-2760-5634-bea4-581a3c7fe9ed",
+    "page": 195,
+    "disease_no": 55,
+    "score": 0.77265
+   },
+   {
+    "rank": 2,
+    "id": "0b43d40d-3808-598f-8010-0de8fd024573",
+    "page": 196,
+    "disease_no": 55,
+    "score": 0.75545
+   },
+   {
+    "rank": 3,
+    "id": "27e72823-1720-5d0a-b640-967350888482",
+    "page": 191,
+    "disease_no": 54,
+    "score": 0.70618
+   },
+   {
+    "rank": 4,
+    "id": "38b29950-fa65-50b4-9083-08befbfe4562",
+    "page": 200,
+    "disease_no": 57,
+    "score": 0.70477
+   },
+   {
+    "rank": 5,
+    "id": "eb0cbf07-7f54-59b3-b343-65c8c84d3d37",
+    "page": 106,
+    "disease_no": 25,
+    "score": 0.70003
+   }
+  ]
+ },
+ {
+  "query_id": "d10",
+  "query": "Bịt mũi bệnh nhân gãy xương hàm trên mà hơi thở thoát ra đằng miệng thì gợi ý tổn thương ở đâu?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "5f72e31e-4b30-50cf-a0c3-38e6246b2fc8",
+    "page": 194,
+    "disease_no": 55,
+    "score": 0.79249
+   },
+   {
+    "rank": 2,
+    "id": "45a029a7-e429-5943-b63b-57bc9a4dd372",
+    "page": 193,
+    "disease_no": 55,
+    "score": 0.73952
+   },
+   {
+    "rank": 3,
+    "id": "3ade2e42-d9f5-56d3-b2e3-2f78832a6098",
+    "page": 193,
+    "disease_no": 55,
+    "score": 0.72966
+   },
+   {
+    "rank": 4,
+    "id": "a309e369-b9fc-569b-bfc2-79477424d8f5",
+    "page": 197,
+    "disease_no": 56,
+    "score": 0.72887
+   },
+   {
+    "rank": 5,
+    "id": "3c1e509d-f334-5842-8e70-9d1ac69b1b04",
+    "page": 190,
+    "disease_no": 54,
+    "score": 0.72521
+   }
+  ]
+ },
+ {
+  "query_id": "d11",
+  "query": "Bệnh quai bị do loại virus nào gây ra?",
+  "filter": null,
+  "hit_rank": 2,
+  "top": [
+   {
+    "rank": 1,
+    "id": "43f6a84e-3952-5cbc-a652-dc90994b5307",
+    "page": 151,
+    "disease_no": 42,
+    "score": 0.74542
+   },
+   {
+    "rank": 2,
+    "id": "9a5b1678-8659-56ea-b58e-954ce7ccc291",
+    "page": 151,
+    "disease_no": 42,
+    "score": 0.71855
+   },
+   {
+    "rank": 3,
+    "id": "ac3b8fa0-8f03-567c-8be4-34fcb9995db5",
+    "page": 151,
+    "disease_no": 42,
+    "score": 0.69915
+   },
+   {
+    "rank": 4,
+    "id": "3c3fae60-fd11-591c-baf1-077b2583ced2",
+    "page": 152,
+    "disease_no": 42,
+    "score": 0.69532
+   },
+   {
+    "rank": 5,
+    "id": "903b2ffe-50a0-57b1-aba3-0431a7ff16b6",
+    "page": 151,
+    "disease_no": 42,
+    "score": 0.69304
+   }
+  ]
+ },
+ {
+  "query_id": "d12",
+  "query": "Viêm tuyến mang tai do virus hay để lại biến chứng gì nhất?",
+  "filter": null,
+  "hit_rank": 2,
+  "top": [
+   {
+    "rank": 1,
+    "id": "bda88ec3-602f-52dc-9a3d-46be731c1614",
+    "page": 154,
+    "disease_no": 43,
+    "score": 0.7857
+   },
+   {
+    "rank": 2,
+    "id": "3c3fae60-fd11-591c-baf1-077b2583ced2",
+    "page": 152,
+    "disease_no": 42,
+    "score": 0.78127
+   },
+   {
+    "rank": 3,
+    "id": "43f6a84e-3952-5cbc-a652-dc90994b5307",
+    "page": 151,
+    "disease_no": 42,
+    "score": 0.77155
+   },
+   {
+    "rank": 4,
+    "id": "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+    "page": 153,
+    "disease_no": 43,
+    "score": 0.76331
+   },
+   {
+    "rank": 5,
+    "id": "80fedcba-7ff3-5e2d-aba7-b5b816e6695f",
+    "page": 153,
+    "disease_no": 43,
+    "score": 0.75916
+   }
+  ]
+ },
+ {
+  "query_id": "d13",
+  "query": "Thuốc nào thường là lựa chọn đầu tiên khi điều trị nội khoa đau dây thần kinh V?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "715f8e37-a1e1-5c33-a250-bcb91939f46a",
+    "page": 168,
+    "disease_no": 48,
+    "score": 0.82581
+   },
+   {
+    "rank": 2,
+    "id": "62e22775-4c9a-57e2-9ffa-be3ed3f45196",
+    "page": 166,
+    "disease_no": 48,
+    "score": 0.73963
+   },
+   {
+    "rank": 3,
+    "id": "0846d26a-f03c-5783-b3a1-67b3d0b282ed",
+    "page": 167,
+    "disease_no": 48,
+    "score": 0.73392
+   },
+   {
+    "rank": 4,
+    "id": "3066c81d-0496-5a7f-bca5-13c7c4618157",
+    "page": 169,
+    "disease_no": 48,
+    "score": 0.73214
+   },
+   {
+    "rank": 5,
+    "id": "29fb3c80-b345-5585-905a-a11c3b396312",
+    "page": 166,
+    "disease_no": 48,
+    "score": 0.72375
+   }
+  ]
+ },
+ {
+  "query_id": "d14",
+  "query": "Đau dây thần kinh V không rõ nguyên nhân thì khi nào được chỉ định điều trị ngoại khoa?",
+  "filter": null,
+  "hit_rank": 4,
+  "top": [
+   {
+    "rank": 1,
+    "id": "715f8e37-a1e1-5c33-a250-bcb91939f46a",
+    "page": 168,
+    "disease_no": 48,
+    "score": 0.78742
+   },
+   {
+    "rank": 2,
+    "id": "0846d26a-f03c-5783-b3a1-67b3d0b282ed",
+    "page": 167,
+    "disease_no": 48,
+    "score": 0.78273
+   },
+   {
+    "rank": 3,
+    "id": "3066c81d-0496-5a7f-bca5-13c7c4618157",
+    "page": 169,
+    "disease_no": 48,
+    "score": 0.78225
+   },
+   {
+    "rank": 4,
+    "id": "f1729ab8-793f-5fdf-853d-3271703da53d",
+    "page": 168,
+    "disease_no": 48,
+    "score": 0.7656
+   },
+   {
+    "rank": 5,
+    "id": "29fb3c80-b345-5585-905a-a11c3b396312",
+    "page": 166,
+    "disease_no": 48,
+    "score": 0.74962
+   }
+  ]
+ },
+ {
+  "query_id": "d15",
+  "query": "Trong tài liệu, MTA là viết tắt của gì và là vật liệu gì?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "38e261f4-2a14-5671-a45b-8ab5bea8ad57",
+    "page": 7,
+    "disease_no": null,
+    "score": 0.66794
+   },
+   {
+    "rank": 2,
+    "id": "036ea0bc-1de6-5160-9510-f173386fffb8",
+    "page": 26,
+    "disease_no": 5,
+    "score": 0.60632
+   },
+   {
+    "rank": 3,
+    "id": "83d02dfd-d33c-5abe-a607-af315fa921d8",
+    "page": 50,
+    "disease_no": 11,
+    "score": 0.60324
+   },
+   {
+    "rank": 4,
+    "id": "5452a15f-1135-576b-84f1-e8db92b96a5c",
+    "page": 51,
+    "disease_no": 11,
+    "score": 0.59864
+   },
+   {
+    "rank": 5,
+    "id": "a361c2c8-c1dd-515a-987b-b30c99a45027",
+    "page": 50,
+    "disease_no": 11,
+    "score": 0.58879
+   }
+  ]
+ },
+ {
+  "query_id": "d16",
+  "query": "Trẻ bị khe hở môi cần đạt cân nặng bao nhiêu thì đủ điều kiện phẫu thuật?",
+  "filter": null,
+  "hit_rank": 2,
+  "top": [
+   {
+    "rank": 1,
+    "id": "c94b63c4-0f5b-505f-876a-a59ddac99195",
+    "page": 103,
+    "disease_no": 24,
+    "score": 0.72794
+   },
+   {
+    "rank": 2,
+    "id": "c854d7d2-1987-5d77-947b-b5a53fc1b73d",
+    "page": 100,
+    "disease_no": 23,
+    "score": 0.70909
+   },
+   {
+    "rank": 3,
+    "id": "e706204b-e6b1-57c1-adbe-47d6443be13e",
+    "page": 99,
+    "disease_no": 23,
+    "score": 0.70395
+   },
+   {
+    "rank": 4,
+    "id": "9ff16620-8fb9-5ce3-b40f-44adf99cb6fd",
+    "page": 99,
+    "disease_no": 23,
+    "score": 0.69016
+   },
+   {
+    "rank": 5,
+    "id": "f106a937-275c-5f52-aaa0-8a80c821c95b",
+    "page": 99,
+    "disease_no": 23,
+    "score": 0.68792
+   }
+  ]
+ },
+ {
+  "query_id": "d17",
+  "query": "U máu ở trẻ nhỏ thường xuất hiện lúc nào và diễn tiến theo thời gian ra sao?",
+  "filter": null,
+  "hit_rank": 2,
+  "top": [
+   {
+    "rank": 1,
+    "id": "e6b25518-272a-5029-9066-3020540c515a",
+    "page": 145,
+    "disease_no": 39,
+    "score": 0.79128
+   },
+   {
+    "rank": 2,
+    "id": "94b0e726-bfd5-5d9d-9296-446a3a05c3d3",
+    "page": 144,
+    "disease_no": 39,
+    "score": 0.77104
+   },
+   {
+    "rank": 3,
+    "id": "f7d8f2b7-545f-5634-b3ea-74db114da695",
+    "page": 146,
+    "disease_no": 39,
+    "score": 0.73729
+   },
+   {
+    "rank": 4,
+    "id": "da509c43-84e7-5f4a-89de-26c356e51f5c",
+    "page": 146,
+    "disease_no": 39,
+    "score": 0.72901
+   },
+   {
+    "rank": 5,
+    "id": "b5c213d1-955c-5eea-bd16-a7e7ffa0d20f",
+    "page": 145,
+    "disease_no": 39,
+    "score": 0.71558
+   }
+  ]
+ },
+ {
+  "query_id": "d18",
+  "query": "Ai là chủ biên của tài liệu hướng dẫn này?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "e9c8e995-c7a6-500f-a522-ad62a9b3f679",
+    "page": 3,
+    "disease_no": null,
+    "score": 0.76213
+   },
+   {
+    "rank": 2,
+    "id": "11885c99-55d7-5b3e-b7c4-4ce44df99b9f",
+    "page": 2,
+    "disease_no": null,
+    "score": 0.66631
+   },
+   {
+    "rank": 3,
+    "id": "fa0218cb-53ed-57a3-96f0-bb7992e24195",
+    "page": 39,
+    "disease_no": 8,
+    "score": 0.60934
+   },
+   {
+    "rank": 4,
+    "id": "f3227df0-785f-5ae0-b963-1f27d7f6754b",
+    "page": 1,
+    "disease_no": null,
+    "score": 0.60571
+   },
+   {
+    "rank": 5,
+    "id": "d808078a-5cba-59c2-8c5a-c362fd3eb349",
+    "page": 77,
+    "disease_no": 17,
+    "score": 0.59452
+   }
+  ]
+ },
+ {
+  "query_id": "t01",
+  "query": "Khi nào thì rạch dẫn lưu ổ áp xe theo đường trong miệng?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "d20871e9-92e7-5183-bafb-d08e996ab974",
+    "page": 119,
+    "disease_no": 30,
+    "score": 0.77652
+   },
+   {
+    "rank": 2,
+    "id": "d8e790bd-6123-5c70-b10a-3db9b2663928",
+    "page": 125,
+    "disease_no": 32,
+    "score": 0.77255
+   },
+   {
+    "rank": 3,
+    "id": "cce1d34d-501a-5ff6-a55c-df4644ea9b11",
+    "page": 116,
+    "disease_no": 29,
+    "score": 0.77015
+   },
+   {
+    "rank": 4,
+    "id": "d1eb705c-fe29-594d-957d-d871bb31a96f",
+    "page": 122,
+    "disease_no": 31,
+    "score": 0.76421
+   },
+   {
+    "rank": 5,
+    "id": "b1fe57fa-8f9b-5b35-b51b-baadb5e2061a",
+    "page": 131,
+    "disease_no": 34,
+    "score": 0.76378
+   }
+  ]
+ },
+ {
+  "query_id": "t02",
+  "query": "Ở thể sai khớp cắn này, độ cắn chìa và độ cắn phủ thay đổi như thế nào?",
+  "filter": null,
+  "hit_rank": null,
+  "top": [
+   {
+    "rank": 1,
+    "id": "ba327499-be3c-571f-83a2-d7e9c685996b",
+    "page": 78,
+    "disease_no": 18,
+    "score": 0.78284
+   },
+   {
+    "rank": 2,
+    "id": "fe590835-0703-5d81-83de-9e84411c5764",
+    "page": 75,
+    "disease_no": 17,
+    "score": 0.78214
+   },
+   {
+    "rank": 3,
+    "id": "fc38daf5-94ab-5f71-8c8c-2859db026b73",
+    "page": 58,
+    "disease_no": 13,
+    "score": 0.77646
+   },
+   {
+    "rank": 4,
+    "id": "19514c42-90ac-54f0-8fa7-63702967b645",
+    "page": 70,
+    "disease_no": 16,
+    "score": 0.77118
+   },
+   {
+    "rank": 5,
+    "id": "3cad59d4-4b52-570c-bf81-86b23fcf0851",
+    "page": 62,
+    "disease_no": 14,
+    "score": 0.76731
+   }
+  ]
+ },
+ {
+  "query_id": "t03",
+  "query": "Trong viêm quanh Implant, xương bị tiêu đến mức nào thì nên tháo Implant ra?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "fcf72383-5eb4-5c6d-8a2b-7a736bd657c7",
+    "page": 183,
+    "disease_no": 52,
+    "score": 0.81138
+   },
+   {
+    "rank": 2,
+    "id": "5f1d32ac-cb93-5036-b9a0-7bc338d1b093",
+    "page": 183,
+    "disease_no": 52,
+    "score": 0.78995
+   },
+   {
+    "rank": 3,
+    "id": "36753f15-3481-513a-9946-6c386680de86",
+    "page": 183,
+    "disease_no": 52,
+    "score": 0.78486
+   },
+   {
+    "rank": 4,
+    "id": "ba5a13eb-2d0a-5fd4-8189-a64d9fea4670",
+    "page": 182,
+    "disease_no": 52,
+    "score": 0.77362
+   },
+   {
+    "rank": 5,
+    "id": "f95402c3-5dec-55d7-a548-75c5d86f8c68",
+    "page": 182,
+    "disease_no": 52,
+    "score": 0.76313
+   }
+  ]
+ },
+ {
+  "query_id": "t04",
+  "query": "Viêm tuyến nước bọt mang tai mạn tính trong trường hợp nào phải mổ, và mổ như thế nào?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "9e7cd407-9bcb-55d6-b655-aa8b2f0ff68c",
+    "page": 154,
+    "disease_no": 43,
+    "score": 0.78626
+   },
+   {
+    "rank": 2,
+    "id": "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+    "page": 153,
+    "disease_no": 43,
+    "score": 0.7848
+   },
+   {
+    "rank": 3,
+    "id": "ac4119f2-8835-5bf2-81dd-d91d228a5ca3",
+    "page": 189,
+    "disease_no": 53,
+    "score": 0.73819
+   },
+   {
+    "rank": 4,
+    "id": "6893fcb8-ed75-5147-9e75-6c769e5a181f",
+    "page": 156,
+    "disease_no": 44,
+    "score": 0.73602
+   },
+   {
+    "rank": 5,
+    "id": "80fedcba-7ff3-5e2d-aba7-b5b816e6695f",
+    "page": 153,
+    "disease_no": 43,
+    "score": 0.73139
+   }
+  ]
+ },
+ {
+  "query_id": "t05",
+  "query": "Dính khớp thái dương hàm ở mức độ nào thì chỉ cần điều trị bảo tồn, và điều trị bằng cách nào?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "7e54b1db-578f-5c4c-9a33-2cc6efc26a18",
+    "page": 200,
+    "disease_no": 57,
+    "score": 0.79974
+   },
+   {
+    "rank": 2,
+    "id": "cd983cb9-15ab-590a-bb9e-f93e5749262b",
+    "page": 199,
+    "disease_no": 57,
+    "score": 0.78492
+   },
+   {
+    "rank": 3,
+    "id": "6f9112f2-fcfd-58d0-ada3-5ccfd80cb646",
+    "page": 199,
+    "disease_no": 57,
+    "score": 0.77643
+   },
+   {
+    "rank": 4,
+    "id": "38b29950-fa65-50b4-9083-08befbfe4562",
+    "page": 200,
+    "disease_no": 57,
+    "score": 0.76433
+   },
+   {
+    "rank": 5,
+    "id": "83643e20-b665-56d0-b580-b1f067b94fd3",
+    "page": 200,
+    "disease_no": 57,
+    "score": 0.75531
+   }
+  ]
+ },
+ {
+  "query_id": "t06",
+  "query": "Quyết định ban hành tài liệu hướng dẫn này có hiệu lực từ khi nào?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "f3227df0-785f-5ae0-b963-1f27d7f6754b",
+    "page": 1,
+    "disease_no": null,
+    "score": 0.65124
+   },
+   {
+    "rank": 2,
+    "id": "11885c99-55d7-5b3e-b7c4-4ce44df99b9f",
+    "page": 2,
+    "disease_no": null,
+    "score": 0.65051
+   },
+   {
+    "rank": 3,
+    "id": "e9c8e995-c7a6-500f-a522-ad62a9b3f679",
+    "page": 3,
+    "disease_no": null,
+    "score": 0.60499
+   },
+   {
+    "rank": 4,
+    "id": "b8b253d7-d150-5908-9a97-1edd2526b9de",
+    "page": 103,
+    "disease_no": 24,
+    "score": 0.57785
+   },
+   {
+    "rank": 5,
+    "id": "fa0218cb-53ed-57a3-96f0-bb7992e24195",
+    "page": 39,
+    "disease_no": 8,
+    "score": 0.56807
+   }
+  ]
+ }
+]

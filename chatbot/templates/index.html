@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>RHM Agent · Day 7</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<style>
+:root {
+  /* Light clinical palette (no dark mode): white, mint tint, teal accent */
+  color-scheme: light;
+  --bg: #ffffff;
+  --page: #f6fbfa;
+  --tint: #eef6f5;
+  --tint-2: #dcebe8;
+  --line: #e3eeec;
+  --text: #13302d;
+  --muted: #5a716d;
+  --faint: #98aaa7;
+  --accent: #0f8a8f;
+  --accent-ink: #0b6f73;
+  --accent-soft: #e5f4f4;
+  --ok: #1e7a3c;
+  --warn: #a35c00;
+  --err: #c0362c;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  --sans: 'Be Vietnam Pro', system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--page); color: var(--text); font-family: var(--sans); font-size: 15px; line-height: 1.7; letter-spacing: -0.003em; -webkit-font-smoothing: antialiased; }
+button, select { font: inherit; color: inherit; }
+.app { display: grid; grid-template-rows: auto 1fr auto; height: 100vh; width: 100%; padding: 0 clamp(16px, 3vw, 48px); background: var(--bg); }
+
+header { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; padding: 22px 0 14px; flex-wrap: wrap; border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 10px; }
+.cross { width: 28px; height: 28px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; flex: none; }
+.title { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; margin: 0; }
+.subtitle { font-size: 12.5px; color: var(--muted); margin-top: 3px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.status { display: inline-flex; align-items: center; gap: 6px; }
+.status::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--faint); }
+.status.ready::before { background: var(--ok); }
+.status.warming::before { background: var(--warn); animation: pulse 1s ease-in-out infinite; }
+.status.failed::before { background: var(--err); }
+@keyframes pulse { 50% { opacity: .3; } }
+
+.controls { display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap; }
+.control { display: flex; flex-direction: column; gap: 4px; }
+.control label { font-size: 11.5px; font-weight: 500; color: var(--muted); }
+.control select { background: var(--bg); border: 1px solid var(--tint-2); border-radius: 10px; padding: 7px 10px; font-size: 13.5px; color: var(--text); min-width: 0; cursor: pointer; }
+#disease { width: 250px; text-overflow: ellipsis; }
+#topk { width: 64px; }
+.control select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+main { overflow-y: auto; padding: 16px 0 24px; scrollbar-width: thin; scrollbar-color: var(--tint-2) transparent; }
+
+.disclaimer { background: var(--accent-soft); border-left: 3px solid var(--accent); padding: 10px 14px; border-radius: 6px; font-size: 13px; color: var(--muted); margin: 0 0 18px; }
+.disclaimer strong { color: var(--text); }
+
+.intro p { margin: 0 0 16px; color: var(--muted); max-width: 60ch; }
+.scope { font-size: 12px; font-weight: 600; color: var(--faint); margin: 12px 0 6px; text-transform: uppercase; letter-spacing: .06em; }
+.samples { list-style: none; margin: 0; padding: 0; }
+.samples button { display: grid; grid-template-columns: 96px 1fr; gap: 12px; align-items: baseline; border: 0; background: none; text-align: left; padding: 10px 12px; margin: 0 -12px; width: calc(100% + 24px); border-radius: 10px; cursor: pointer; }
+.samples button:hover { background: var(--tint); }
+.samples button:focus-visible { outline: 2px solid var(--accent); }
+.samples .lvl { font-size: 12px; font-weight: 500; color: var(--accent); }
+
+.turn { padding: 22px 0; }
+.turn + .turn { border-top: 1px dashed var(--line); }
+.q { background: var(--accent-soft); color: var(--text); border-radius: 16px 16px 4px 16px; padding: 10px 16px; margin-left: auto; width: fit-content; max-width: min(70%, 900px); white-space: pre-wrap; overflow-wrap: anywhere; font-weight: 500; }
+.a { margin-top: 16px; }
+.a-meta { display: none; }
+.a-meta .st-ok { color: var(--ok); }
+.a-meta .st-run { color: var(--warn); }
+.a-meta .st-err { color: var(--err); }
+.a-meta .dot::before { content: '●'; margin-right: 6px; font-size: 9px; vertical-align: 1px; }
+
+.md { overflow-wrap: anywhere; }
+.md > :first-child { margin-top: 0; }
+.md > :last-child { margin-bottom: 0; }
+.md h1, .md h2, .md h3, .md h4 { font-size: 15px; font-weight: 600; margin: 20px 0 6px; }
+.md p { margin: 8px 0; }
+.md ul, .md ol { margin: 8px 0; padding-left: 20px; }
+.md li { margin: 3px 0; }
+.md li::marker { color: var(--faint); }
+.md strong { font-weight: 600; color: var(--accent-ink); }
+.md a { color: var(--accent); text-decoration: none; }
+.md code { font-family: var(--mono); font-size: 12.5px; background: var(--tint); padding: 1px 5px; border-radius: 4px; }
+.md pre { background: var(--tint); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+.md blockquote { margin: 10px 0; padding: 8px 14px; background: var(--tint); border-radius: 8px; color: var(--muted); }
+.md .cite { font-size: 11px; font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 1px 6px; border-radius: 999px; white-space: nowrap; vertical-align: 1px; }
+.caret { display: inline-block; width: 7px; height: 15px; background: var(--accent); margin-left: 2px; vertical-align: -2px; animation: blink 1s steps(2) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* Compact, low-key expandable panels (retrieval details, prompt, sources) */
+.panels { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; align-items: flex-start; }
+.panel { font-size: 12px; line-height: 1.5; }
+.panels > .panel[open] { flex-basis: 100%; }
+.panel > summary { list-style: none; cursor: pointer; font-size: 11.5px; font-weight: 500; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); user-select: none; }
+.panel > summary:hover { background: var(--tint); color: var(--text); }
+.panel[open] > summary { background: var(--tint); color: var(--text); }
+.panel > summary::-webkit-details-marker { display: none; }
+.panel > summary .chev { display: inline-block; font-size: 10px; transition: transform .15s; color: var(--faint); }
+.panel[open] > summary .chev { transform: rotate(90deg); }
+.panel-body { margin-top: 6px; padding: 8px 10px; border-radius: 10px; background: var(--page); border: 1px solid var(--line); }
+
+.kv { display: grid; grid-template-columns: 84px 1fr; gap: 2px 10px; margin: 0; font-size: 12px; }
+.kv dt { color: var(--faint); }
+.kv dd { margin: 0; overflow-wrap: anywhere; color: var(--muted); }
+.kv .query { font-weight: 600; color: var(--text); }
+.kv .note-inline { color: var(--faint); font-size: 11px; margin-left: 6px; }
+.prompt { margin-top: 6px; }
+.prompt > summary { font-size: 11px; padding: 1px 8px; }
+.prompt pre { margin: 6px 0 0; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-family: var(--mono); font-size: 10.5px; line-height: 1.5; max-height: 220px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--muted); }
+.prompt .role { color: var(--accent); font-weight: 500; }
+
+.src-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+/* Each chunk is collapsed to one line; click to expand the full text */
+.src { background: var(--bg); border: 1px solid var(--line); border-left: 2px solid var(--accent); border-radius: 8px; }
+.src > summary { list-style: none; cursor: pointer; padding: 5px 10px; display: grid; grid-template-columns: auto 1fr; gap: 0 8px; align-items: baseline; border-radius: 8px; }
+.src > summary::-webkit-details-marker { display: none; }
+.src > summary:hover { background: var(--tint); }
+.src > summary .chev { font-size: 10px; color: var(--faint); transition: transform .15s; }
+.src[open] > summary .chev { transform: rotate(90deg); }
+.src[open] > summary { border-bottom: 1px dashed var(--line); border-radius: 8px 8px 0 0; }
+.src-head { display: flex; gap: 6px; flex-wrap: wrap; font-size: 11px; color: var(--faint); min-width: 0; }
+.src-head .cite { color: var(--accent); font-weight: 600; }
+.src-head .sep { color: var(--tint-2); }
+.src-preview { grid-column: 2; font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.src[open] .src-preview { display: none; }
+.src-text { font-size: 12.5px; line-height: 1.6; color: var(--text); white-space: pre-wrap; overflow-wrap: anywhere; padding: 8px 12px 10px 28px; }
+
+.thinking { font-size: 13px; color: var(--muted); }
+.thinking::after { content: ''; animation: dots 1.4s steps(4) infinite; }
+@keyframes dots { 0% { content: ''; } 25% { content: '.'; } 50% { content: '..'; } 75% { content: '...'; } }
+.error-msg { color: var(--err); }
+
+footer { padding: 14px 0 20px; border-top: 1px solid var(--line); }
+.composer { display: flex; gap: 8px; align-items: flex-end; background: var(--bg); border: 1px solid var(--tint-2); border-radius: 16px; padding: 8px 8px 8px 16px; transition: border-color .15s, box-shadow .15s; }
+.composer:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.composer textarea { flex: 1; border: 0; outline: 0; resize: none; background: none; color: var(--text); font: inherit; max-height: 160px; padding: 7px 0; }
+.composer textarea::placeholder { color: var(--faint); }
+.send { border: 0; background: var(--accent); color: #fff; font-weight: 600; font-size: 14px; padding: 8px 20px; border-radius: 12px; cursor: pointer; }
+.send:hover { background: var(--accent-ink); }
+.send:disabled { opacity: .4; cursor: default; }
+.note { font-size: 12px; color: var(--faint); margin-top: 8px; }
+
+@media (max-width: 600px) {
+  header { padding-top: 16px; }
+  .samples button { grid-template-columns: 1fr; gap: 2px; }
+  .q { max-width: 92%; }
+  #disease { width: 100%; max-width: 250px; }
+  .kv { grid-template-columns: 1fr; }
+}
+
+/* ---------------------------------------------------------------- tabs */
+.tabs { display: inline-flex; gap: 2px; background: var(--tint); padding: 3px; border-radius: 10px; }
+.tabs button { border: 0; background: none; padding: 6px 14px; border-radius: 8px; font-size: 13.5px; font-weight: 500; color: var(--muted); cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--bg); color: var(--text); box-shadow: 0 1px 2px rgba(16, 48, 45, .08); }
+.tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.head-right { display: flex; gap: 14px; align-items: flex-end; flex-wrap: wrap; }
+body[data-view="bench"] .controls, body[data-view="bench"] footer { display: none; }
+
+/* ---------------------------------------------------------------- benchmark view */
+#bench { overflow-y: auto; padding: 18px 0 32px; }
+.b-intro { color: var(--muted); font-size: 13.5px; margin: 0 0 14px; max-width: 90ch; }
+.b-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 10px; }
+.b-card { border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; background: var(--bg); }
+.b-card.sel { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.b-card h3 { margin: 0; font-size: 15px; display: flex; align-items: center; gap: 8px; }
+.b-card .tag { font-size: 11px; font-weight: 600; color: #fff; background: var(--accent); padding: 1px 8px; border-radius: 999px; }
+.b-card .desc { font-size: 12px; color: var(--muted); margin: 2px 0 10px; }
+.b-metrics { display: grid; grid-template-columns: auto 1fr auto; gap: 5px 10px; align-items: center; font-size: 12.5px; }
+.b-metrics .k { color: var(--muted); }
+.b-metrics .v { font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.bar { height: 6px; background: var(--tint); border-radius: 999px; overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+.b-sep { grid-column: 1 / -1; border-top: 1px dashed var(--line); margin: 3px 0; }
+.b-select { font-size: 12.5px; color: var(--muted); background: var(--page); border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; margin: 0 0 18px; }
+.b-select strong { color: var(--accent-ink); }
+
+.b-toolbar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 0 0 10px; position: sticky; top: -18px; background: var(--bg); padding: 8px 0; z-index: 2; }
+.b-toolbar select { background: var(--bg); border: 1px solid var(--tint-2); border-radius: 10px; padding: 6px 10px; font-size: 13px; }
+.b-toolbar label.chk { font-size: 13px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+.b-toolbar .count { margin-left: auto; font-size: 12.5px; color: var(--faint); }
+.b-legend { font-size: 11.5px; color: var(--faint); display: flex; gap: 14px; flex-wrap: wrap; margin: 0 0 8px; }
+
+.b-head, .bq > summary { display: grid; grid-template-columns: 52px 54px minmax(0, 1fr) repeat(3, 92px); gap: 10px; align-items: center; }
+.b-head { font-size: 11.5px; font-weight: 600; color: var(--faint); padding: 0 12px 6px; }
+.b-head .c { text-align: center; }
+.b-list { display: flex; flex-direction: column; gap: 6px; }
+.bq { border: 1px solid var(--line); border-radius: 12px; background: var(--bg); }
+.bq > summary { list-style: none; cursor: pointer; padding: 10px 12px; border-radius: 12px; }
+.bq > summary::-webkit-details-marker { display: none; }
+.bq > summary:hover { background: var(--page); }
+.bq[open] { border-color: var(--tint-2); box-shadow: 0 2px 10px rgba(16, 48, 45, .05); }
+.bq[open] > summary { border-bottom: 1px solid var(--line); border-radius: 12px 12px 0 0; }
+.bq .qid { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.split { font-size: 11px; font-weight: 600; padding: 1px 8px; border-radius: 999px; justify-self: start; }
+.split.dev { background: var(--tint); color: var(--muted); }
+.split.test { background: #fff3e0; color: #9a5b00; }
+.bq .qtext { font-size: 14px; min-width: 0; }
+.bq .qtext .type { font-size: 11px; color: var(--faint); margin-left: 6px; }
+.bq .qtext .flt { font-size: 11px; color: var(--accent); background: var(--accent-soft); padding: 0 6px; border-radius: 999px; margin-left: 6px; white-space: nowrap; }
+.cell { text-align: center; font-size: 12px; font-weight: 600; border-radius: 8px; padding: 4px 2px; line-height: 1.3; }
+.cell small { display: block; font-weight: 500; font-size: 10.5px; opacity: .85; }
+.cell.r1 { background: #e3f5e8; color: #1e7a3c; }
+.cell.r23 { background: #fff4dc; color: #8a5a00; }
+.cell.pg { background: #fdeceb; color: #b3261e; }
+.cell.miss { background: #fdeceb; color: #b3261e; }
+
+.bq-body { padding: 12px 14px 14px; }
+.gold { display: grid; grid-template-columns: 120px 1fr; gap: 4px 12px; font-size: 13px; margin-bottom: 12px; }
+.gold dt { color: var(--faint); font-size: 12px; }
+.gold dd { margin: 0; }
+.gold .ev { background: #fff7d6; border-radius: 6px; padding: 1px 6px; }
+.gold .note { color: var(--muted); font-size: 12.5px; }
+.cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.col { border: 1px solid var(--line); border-radius: 10px; padding: 8px; background: var(--page); min-width: 0; }
+.col h4 { margin: 0 0 6px; font-size: 13px; display: flex; justify-content: space-between; align-items: center; gap: 6px; flex-wrap: wrap; }
+.col h4 .res { font-size: 11px; font-weight: 600; }
+.col .gr { font-size: 11.5px; color: var(--muted); margin: 0 0 6px; }
+.col .gr b { color: var(--text); }
+.ch { border: 1px solid var(--line); border-left: 3px solid var(--tint-2); border-radius: 8px; background: var(--bg); margin-top: 5px; }
+.ch.hit { border-left-color: var(--ok); }
+.ch.pageonly { border-left-color: var(--warn); }
+.ch > summary { list-style: none; cursor: pointer; padding: 5px 8px; font-size: 11px; color: var(--muted); }
+.ch > summary::-webkit-details-marker { display: none; }
+.ch > summary .line1 { display: flex; gap: 6px; flex-wrap: wrap; align-items: baseline; }
+.ch > summary .rk { font-weight: 700; color: var(--text); }
+.ch > summary .flag { font-weight: 600; }
+.ch.hit .flag { color: var(--ok); }
+.ch.pageonly .flag { color: var(--warn); }
+.ch:not(.hit):not(.pageonly) .flag { color: var(--faint); }
+.ch > summary .pv { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--muted); font-size: 11.5px; margin-top: 2px; }
+.ch[open] > summary .pv { display: none; }
+.ch[open] > summary { border-bottom: 1px dashed var(--line); }
+.ch .full { font-size: 12px; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; padding: 6px 8px 8px; }
+.ch mark { background: #ffe58a; border-radius: 3px; padding: 0 1px; }
+.b-empty { color: var(--faint); font-size: 13px; padding: 20px 0; }
+
+@media (max-width: 980px) {
+  .b-cards, .cols { grid-template-columns: 1fr; }
+  .b-head { display: none; }
+  .bq > summary { grid-template-columns: 44px 48px minmax(0, 1fr); }
+  .bq > summary .cell { grid-row: 2; }
+  .gold { grid-template-columns: 1fr; }
+}
+/* ---------------------------------------------------------------- Day 7 additions */
+#config { width: 190px; }
+.a-meta { display: flex; gap: 10px; flex-wrap: wrap; font-size: 11.5px; color: var(--faint); margin-bottom: 8px; }
+.steps { list-style: none; margin: 0 0 12px; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.step { font-size: 12.5px; color: var(--muted); display: grid; grid-template-columns: 62px 1fr; gap: 8px; align-items: baseline; }
+.step .n { font-size: 11px; font-weight: 600; color: var(--accent); }
+.step .sq { font-weight: 600; color: var(--text); }
+.step .add { font-size: 11.5px; color: var(--faint); }
+.step .add .cite { color: var(--accent); font-weight: 600; }
+.verdict { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+.verdict.ok { background: #e3f5e8; color: var(--ok); }
+.verdict.abstain { background: #fff4dc; color: #8a5a00; }
+.src.cited { border-left-color: var(--ok); }
+.src:not(.cited) { border-left-color: var(--tint-2); }
+.b-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 0 0 18px; }
+.b-table th, .b-table td { padding: 6px 10px; border-bottom: 1px solid var(--line); text-align: right; font-variant-numeric: tabular-nums; }
+.b-table th:first-child, .b-table td:first-child { text-align: left; }
+.b-table th { font-size: 11.5px; color: var(--faint); font-weight: 600; }
+.b-table tr.best td { font-weight: 600; color: var(--accent-ink); }
+.b-h { font-size: 13px; font-weight: 600; color: var(--muted); margin: 18px 0 8px; text-transform: uppercase; letter-spacing: .05em; }
+.cell.ab { background: #fff4dc; color: #8a5a00; }
+.cell.na { background: var(--tint); color: var(--faint); }
+.run { border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; background: var(--page); min-width: 0; }
+.run h4 { margin: 0 0 4px; font-size: 13px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.run .why { font-size: 12px; color: var(--muted); margin: 2px 0 6px; }
+.run .ans { font-size: 12.5px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; margin: 6px 0; }
+.run .sl { font-size: 11.5px; color: var(--muted); margin: 2px 0; }
+@media (max-width: 600px) { #config { width: 100%; } .step { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body data-view="chat">
+<div class="app">
+  <header>
+    <div>
+      <div class="brand">
+        <span class="cross" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg>
+        </span>
+        <h1 class="title">RHM Agent</h1>
+      </div>
+      <div class="subtitle">
+        <span>Agentic RAG · Hướng dẫn Răng Hàm Mặt · QĐ 3108/QĐ-BYT</span>
+        <span class="status warming" id="status">đang khởi động</span>
+      </div>
+    </div>
+    <div class="head-right">
+    <nav class="tabs" role="tablist" aria-label="Chế độ xem">
+      <button type="button" role="tab" data-view="chat" aria-selected="true">Hỏi đáp</button>
+      <button type="button" role="tab" data-view="bench" aria-selected="false">Benchmark</button>
+    </nav>
+    <div class="controls">
+      <div class="control">
+        <label for="config">Cấu hình agent</label>
+        <select id="config">
+          {% for c in configs %}<option value="{{ c.name }}" title="{{ c.description }}" {% if c.name == default %}selected{% endif %}>{{ c.name }}{% if c.name == default %} (đã chọn){% endif %}</option>{% endfor %}
+        </select>
+      </div>
+      <div class="control">
+        <label for="disease">Bệnh (lọc)</label>
+        <select id="disease">
+          <option value="">— Mọi bệnh —</option>
+          {% for d in diseases %}<option value="{{ d.no }}">{{ d.no }}. {{ d.title }}</option>{% endfor %}
+        </select>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <main id="chat">
+    <div class="disclaimer">
+      <strong>Lưu ý:</strong> công cụ chỉ tra cứu nội dung tài liệu hướng dẫn chuyên môn do Bộ Y tế ban hành. <strong>Không thay thế bác sĩ</strong> và không đưa chẩn đoán cho người bệnh cụ thể.
+    </div>
+    <section class="intro" id="intro">
+      <p>Agent tự tìm trong tài liệu (có thể nhiều lượt), trả lời kèm mã nguồn [S#], và nói rõ khi tài liệu không đủ bằng chứng. Agent dùng đúng prompt và cấu hình như khi chạy benchmark.</p>
+      <p class="scope">Ví dụ</p>
+      <ul class="samples">
+        {% for s in samples %}<li><button type="button" data-q="{{ s.q }}" data-disease="{{ s.disease or '' }}"><span class="lvl">{% if s.disease %}bệnh {{ s.disease }}{% else %}mọi bệnh{% endif %}</span><span>{{ s.q }}</span></button></li>{% endfor %}
+      </ul>
+    </section>
+  </main>
+
+  <main id="bench" hidden></main>
+
+  <footer>
+    <form class="composer" id="form">
+      <textarea id="input" rows="1" placeholder="Hỏi về chẩn đoán, điều trị, phòng bệnh…" aria-label="Câu hỏi"></textarea>
+      <button class="send" id="send" type="submit">Hỏi</button>
+    </form>
+  </footer>
+</div>
+
+<script>
+const chat = document.getElementById('chat');
+const form = document.getElementById('form');
+const input = document.getElementById('input');
+const sendBtn = document.getElementById('send');
+const diseaseSel = document.getElementById('disease');
+const configSel = document.getElementById('config');
+const statusEl = document.getElementById('status');
+marked.setOptions({ gfm: true, breaks: false });
+
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+function renderMarkdown(target, text) {
+  const html = DOMPurify.sanitize(marked.parse(text || ''));
+  target.innerHTML = html.replace(/\[(S\d+)\]/g, '<span class="cite">$1</span>');
+  target.querySelectorAll('a').forEach(a => { a.target = '_blank'; a.rel = 'noopener noreferrer'; });
+}
+
+async function pollHealth() {
+  for (let i = 0; i < 90; i++) {
+    try {
+      const h = await (await fetch('/api/health')).json();
+      if (h.ready) { statusEl.className = 'status ready'; statusEl.textContent = 'sẵn sàng'; statusEl.title = `index ${h.index_s}s · dense ${h.dense_s}s`; return; }
+      if (h.error) { statusEl.className = 'status failed'; statusEl.textContent = 'khởi động lỗi'; statusEl.title = h.error; return; }
+    } catch (e) { /* server đang khởi động */ }
+    await new Promise(r => setTimeout(r, 1000));
+  }
+}
+pollHealth();
+
+function sourceItem(s, cited) {
+  const li = el('li');
+  const item = el('details', 'src' + (cited ? ' cited' : ''));
+  const head = el('summary');
+  head.appendChild(el('span', 'chev', '›'));
+  const h = el('div', 'src-head');
+  h.appendChild(el('span', 'cite', '[' + s.ref + ']'));
+  const add = t => { h.appendChild(el('span', 'sep', '·')); h.appendChild(el('span', null, t)); };
+  if (s.disease_no) add('Bệnh ' + s.disease_no + '. ' + s.disease);
+  else if (s.section) add(s.section);
+  if (s.subsection) add(s.subsection);
+  add('trang ' + (s.pages || []).join(', '));
+  add(cited ? 'được trích' : 'không trích');
+  head.appendChild(h);
+  head.appendChild(el('span', 'src-preview', (s.text || '').replace(/\s+/g, ' ').trim()));
+  item.appendChild(head);
+  item.appendChild(el('div', 'src-text', s.text));
+  li.appendChild(item);
+  return li;
+}
+function panel(title, bodyNode) {
+  const d = el('details', 'panel');
+  const sm = el('summary');
+  sm.appendChild(el('span', 'chev', '›'));
+  sm.appendChild(el('span', null, title));
+  d.appendChild(sm);
+  const b = el('div', 'panel-body');
+  b.appendChild(bodyNode);
+  d.appendChild(b);
+  return d;
+}
+
+async function* sseEvents(response) {
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder('utf-8');
+  let buf = '';
+  while (true) {
+    const { value, done } = await reader.read();
+    if (done) break;
+    buf += decoder.decode(value, { stream: true });
+    let idx;
+    while ((idx = buf.indexOf('\n\n')) >= 0) {
+      const block = buf.slice(0, idx);
+      buf = buf.slice(idx + 2);
+      let event = 'message', data = '';
+      block.split('\n').forEach(line => {
+        if (line.startsWith('event:')) event = line.slice(6).trim();
+        else if (line.startsWith('data:')) data += line.slice(5).trim();
+      });
+      if (data) yield { event, data: JSON.parse(data) };
+    }
+  }
+}
+
+input.addEventListener('input', () => { input.style.height = 'auto'; input.style.height = input.scrollHeight + 'px'; });
+input.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); ask(); } });
+form.addEventListener('submit', e => { e.preventDefault(); ask(); });
+document.querySelectorAll('.samples button').forEach(b => b.addEventListener('click', () => {
+  input.value = b.dataset.q; diseaseSel.value = b.dataset.disease || ''; ask();
+}));
+
+async function ask() {
+  const query = input.value.trim();
+  if (!query || sendBtn.disabled) return;
+  document.getElementById('intro')?.remove();
+  input.value = ''; input.style.height = 'auto';
+  const diseaseNo = diseaseSel.value ? parseInt(diseaseSel.value, 10) : null;
+
+  const turn = el('section', 'turn');
+  turn.appendChild(el('div', 'q', query));
+  const answer = el('div', 'a');
+  const meta = el('div', 'a-meta');
+  answer.appendChild(meta);
+  const steps = el('ol', 'steps');
+  answer.appendChild(steps);
+  const body = el('div', 'md');
+  const thinking = el('div', 'thinking', 'agent đang tìm trong tài liệu' + (diseaseNo ? ' · bệnh ' + diseaseNo : ''));
+  body.appendChild(thinking);
+  answer.appendChild(body);
+  const panels = el('div', 'panels');
+  answer.appendChild(panels);
+  turn.appendChild(answer);
+  chat.appendChild(turn);
+  turn.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  sendBtn.disabled = true;
+
+  const sources = [];
+  let n = 0, info = null;
+  try {
+    const res = await fetch('/api/ask/stream', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query, config: configSel.value, disease_no: diseaseNo }),
+    });
+    if (!res.ok) { const d = await res.json().catch(() => ({})); throw new Error(typeof d.detail === 'string' ? d.detail : 'Yêu cầu không hợp lệ (' + res.status + ').'); }
+    for await (const { event, data } of sseEvents(res)) {
+      if (event === 'meta') {
+        info = data;
+        [data.config, data.retriever, 'top-' + data.top_k, 'tối đa ' + data.max_searches + ' lượt', data.model]
+          .concat(data.filter ? ['lọc bệnh ' + data.filter.disease_no] : []).forEach(t => meta.appendChild(el('span', null, t)));
+      } else if (event === 'search') {
+        n += 1;
+        const li = el('li', 'step');
+        li.appendChild(el('span', 'n', 'Lượt ' + n));
+        const right = el('span');
+        right.appendChild(el('span', null, 'tìm '));
+        right.appendChild(el('span', 'sq', '“' + data.query + '”'));
+        const add = el('div', 'add');
+        if (data.added.length) {
+          add.appendChild(document.createTextNode('thêm '));
+          data.added.forEach((s, i) => { if (i) add.appendChild(document.createTextNode(', ')); add.appendChild(el('span', 'cite', s.ref)); add.appendChild(document.createTextNode(' tr.' + s.pages.join('-'))); });
+        } else add.appendChild(document.createTextNode('không có đoạn mới'));
+        if (data.skipped_duplicate) add.appendChild(document.createTextNode(' · ' + data.skipped_duplicate + ' trùng'));
+        if (data.skipped_budget) add.appendChild(document.createTextNode(' · ' + data.skipped_budget + ' bỏ vì hết budget'));
+        add.appendChild(document.createTextNode(' · ' + data.ms + ' ms · context ' + data.context_chars + ' ký tự'));
+        right.appendChild(add);
+        li.appendChild(right);
+        steps.appendChild(li);
+        data.added.forEach(s => sources.push(s));
+        thinking.textContent = 'agent đang đọc ' + sources.length + ' đoạn';
+      } else if (event === 'answer') {
+        body.innerHTML = '';
+        const abstain = data.status === 'abstain';
+        const v = el('span', 'verdict ' + (abstain ? 'abstain' : 'ok'), abstain ? 'Không đủ bằng chứng' : 'Có bằng chứng · ' + data.citation_refs.join(' '));
+        answer.insertBefore(v, body);
+        renderMarkdown(body, data.answer || '(model không trả nội dung)');
+        if (sources.length) {
+          const list = el('ul', 'src-list');
+          sources.forEach(s => list.appendChild(sourceItem(s, data.citation_refs.includes(s.ref))));
+          panels.appendChild(panel(sources.length + ' đoạn trong context', list));
+        }
+        if (data.invalid_refs.length) panels.appendChild(el('span', 'note', 'mã không hợp lệ: ' + data.invalid_refs.join(', ')));
+      } else if (event === 'done') {
+        [data.searches + ' lượt tìm', data.seconds + 's', (data.prompt_tokens + data.completion_tokens).toLocaleString('vi-VN') + ' tokens', '$' + Number(data.llm_cost_usd).toFixed(5)]
+          .forEach(t => meta.appendChild(el('span', null, t)));
+      } else if (event === 'error') {
+        throw new Error(data.detail);
+      }
+    }
+  } catch (err) {
+    body.innerHTML = '';
+    body.appendChild(el('p', 'error-msg', err.message || 'Không kết nối được server.'));
+  } finally {
+    sendBtn.disabled = false;
+    input.focus();
+  }
+}
+
+// ================================================================ tabs + benchmark view
+const benchEl = document.getElementById('bench');
+let benchData = null;
+function setView(view) {
+  document.body.dataset.view = view;
+  document.querySelectorAll('.tabs button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.view === view)));
+  chat.hidden = view !== 'chat';
+  benchEl.hidden = view !== 'bench';
+  if (view === 'bench' && !benchData) loadBench();
+  try { localStorage.setItem('rhm7-view', view); } catch (e) { /* storage có thể bị chặn */ }
+}
+document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => setView(b.dataset.view)));
+
+const fmt = f => f ? f.text : '—';
+function retrievalTable(block, title) {
+  const wrap = el('div');
+  wrap.appendChild(el('div', 'b-h', title));
+  const t = el('table', 'b-table');
+  t.innerHTML = '<tr><th>Phương pháp</th><th>Hit@1</th><th>Evidence Hit@3</th><th>Hit@5</th><th>MRR@10</th><th>ms/query</th></tr>';
+  const methods = block.summary.methods;
+  const best = Math.max(...Object.values(methods).map(m => m.evidence_hit3.n));
+  Object.entries(methods).forEach(([name, m]) => {
+    const tr = el('tr', m.evidence_hit3.n === best ? 'best' : '');
+    [name, fmt(m.hit1), fmt(m.evidence_hit3), fmt(m.hit5), m.mrr10.toFixed(3), m.median_ms].forEach(v => tr.appendChild(el('td', null, String(v))));
+    t.appendChild(tr);
+  });
+  wrap.appendChild(t);
+  return wrap;
+}
+function agentCards(block, split, chosen) {
+  const cards = el('div', 'b-cards');
+  benchData.configs.forEach(cfg => {
+    const s = block.summary && block.summary[cfg.name];
+    if (!s) return;
+    const c = el('div', 'b-card' + (cfg.name === chosen ? ' sel' : ''));
+    const h = el('h3', null, cfg.name);
+    if (cfg.name === chosen) h.appendChild(el('span', 'tag', 'đã chọn'));
+    c.appendChild(h);
+    c.appendChild(el('div', 'desc', cfg.description));
+    const g = el('div', 'b-metrics');
+    const row = (k, v) => { g.appendChild(el('span', 'k', k)); g.appendChild(el('span')); g.appendChild(el('span', 'v', v)); };
+    const a = s.auto, L = s.labeled;
+    if (L) {
+      const ga = L.grounded_answer;
+      row('Điểm trả lời', ga.sum + '/' + 2 * ga.N + ' (2: ' + ga['2'] + ', 1: ' + ga['1'] + ', 0: ' + ga['0'] + ')');
+      row('Citation hỗ trợ', L.citation_validity.n + '/' + L.citation_validity.N);
+      row('Từ chối đúng', L.abstention.n + '/' + L.abstention.N);
+      row('Từ chối nhầm', L.false_abstention.n + '/' + L.false_abstention.N);
+    }
+    row('Context Evidence', a.context_evidence_rate);
+    row('Lượt tìm TB', String(a.mean_searches));
+    row('Thời gian TB', a.mean_seconds + ' s');
+    row('Chi phí LLM', '$' + a.total_llm_cost_usd);
+    if (a.errors) row('Lỗi', String(a.errors));
+    c.appendChild(g);
+    cards.appendChild(c);
+  });
+  return cards;
+}
+function cell(run, q) {
+  if (!run) return el('span', 'cell na', '—');
+  const r = run.review;
+  if (run.status === 'error') return el('span', 'cell miss', 'lỗi');
+  if (!q.answerable) {
+    const ok = run.status === 'abstain';
+    const c = el('span', 'cell ' + (ok ? 'r1' : 'miss'), ok ? 'từ chối' : 'trả lời');
+    return c;
+  }
+  if (run.status === 'abstain') return el('span', 'cell ab', 'từ chối');
+  if (r && r.answer_grade !== undefined) return el('span', 'cell ' + ['miss', 'r23', 'r1'][r.answer_grade], 'điểm ' + r.answer_grade);
+  return el('span', 'cell na', 'trả lời');
+}
+function highlight(text, gold) {
+  const span = el('div', 'full');
+  let html = text.replace(/[&<>]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[ch]));
+  (gold || []).forEach(g => {
+    const words = g.evidence.split(/\s+/).map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/[&<>]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[ch])));
+    const re = new RegExp(words.join('\\s+'));
+    html = html.replace(re, m => '<mark>' + m + '</mark>');
+  });
+  span.innerHTML = html;
+  return span;
+}
+function questionEl(q, block, names) {
+  const d = el('details', 'bq');
+  const s = el('summary');
+  s.style.gridTemplateColumns = `52px 54px minmax(0,1fr) repeat(${names.length}, 92px)`;
+  s.appendChild(el('span', 'qid', q.id));
+  s.appendChild(el('span', 'split ' + q.split, q.split));
+  const qt = el('span', 'qtext', q.question);
+  if (!q.answerable) qt.appendChild(el('span', 'flt', 'thiếu bằng chứng'));
+  if (q.filter) qt.appendChild(el('span', 'flt', 'lọc bệnh ' + q.filter.disease_no));
+  if (q.type) qt.appendChild(el('span', 'type', q.type));
+  s.appendChild(qt);
+  names.forEach(n => s.appendChild(cell(block.runs[n]?.[q.id], q)));
+  d.appendChild(s);
+  d.addEventListener('toggle', () => {
+    if (!d.open || d.dataset.done) return;
+    d.dataset.done = '1';
+    const b = el('div', 'bq-body');
+    const gold = el('dl', 'gold');
+    const row = (k, v) => { gold.appendChild(el('dt', null, k)); const dd = el('dd'); if (v instanceof Node) dd.appendChild(v); else dd.textContent = v; gold.appendChild(dd); };
+    if (q.answerable) {
+      row('Đáp án mong đợi', q.expected_answer);
+      row('Evidence', el('span', 'ev', q.gold[0].evidence));
+      row('Trang gold', q.gold[0].pages.join(', '));
+    } else {
+      row('Vì sao thiếu', q.absence_reason);
+      row('Đoạn dễ nhầm', 'tr. ' + q.near_miss.page + ': ' + q.near_miss.text);
+    }
+    if (q.note) row('Ghi chú', q.note);
+    b.appendChild(gold);
+    const cols = el('div', 'cols');
+    cols.style.gridTemplateColumns = `repeat(${names.length}, minmax(0,1fr))`;
+    names.forEach(n => {
+      const run = block.runs[n]?.[q.id];
+      const col = el('div', 'run');
+      const h = el('h4', null, n);
+      if (run) h.appendChild(cell(run, q));
+      col.appendChild(h);
+      if (!run) { cols.appendChild(col); return; }
+      if (run.review?.reason) col.appendChild(el('div', 'why', run.review.reason));
+      run.searches.forEach((sr, i) => col.appendChild(el('div', 'sl', (i + 1) + '. “' + sr.query + '” → ' + (Object.keys(sr.added_refs).join(', ') || 'không có đoạn mới'))));
+      const ans = el('div', 'ans md');
+      renderMarkdown(ans, run.answer || run.error || '(rỗng)');
+      col.appendChild(ans);
+      col.appendChild(el('div', 'sl', run.seconds + 's · $' + Number(run.cost || 0).toFixed(5)));
+      run.context.forEach(c => {
+        const hit = q.answerable && q.gold.some(g => c.text.replace(/\s+/g, ' ').includes(g.evidence.replace(/\s+/g, ' ')) && (c.pages || [c.page]).includes(g.page));
+        const ch = el('details', 'ch' + (hit ? ' hit' : ''));
+        const sm = el('summary');
+        const l1 = el('span', 'line1');
+        l1.appendChild(el('span', 'rk', c.ref));
+        l1.appendChild(el('span', null, 'tr.' + (c.pages || [c.page]).join('-') + (c.disease_no ? ' · bệnh ' + c.disease_no : '')));
+        l1.appendChild(el('span', 'flag', hit ? 'có evidence' : (run.citation_refs.includes(c.ref) ? 'được trích' : '')));
+        sm.appendChild(l1);
+        sm.appendChild(el('span', 'pv', c.text.replace(/\s+/g, ' ')));
+        ch.appendChild(sm);
+        ch.appendChild(highlight(c.text, q.answerable ? q.gold : []));
+        col.appendChild(ch);
+      });
+      cols.appendChild(col);
+    });
+    b.appendChild(cols);
+    d.appendChild(b);
+  });
+  return d;
+}
+function renderBench(data) {
+  benchEl.innerHTML = '';
+  const chosen = data.selection?.chosen;
+  benchEl.appendChild(el('p', 'b-intro', 'Kết quả benchmark Day 7 đã chạy (không chạy lại). Dev: 24 câu có đáp án + 2 câu thiếu bằng chứng; test: 5 + 2 câu mới. Chọn cấu hình chỉ dựa trên dev theo artifacts/selection_criteria.md. Điểm trả lời và citation là nhãn chấm tay.'));
+  if (data.selection) {
+    const box = el('div', 'b-select');
+    box.appendChild(el('strong', null, 'Đã chọn: ' + chosen + '. '));
+    box.appendChild(document.createTextNode((data.selection.steps || []).join(' → ')));
+    benchEl.appendChild(box);
+  }
+  ['dev', 'test'].forEach(split => {
+    const ab = data.agent[split];
+    if (ab) { benchEl.appendChild(el('div', 'b-h', 'Agent · ' + split)); benchEl.appendChild(agentCards(ab, split, chosen)); }
+    if (data.retrieval[split]) benchEl.appendChild(retrievalTable(data.retrieval[split], 'Retrieval · ' + split + ' (query gốc, có filter người dùng)'));
+  });
+
+  const toolbar = el('div', 'b-toolbar');
+  const splitSel = el('select');
+  ['dev', 'test'].filter(s => data.agent[s]).forEach(s => splitSel.appendChild(new Option(s, s)));
+  const kind = el('select');
+  [['all', 'Mọi câu'], ['ans', 'Có đáp án'], ['abs', 'Thiếu bằng chứng'], ['bad', 'Có cấu hình sai/từ chối nhầm']].forEach(([v, t]) => kind.appendChild(new Option(t, v)));
+  const count = el('span', 'count');
+  toolbar.append(splitSel, kind, count);
+  benchEl.appendChild(toolbar);
+  const list = el('div', 'b-list');
+  benchEl.appendChild(list);
+  function apply() {
+    list.innerHTML = '';
+    const block = data.agent[splitSel.value];
+    if (!block) return;
+    const names = Object.keys(block.runs);
+    const head = el('div', 'b-head');
+    head.style.gridTemplateColumns = `52px 54px minmax(0,1fr) repeat(${names.length}, 92px)`;
+    ['ID', 'split', 'câu hỏi'].concat(names).forEach((t, i) => head.appendChild(el('span', i > 2 ? 'c' : null, t)));
+    list.appendChild(head);
+    const qs = data.questions.filter(q => q.split === splitSel.value).filter(q => {
+      if (kind.value === 'ans') return q.answerable;
+      if (kind.value === 'abs') return !q.answerable;
+      if (kind.value === 'bad') return names.some(n => { const r = block.runs[n][q.id]; if (!r) return false; return q.answerable ? (r.status !== 'answered' || (r.review && r.review.answer_grade < 2)) : r.status !== 'abstain'; });
+      return true;
+    });
+    qs.forEach(q => list.appendChild(questionEl(q, block, names)));
+    count.textContent = qs.length + ' câu';
+  }
+  [splitSel, kind].forEach(x => x.addEventListener('change', apply));
+  apply();
+}
+async function loadBench() {
+  benchEl.innerHTML = '';
+  benchEl.appendChild(el('p', 'b-empty', 'đang tải kết quả…'));
+  try {
+    const r = await fetch('/api/benchmark');
+    if (!r.ok) throw new Error((await r.json()).detail || r.status);
+    benchData = await r.json();
+    renderBench(benchData);
+  } catch (e) {
+    benchEl.innerHTML = '';
+    benchEl.appendChild(el('p', 'error-msg', 'Không tải được benchmark: ' + e.message));
+  }
+}
+try { if (localStorage.getItem('rhm7-view') === 'bench') setView('bench'); } catch (e) { /* bỏ qua */ }
+</script>
+</body>
+</html>

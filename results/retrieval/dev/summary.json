@@ -1,0 +1,160 @@
+{
+  "split": "dev",
+  "n_questions": 24,
+  "filter": true,
+  "corpus": "data/day6/chunks_B.json (526 chunk, Qdrant day06_rhm_b)",
+  "methods": {
+    "dense": {
+      "retriever": "dense",
+      "hit1": {
+        "n": 16,
+        "N": 24,
+        "rate": 0.667,
+        "text": "16/24"
+      },
+      "evidence_hit3": {
+        "n": 21,
+        "N": 24,
+        "rate": 0.875,
+        "text": "21/24"
+      },
+      "hit5": {
+        "n": 23,
+        "N": 24,
+        "rate": 0.958,
+        "text": "23/24"
+      },
+      "mrr10": 0.798,
+      "misses_hit3": [
+        "d05",
+        "d14",
+        "t02"
+      ],
+      "median_ms": 1191.5,
+      "embedding_api_calls_this_run": 24,
+      "embedding_cost_usd_this_run": 0.0001
+    },
+    "bm25-syllable": {
+      "retriever": "bm25-syllable",
+      "hit1": {
+        "n": 15,
+        "N": 24,
+        "rate": 0.625,
+        "text": "15/24"
+      },
+      "evidence_hit3": {
+        "n": 20,
+        "N": 24,
+        "rate": 0.833,
+        "text": "20/24"
+      },
+      "hit5": {
+        "n": 21,
+        "N": 24,
+        "rate": 0.875,
+        "text": "21/24"
+      },
+      "mrr10": 0.747,
+      "misses_hit3": [
+        "d11",
+        "d12",
+        "d15",
+        "t04"
+      ],
+      "median_ms": 1.8,
+      "embedding_api_calls_this_run": 0,
+      "embedding_cost_usd_this_run": 0.0
+    },
+    "bm25-word": {
+      "retriever": "bm25-word",
+      "hit1": {
+        "n": 15,
+        "N": 24,
+        "rate": 0.625,
+        "text": "15/24"
+      },
+      "evidence_hit3": {
+        "n": 20,
+        "N": 24,
+        "rate": 0.833,
+        "text": "20/24"
+      },
+      "hit5": {
+        "n": 21,
+        "N": 24,
+        "rate": 0.875,
+        "text": "21/24"
+      },
+      "mrr10": 0.719,
+      "misses_hit3": [
+        "d12",
+        "d14",
+        "d18",
+        "t04"
+      ],
+      "median_ms": 5.6,
+      "embedding_api_calls_this_run": 0,
+      "embedding_cost_usd_this_run": 0.0
+    },
+    "bm25-word-title": {
+      "retriever": "bm25-word-title",
+      "hit1": {
+        "n": 18,
+        "N": 24,
+        "rate": 0.75,
+        "text": "18/24"
+      },
+      "evidence_hit3": {
+        "n": 21,
+        "N": 24,
+        "rate": 0.875,
+        "text": "21/24"
+      },
+      "hit5": {
+        "n": 22,
+        "N": 24,
+        "rate": 0.917,
+        "text": "22/24"
+      },
+      "mrr10": 0.814,
+      "misses_hit3": [
+        "d14",
+        "d18",
+        "t04"
+      ],
+      "median_ms": 3.1,
+      "embedding_api_calls_this_run": 0,
+      "embedding_cost_usd_this_run": 0.0
+    },
+    "hybrid": {
+      "retriever": "hybrid-rrf(dense+bm25-word-title)",
+      "hit1": {
+        "n": 18,
+        "N": 24,
+        "rate": 0.75,
+        "text": "18/24"
+      },
+      "evidence_hit3": {
+        "n": 21,
+        "N": 24,
+        "rate": 0.875,
+        "text": "21/24"
+      },
+      "hit5": {
+        "n": 24,
+        "N": 24,
+        "rate": 1.0,
+        "text": "24/24"
+      },
+      "mrr10": 0.826,
+      "misses_hit3": [
+        "d05",
+        "d14",
+        "t02"
+      ],
+      "median_ms": 110.2,
+      "embedding_api_calls_this_run": 0,
+      "embedding_cost_usd_this_run": 0.0
+    }
+  }
+}
