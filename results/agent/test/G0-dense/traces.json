@@ -1,0 +1,1269 @@
+[
+ {
+  "query_id": "n01",
+  "question": "Nang nhái sàn miệng trong trường hợp nào thì chỉ định phẫu thuật mở thông nang?",
+  "filter": null,
+  "config": "G0-dense",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "**Chỉ định phẫu thuật mở thông nang** đối với nang nhái sàn miệng [S2]:\n\n- Nang có kích thước lớn gây chèn ép và ảnh hưởng đến chức năng [S2].\n- Nang có kích thước lớn và tình trạng toàn thân của bệnh nhân không cho phép phẫu thuật kéo dài [S2].\n\n*(Kỹ thuật gồm: gây tê tại chỗ, rạch niêm mạc trên nang hình múi cam, bóc bỏ phần niêm mạc miệng giữa hai đường rạch, rạch vỏ nang, khâu nối mép vỏ nang với mép niêm mạc sàn miệng để thông lòng nang ra khoang miệng, dùng kháng sinh [S2].)*",
+  "citations": [
+   "0bdf410d-4b1a-5999-ac6b-fa27a2689e77"
+  ],
+  "citation_refs": [
+   "S2"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "nang nhái sàn miệng chỉ định phẫu thuật mở thông nang",
+    "filter": null,
+    "top_k": 3,
+    "ms": 22301.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "cb52494d-0f91-5303-8623-8da6d320f774",
+      "page": 112,
+      "disease_no": 27,
+      "score": 0.80491
+     },
+     {
+      "rank": 2,
+      "id": "0bdf410d-4b1a-5999-ac6b-fa27a2689e77",
+      "page": 109,
+      "disease_no": 26,
+      "score": 0.80247
+     },
+     {
+      "rank": 3,
+      "id": "71d7f398-54b8-5712-bbb2-b59005243def",
+      "page": 108,
+      "disease_no": 26,
+      "score": 0.79952
+     }
+    ],
+    "added_refs": {
+     "S1": "cb52494d-0f91-5303-8623-8da6d320f774",
+     "S2": "0bdf410d-4b1a-5999-ac6b-fa27a2689e77",
+     "S3": "71d7f398-54b8-5712-bbb2-b59005243def"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1369
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "nang nhái sàn miệng điều trị phẫu thuật",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1091.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "71d7f398-54b8-5712-bbb2-b59005243def",
+      "page": 108,
+      "disease_no": 26,
+      "score": 0.79046
+     },
+     {
+      "rank": 2,
+      "id": "58344170-737c-5a26-b905-cc9fdfa90b64",
+      "page": 111,
+      "disease_no": 27,
+      "score": 0.77903
+     },
+     {
+      "rank": 3,
+      "id": "1efa0692-07ee-57da-84dc-113a565aba33",
+      "page": 109,
+      "disease_no": 26,
+      "score": 0.77273
+     }
+    ],
+    "added_refs": {
+     "S4": "58344170-737c-5a26-b905-cc9fdfa90b64",
+     "S5": "1efa0692-07ee-57da-84dc-113a565aba33"
+    },
+    "skipped_duplicate": [
+     "71d7f398-54b8-5712-bbb2-b59005243def"
+    ],
+    "skipped_budget": [],
+    "context_chars": 2069
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S2"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "cb52494d-0f91-5303-8623-8da6d320f774",
+    "page": 112,
+    "pages": [
+     112
+    ],
+    "disease_no": 27,
+    "text": "2.2. Phẫu thuật mở thông nang\n- Chỉ định\nNang có kích thước lớn gây chèn ép, ảnh hưởng đến chức năng và tình trạng\ntoàn thân của bệnh nhân không cho phép phẫu thuật kéo dài.\n- Kỹ thuật\n+ Gây tê tại chỗ.\n+ Rạch niêm mạc trên nang theo hình múi cam.\n+ Tách bóc lấy bỏ phần niêm mạc miệng hình múi cam giữa hai đường rạch.\n+ Rạch vỏ nang.\n+ Khâu nối từng bên mép vỏ nang với mép niêm mạc sàn miệng, để thông\nlòng nang ra khoang miệng.\n+ Kháng sinh."
+   },
+   {
+    "ref": "S2",
+    "id": "0bdf410d-4b1a-5999-ac6b-fa27a2689e77",
+    "page": 109,
+    "pages": [
+     109
+    ],
+    "disease_no": 26,
+    "text": "2.3. Phẫu thuật mở thông nang\n- Chỉ định\n+ Nang có kích thước lớn gây chèn ép và ảnh hưởng đến chức năng.\n+ Nang có kích thước lớn và tình trạng toàn thân của bệnh nhân không cho\nphép phẫu thuật kéo dài.\n- Kỹ thuật\n+ Gây tê tại chỗ.\n+ Rạch niêm mạc trên nang theo hình múi cam.\n+ Tách bóc lấy bỏ phần niêm mạc miệng hình múi cam giữa hai đường rạch.\n+ Rạch vỏ nang.\n+ Khâu nối từng bên mép vỏ nang với mép niêm mạc sàn miệng, để thông\nlòng nang ra khoang miệng.\n+ Kháng sinh."
+   },
+   {
+    "ref": "S3",
+    "id": "71d7f398-54b8-5712-bbb2-b59005243def",
+    "page": 108,
+    "pages": [
+     108
+    ],
+    "disease_no": 26,
+    "text": "26. NANG NHÁI SÀN MIỆNG\nI. ĐỊNH NGHĨA\nNang nhái sàn miệng là nang nhầy, khu trú ở sàn miệng. Lòng nang chứa dịch\nnhầy có nguồn gốc từ tuyến nước bọt dưới lưỡi, hoặc tuyến dưới hàm, hoặc tuyến\nnước bọt phụ ở sàn miệng."
+   },
+   {
+    "ref": "S4",
+    "id": "58344170-737c-5a26-b905-cc9fdfa90b64",
+    "page": 111,
+    "pages": [
+     111
+    ],
+    "disease_no": 27,
+    "text": "27. NANG TUYẾN NƯỚC BỌT DƯỚI HÀM VÀ DƯỚI LƯỠI\nI. ĐỊNH NGHĨA\nNang tuyến nước bọt dưới hàm và dưới lưỡi là nang nhầy, có thể khu trú ở\nvùng dưới hàm hoặc sàn miệng. Lòng nang chứa dịch nhầy có nguồn gốc từ tuyến\nnước bọt dưới lưỡi, hoặc tuyến dưới hàm, hoặc tuyến nước bọt phụ ở sàn miệng."
+   },
+   {
+    "ref": "S5",
+    "id": "1efa0692-07ee-57da-84dc-113a565aba33",
+    "page": 109,
+    "pages": [
+     109
+    ],
+    "disease_no": 26,
+    "text": "2.1. Phẫu thuật cắt bỏ nang\n- Chỉ định: Nang có kích thước nhỏ, không liên quan tới tuyến nước bọt dưới\nlưỡi.\n- Kỹ thuật\n+ Gây tê tại chỗ.\n+ Rạch niêm mạc bộc lộ nang.\n+ Tách bóc vỏ nang ra khỏi mô xung quanh và lấy toàn bộ nang.\n+ Khâu đóng niêm mạc.\n+ Kháng sinh."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2785,
+   "completion_tokens": 331,
+   "llm_cost_usd": 0.000283248
+  },
+  "seconds": 70.76,
+  "error": null
+ },
+ {
+  "query_id": "n02",
+  "question": "Khi cố định hai hàm bằng cung Tiguersted hoặc nút Ivy thì cần giữ cố định trong bao lâu?",
+  "filter": {
+   "disease_no": 54
+  },
+  "config": "G0-dense",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Cố định hai hàm bằng cung Tiguersted hoặc nút Ivy cần giữ trong thời gian **từ 4–6 tuần** [S1].",
+  "citations": [
+   "4ebb2ed6-6f7b-52ab-949b-66232d48cf41"
+  ],
+  "citation_refs": [
+   "S1"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "cố định hai hàm cung Tiguersted nút Ivy thời gian",
+    "filter": {
+     "disease_no": 54
+    },
+    "top_k": 3,
+    "ms": 22210.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "4ebb2ed6-6f7b-52ab-949b-66232d48cf41",
+      "page": 191,
+      "disease_no": 54,
+      "score": 0.59625
+     },
+     {
+      "rank": 2,
+      "id": "88416d36-8c93-5a07-9b0f-77d9ab50b18c",
+      "page": 190,
+      "disease_no": 54,
+      "score": 0.46666
+     },
+     {
+      "rank": 3,
+      "id": "3c1e509d-f334-5842-8e70-9d1ac69b1b04",
+      "page": 190,
+      "disease_no": 54,
+      "score": 0.45402
+     }
+    ],
+    "added_refs": {
+     "S1": "4ebb2ed6-6f7b-52ab-949b-66232d48cf41",
+     "S2": "88416d36-8c93-5a07-9b0f-77d9ab50b18c",
+     "S3": "3c1e509d-f334-5842-8e70-9d1ac69b1b04"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1398
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "gãy xương hàm cố định liên hàm bao lâu",
+    "filter": {
+     "disease_no": 54
+    },
+    "top_k": 3,
+    "ms": 1277.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "4ebb2ed6-6f7b-52ab-949b-66232d48cf41",
+      "page": 191,
+      "disease_no": 54,
+      "score": 0.75207
+     },
+     {
+      "rank": 2,
+      "id": "88416d36-8c93-5a07-9b0f-77d9ab50b18c",
+      "page": 190,
+      "disease_no": 54,
+      "score": 0.74478
+     },
+     {
+      "rank": 3,
+      "id": "eccf6f1e-783f-5bc6-87b9-96c5763b2bcb",
+      "page": 192,
+      "disease_no": 54,
+      "score": 0.71132
+     }
+    ],
+    "added_refs": {
+     "S4": "eccf6f1e-783f-5bc6-87b9-96c5763b2bcb"
+    },
+    "skipped_duplicate": [
+     "4ebb2ed6-6f7b-52ab-949b-66232d48cf41",
+     "88416d36-8c93-5a07-9b0f-77d9ab50b18c"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1668
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S1"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "4ebb2ed6-6f7b-52ab-949b-66232d48cf41",
+    "page": 191,
+    "pages": [
+     191
+    ],
+    "disease_no": 54,
+    "text": "2. Điều trị cụ thể\n2.1. Điều trị không phẫu thuật bằng nắn chỉnh và cố định\n- Nắn chỉnh xương gãy\n+ Nắn chỉnh bằng tay.\n+ Nắn chỉnh bằng lực kéo.\n- Cố định xương gãy\n+ Cố định bằng phương pháp cố định ngoài miệng: Băng cằm đầu, các khí cụ\ntựa trên sọ.\n+ Cố định trong miệng: cố định hai hàm bằng cung Tiguersted hoặc nút Ivy\ntrong thời gian từ 4- 6 tuần\n- Điều trị toàn thân: Kháng sinh, chống viêm, giảm đau, dinh dưỡng."
+   },
+   {
+    "ref": "S2",
+    "id": "88416d36-8c93-5a07-9b0f-77d9ab50b18c",
+    "page": 190,
+    "pages": [
+     190
+    ],
+    "disease_no": 54,
+    "text": "54. GÃY XƯƠNG HÀM DƯỚI\nI. ĐỊNH NGHĨA\nLà tổn thương gãy, làm mất sự liên tục của xương hàm dưới.\nII. NGUYÊN NHÂN\n- Tai nạn giao thông.\n- Tai nạn lao động.\n- Tai nạn sinh hoạt."
+   },
+   {
+    "ref": "S3",
+    "id": "3c1e509d-f334-5842-8e70-9d1ac69b1b04",
+    "page": 190,
+    "pages": [
+     190
+    ],
+    "disease_no": 54,
+    "text": "III. CHẨN ĐOÁN\n1. Chẩn đoán xác định\n1.1. Triệu chứng lâm sàng gãy xương hàm dưới\n- Sưng nề và tụ máu: Tùy theo vị trí, mức độ chấn thương mà dấu hiệu sưng nề\nvà tụ máu có những mức độ nhiều ít khác nhau, có thể gặp ở ngoài hoặc trong\nmiệng.\n- Gián đoạn và đau chói bờ xương hàm dưới.\n- Gián đoạn và di lệch cung răng.\n- Sai khớp cắn.\n- Lung lay răng và khối xương ổ răng.\n- Có dấu hiệu di động của hai đầu xương gãy khi khám.\n- Rối loạn vận động hàm dưới: há miệng hạn chế, lệch hàm sang bên khi há\nmiệng.\n- Dị cảm: thường biểu hiện tê môi dưới, da vùng cằm.\n- Có thể có tràn khí dưới da : sờ nắn có cảm giác lép bép hơi."
+   },
+   {
+    "ref": "S4",
+    "id": "eccf6f1e-783f-5bc6-87b9-96c5763b2bcb",
+    "page": 192,
+    "pages": [
+     192
+    ],
+    "disease_no": 54,
+    "text": "2. Biến chứng\n- Nhiễm trùng.\n- Khớp cắn sai.\n- Hạn chế há miệng.\nVI. PHÒNG BỆNH\n- Các biện pháp đề phòng tai nạn giao thông.\n- Có các phương tiện bảo hộ trong các trường hợp tai nạn giao thông và lao\nđộng."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2641,
+   "completion_tokens": 157,
+   "llm_cost_usd": 0.000177246
+  },
+  "seconds": 25.63,
+  "error": null
+ },
+ {
+  "query_id": "n03",
+  "question": "Nếu sỏi ở ống tuyến Wharton được lấy ra muộn thì tuyến dưới hàm sẽ bị ảnh hưởng ra sao?",
+  "filter": null,
+  "config": "G0-dense",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "Theo tài liệu: viêm tuyến dưới hàm do sỏi ống tuyến nếu **điều trị lấy bỏ sỏi muộn thì tuyến dưới hàm dễ viêm mạn xơ hóa, dẫn đến phải cắt bỏ tuyến** [S7].\n\nSo sánh: nếu được điều trị sớm bằng lấy sỏi ống tuyến sẽ bảo tồn được tuyến dưới hàm với kết quả điều trị tốt [S7]. Khi tuyến đã viêm mạn gây xơ hóa thì chỉ định là phẫu thuật lấy sỏi và cắt bỏ tuyến dưới hàm [S4].\n\nVì vậy khuyến cáo: khi phát hiện có sỏi ống tuyến Wharton thì phẫu thuật lấy bỏ sớm để phòng viêm tuyến [S2].",
+  "citations": [
+   "32ef6e2a-d1da-5345-94fd-8f67dd11317e",
+   "a9b4c8ca-9266-5840-b760-b9caebd331df",
+   "4b5a94f2-3c80-5ff4-b960-1e98c70afbed"
+  ],
+  "citation_refs": [
+   "S7",
+   "S4",
+   "S2"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sỏi ống tuyến Wharton lấy muộn ảnh hưởng tuyến dưới hàm",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1143.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "6893fcb8-ed75-5147-9e75-6c769e5a181f",
+      "page": 156,
+      "disease_no": 44,
+      "score": 0.79394
+     },
+     {
+      "rank": 2,
+      "id": "4b5a94f2-3c80-5ff4-b960-1e98c70afbed",
+      "page": 158,
+      "disease_no": 44,
+      "score": 0.78058
+     },
+     {
+      "rank": 3,
+      "id": "aaf1a9e1-fd9e-5e18-a911-1680703a4e38",
+      "page": 156,
+      "disease_no": 44,
+      "score": 0.77288
+     }
+    ],
+    "added_refs": {
+     "S1": "6893fcb8-ed75-5147-9e75-6c769e5a181f",
+     "S2": "4b5a94f2-3c80-5ff4-b960-1e98c70afbed",
+     "S3": "aaf1a9e1-fd9e-5e18-a911-1680703a4e38"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 845
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "sỏi tuyến nước bọt dưới hàm điều trị phẫu thuật",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1040.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "a9b4c8ca-9266-5840-b760-b9caebd331df",
+      "page": 157,
+      "disease_no": 44,
+      "score": 0.76305
+     },
+     {
+      "rank": 2,
+      "id": "6893fcb8-ed75-5147-9e75-6c769e5a181f",
+      "page": 156,
+      "disease_no": 44,
+      "score": 0.75314
+     },
+     {
+      "rank": 3,
+      "id": "bb8164b0-7faa-5613-bd92-bec4ab1f0e69",
+      "page": 126,
+      "disease_no": 32,
+      "score": 0.73408
+     }
+    ],
+    "added_refs": {
+     "S4": "a9b4c8ca-9266-5840-b760-b9caebd331df",
+     "S5": "bb8164b0-7faa-5613-bd92-bec4ab1f0e69"
+    },
+    "skipped_duplicate": [
+     "6893fcb8-ed75-5147-9e75-6c769e5a181f"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1877
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "viêm tuyến nước bọt dưới hàm mạn tính xơ hóa tuyến biến chứng",
+    "filter": null,
+    "top_k": 3,
+    "ms": 22254.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+      "page": 153,
+      "disease_no": 43,
+      "score": 0.78738
+     },
+     {
+      "rank": 2,
+      "id": "6893fcb8-ed75-5147-9e75-6c769e5a181f",
+      "page": 156,
+      "disease_no": 44,
+      "score": 0.77653
+     },
+     {
+      "rank": 3,
+      "id": "32ef6e2a-d1da-5345-94fd-8f67dd11317e",
+      "page": 158,
+      "disease_no": 44,
+      "score": 0.77195
+     }
+    ],
+    "added_refs": {
+     "S6": "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+     "S7": "32ef6e2a-d1da-5345-94fd-8f67dd11317e"
+    },
+    "skipped_duplicate": [
+     "6893fcb8-ed75-5147-9e75-6c769e5a181f"
+    ],
+    "skipped_budget": [],
+    "context_chars": 2612
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S7",
+     "S4",
+     "S2"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "6893fcb8-ed75-5147-9e75-6c769e5a181f",
+    "page": 156,
+    "pages": [
+     156
+    ],
+    "disease_no": 44,
+    "text": "44. VIÊM TUYẾN NƯỚC BỌT DƯỚI HÀM DO SỎI\nI. ĐỊNH NGHĨA\nLà tình trạng tổn thương viêm tuyến nước bọt có nguyên nhân do sỏi có thể ở\nvùng tuyến hoặc ống tuyến."
+   },
+   {
+    "ref": "S2",
+    "id": "4b5a94f2-3c80-5ff4-b960-1e98c70afbed",
+    "page": 158,
+    "pages": [
+     158
+    ],
+    "disease_no": 44,
+    "text": "2. Biến chứng\n- Áp xe vùng dưới hàm.\n- Áp xe vùng sàn miệng.\nVI. PHÒNG BỆNH\nKhi phát hiện có sỏi ống tuyến Wharton thì phẫu thuật lấy bỏ sớm để phòng\nviêm tuyến."
+   },
+   {
+    "ref": "S3",
+    "id": "aaf1a9e1-fd9e-5e18-a911-1680703a4e38",
+    "page": 156,
+    "pages": [
+     156,
+     157
+    ],
+    "disease_no": 44,
+    "text": "1.2. Cận lâm sàng\n- X quang thường quy: có thể thấy hình ảnh sỏi ở tuyến hoặc ống tuyến.\n- CT Scanner\n+ Thấy vị trí, kích thước của sỏi.\n+ Có hình ảnh phì đại tuyến dưới hàm.\n- Chụp cản quang tuyến dưới hàm: có hình ảnh chuỗ i ngọc trai điển hình với\nđặc điểm ống Wharton to, giãn nỡ không đều."
+   },
+   {
+    "ref": "S4",
+    "id": "a9b4c8ca-9266-5840-b760-b9caebd331df",
+    "page": 157,
+    "pages": [
+     157,
+     158
+    ],
+    "disease_no": 44,
+    "text": "2. Điều trị cụ thể\na. Phẫu thuật lấy sỏi và điều trị bảo tồn tuyến\n- Chỉ định\n+ Sỏi ống tuyến.\n+ Viêm tuyến nhưng tuyến chưa xơ hóa.\n- Kỹ thuật\n+ Vô cảm.\n+ Xác định và cố định vị trí sỏi bằng chỉ phẫu thuật.\n+ Rạch niêm mạc dọc ống tuyến tại vị trí có sỏi.\n+ Bộc lộ và lấy sỏi.\n+ Kiểm soát vùng phẫu thuật.\n+ Cắt bỏ chỉ cố định sỏi.\n+ Khâu đóng niêm mạc.\n+ Kháng sinh, chống viêm.\nb. Phẫu thuật lấy sỏi và cắt bỏ tuyến dưới hàm\n- Chỉ định\n+ Sỏi tuyến.\n+ Tuyến viêm mạn gây xơ hóa.\n- Kỹ thuật\n+ Vô cảm.\n+ Rạch da vùng dưới hàm.\n+ Tách bóc, bộc lộ tuyến.\n+ Cắt bỏ tuyến cùng sỏi.\n+ Kiểm soát vùng phẫu thuật.\n+ Đặt dẫn lưu.\n+ Khâu phục hồi phần mềm.\n+ Kháng sinh."
+   },
+   {
+    "ref": "S5",
+    "id": "bb8164b0-7faa-5613-bd92-bec4ab1f0e69",
+    "page": 126,
+    "pages": [
+     126
+    ],
+    "disease_no": 32,
+    "text": "VI. PHÒNG BỆNH\n- Khám răng miệng định kỳ để phát hiện các răng sâu, tổn thương viêm quanh\nrăng, răng khôn mọc lệch để điều trị kịp thời.\n- Khi phát hiện sỏi ống tuyến nước bọt dưới hàm thì cần phẫu thuật lấy sỏi."
+   },
+   {
+    "ref": "S6",
+    "id": "3c611acb-b8ac-5b7d-b3cd-accbdca673e3",
+    "page": 153,
+    "pages": [
+     153
+    ],
+    "disease_no": 43,
+    "text": "43. VIÊM TUYẾN NƯỚC BỌT MANG TAI MẠN TÍNH\nI. ĐỊNH NGHĨA\nViêm tuyến nước bọt mạn tính là loại viêm tuyến nước bọt thường gặp ở người\nlớn do nhiều nguyên nhân,hay gặp nhất là do vi khuẩn."
+   },
+   {
+    "ref": "S7",
+    "id": "32ef6e2a-d1da-5345-94fd-8f67dd11317e",
+    "page": 158,
+    "pages": [
+     158
+    ],
+    "disease_no": 44,
+    "text": "V. TIÊN LƯỢNG VÀ BIẾN CHỨNG\n1. Tiên lượng\n- Viêm tuyến dưới hàm do sỏi ống tuyến được điều trị sớm bằng việc lấy sỏi\nống tuyến sẽ bảo tồn được tuyến dưới hàm với kết quả điều trị tốt.\n- Viêm tuyến dưới hàm do sỏi ống tuyến nếu điều trị lấy bỏ sỏi muộn thì tuyến\ndưới hàm dễ viêm mạn xơ hóa, dẫn đến phải cắt bỏ tuyến.\n- Viêm tuyến dưới hàm do sỏi tuyến thì không thể điều trị bảo tồn tuyến."
+   }
+  ],
+  "usage": {
+   "llm_calls": 3,
+   "prompt_tokens": 4813,
+   "completion_tokens": 1114,
+   "llm_cost_usd": 0.001006059
+  },
+  "seconds": 35.27,
+  "error": null
+ },
+ {
+  "query_id": "n04",
+  "question": "Khi điều trị nội nha răng viêm quanh cuống, chất gì được đặt vào ống tủy để trung hòa mô viêm vùng cuống?",
+  "filter": null,
+  "config": "G0-dense",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "**Ca(OH)₂ (calci hydroxid)** được đặt trong ống tủy để trung hòa mô viêm vùng cuống và sát khuẩn hệ thống ống tủy [S4].\n\nTrong điều trị nội nha viêm quanh cuống răng, các bước gồm: làm sạch và tạo hình hệ thống ống tủy → đặt Ca(OH)₂ trong ống tủy → hàn kín hệ thống ống tủy → phục hồi thân răng [S4].",
+  "citations": [
+   "c01489b8-35f3-5dc3-bc47-64e9648d33ee"
+  ],
+  "citation_refs": [
+   "S4"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "điều trị nội nha răng viêm quanh cuống đặt thuốc vào ống tủy trung hòa mô viêm vùng cuống",
+    "filter": null,
+    "top_k": 3,
+    "ms": 23268.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "5452a15f-1135-576b-84f1-e8db92b96a5c",
+      "page": 51,
+      "disease_no": 11,
+      "score": 0.75438
+     },
+     {
+      "rank": 2,
+      "id": "8790c0da-5420-527e-b1e5-790e9323219b",
+      "page": 56,
+      "disease_no": 12,
+      "score": 0.75376
+     },
+     {
+      "rank": 3,
+      "id": "0be4e7a8-bbbc-5538-80c8-1f87079edc33",
+      "page": 56,
+      "disease_no": 12,
+      "score": 0.75344
+     }
+    ],
+    "added_refs": {
+     "S1": "5452a15f-1135-576b-84f1-e8db92b96a5c",
+     "S2": "8790c0da-5420-527e-b1e5-790e9323219b",
+     "S3": "0be4e7a8-bbbc-5538-80c8-1f87079edc33"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 920
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "viêm quanh cuống răng điều trị nội nha thuốc đặt ống tủy",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1092.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "8790c0da-5420-527e-b1e5-790e9323219b",
+      "page": 56,
+      "disease_no": 12,
+      "score": 0.74252
+     },
+     {
+      "rank": 2,
+      "id": "0be4e7a8-bbbc-5538-80c8-1f87079edc33",
+      "page": 56,
+      "disease_no": 12,
+      "score": 0.72486
+     },
+     {
+      "rank": 3,
+      "id": "c01489b8-35f3-5dc3-bc47-64e9648d33ee",
+      "page": 56,
+      "disease_no": 12,
+      "score": 0.72445
+     }
+    ],
+    "added_refs": {
+     "S4": "c01489b8-35f3-5dc3-bc47-64e9648d33ee"
+    },
+    "skipped_duplicate": [
+     "8790c0da-5420-527e-b1e5-790e9323219b",
+     "0be4e7a8-bbbc-5538-80c8-1f87079edc33"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1818
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S4"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "5452a15f-1135-576b-84f1-e8db92b96a5c",
+    "page": 51,
+    "pages": [
+     51
+    ],
+    "disease_no": 11,
+    "text": "- Bước 7: Chụp X quang kiểm tra.\n- Bước 8: Hàn kín hệ thống ống tuỷ bằng các kỹ thuật lèn dọc, lèn ngang với\ngutta-percha nóng, nguội.\n- Bước 9: Hàn kín buồng tủy và phục hồi thân răng bằng vật liệu thích hợp."
+   },
+   {
+    "ref": "S2",
+    "id": "8790c0da-5420-527e-b1e5-790e9323219b",
+    "page": 56,
+    "pages": [
+     56
+    ],
+    "disease_no": 12,
+    "text": "2. Phác đồ điều trị\nNhững răng bị viêm quanh cuống cấp hoặc bán cấp: dẫn lưu buồng tủy. Sau đó\ndùng kháng sinh có tác dụng với vi khuẩn yếm khí và Gram (-), kết hợp với giảm\nđau, nâng cao thể trạng để tiến hành điều trị nội nha."
+   },
+   {
+    "ref": "S3",
+    "id": "0be4e7a8-bbbc-5538-80c8-1f87079edc33",
+    "page": 56,
+    "pages": [
+     56
+    ],
+    "disease_no": 12,
+    "text": "IV. ĐIỀU TRỊ\n1. Nguyên tắc\n- Loại trừ toàn bộ mô nhiễm khuẩn và hoại tử trong ống tủy.\n- Dẫn lưu tốt mô viêm vùng cuống.\n- Hàn kín hệ thống ống tủy, tạo điều kiện cho mô cuống hồi phục.\n- Chỉ định phẫu thuật cắt cuống răng nếu tiên lượng điều trị nội nha không có\nkết quả."
+   },
+   {
+    "ref": "S4",
+    "id": "c01489b8-35f3-5dc3-bc47-64e9648d33ee",
+    "page": 56,
+    "pages": [
+     56,
+     57
+    ],
+    "disease_no": 12,
+    "text": "3. Điều trị cụ thể\na. Điều trị toàn thân\nĐối với các thể bệnh đau (viêm quanh cuống cấp, áp xe quanh cuống cấp) phải\nđiều trị bằng kháng sinh toàn thân, đặc biệt trong trường hợp áp xe quanh cuống cấp\ncó viêm mô tế bào.\nb. Điều trị nội nha\n- Làm sạch và tạo hình hệ thống ống tủy.\n- Đặt Ca(OH)2 trong ống tủy để trung hòa mô viêm vùng cuống, sát khuẩn hệ\nthống ống tủy.\n- Hàn kín hệ thống ống tủy.\n- Phục hồi thân răng\nc. Điều trị phẫu thuật\n- Sau điều trị nội nha có tổn thương quanh cuống không phục hồi do nhiều\nnguyên nhân khác nhau.\n- Sau khi răng nguyên nhân và các răng liên quan được điều trị nội nha, theo\ndõi mà tổn thương cuống không tiến triển tốt, tiến hành điều trị phẫu thuật lấy đi\ntoàn bộ lớp vỏ nang có hoặc không có cắt phần cuống răng nguyên nhân.\n- Tiến hành hàn ngược cuống răng nếu có cắt cuống răng."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2604,
+   "completion_tokens": 272,
+   "llm_cost_usd": 0.000309812
+  },
+  "seconds": 27.36,
+  "error": null
+ },
+ {
+  "query_id": "n05",
+  "question": "U men xương hàm có kích thước lớn, đã phá hủy nhiều xương thì điều trị như thế nào?",
+  "filter": null,
+  "config": "G0-dense",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "answered",
+  "answer": "**U men xương hàm kích thước lớn, đã phá hủy nhiều xương — điều trị cụ thể:**\n\n- Phẫu thuật cắt bỏ u và đoạn xương hàm [S2].\n- Phục hồi đoạn xương cắt bỏ bằng kỹ thuật ghép xương hàm [S2].\n- Phục hình răng để phục hồi chức năng ăn nhai [S2].\n\nNguyên tắc chung là phẫu thuật cắt bỏ triệt để toàn bộ khối u để tránh tái phát [S2]. Ngoài ra, trong một số trường hợp có thể tiến hành phẫu thuật mở thông u men để chuẩn bị cho phẫu thuật cắt bỏ triệt để [S2].",
+  "citations": [
+   "a1134f9a-5eb3-52a0-a947-9169f1393491"
+  ],
+  "citation_refs": [
+   "S2"
+  ],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "u men xương hàm kích thước lớn phá hủy xương điều trị",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1137.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "48656ff2-85da-5ca0-ad6f-40212e8e00ea",
+      "page": 137,
+      "disease_no": 36,
+      "score": 0.7643
+     },
+     {
+      "rank": 2,
+      "id": "a1134f9a-5eb3-52a0-a947-9169f1393491",
+      "page": 138,
+      "disease_no": 36,
+      "score": 0.7422
+     },
+     {
+      "rank": 3,
+      "id": "c3fa085d-814e-5957-8490-cfb5df705986",
+      "page": 140,
+      "disease_no": 37,
+      "score": 0.73876
+     }
+    ],
+    "added_refs": {
+     "S1": "48656ff2-85da-5ca0-ad6f-40212e8e00ea",
+     "S2": "a1134f9a-5eb3-52a0-a947-9169f1393491",
+     "S3": "c3fa085d-814e-5957-8490-cfb5df705986"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1207
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "u men xương hàm phẫu thuật cắt đoạn xương hàm",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1212.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "48656ff2-85da-5ca0-ad6f-40212e8e00ea",
+      "page": 137,
+      "disease_no": 36,
+      "score": 0.757
+     },
+     {
+      "rank": 2,
+      "id": "c3fa085d-814e-5957-8490-cfb5df705986",
+      "page": 140,
+      "disease_no": 37,
+      "score": 0.74827
+     },
+     {
+      "rank": 3,
+      "id": "28f73265-c6de-5e1a-880d-841acc88c64a",
+      "page": 138,
+      "disease_no": 36,
+      "score": 0.73543
+     }
+    ],
+    "added_refs": {
+     "S4": "28f73265-c6de-5e1a-880d-841acc88c64a"
+    },
+    "skipped_duplicate": [
+     "48656ff2-85da-5ca0-ad6f-40212e8e00ea",
+     "c3fa085d-814e-5957-8490-cfb5df705986"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1626
+   },
+   {
+    "event": "answer",
+    "status": "answered",
+    "refs": [
+     "S2"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "48656ff2-85da-5ca0-ad6f-40212e8e00ea",
+    "page": 137,
+    "pages": [
+     137
+    ],
+    "disease_no": 36,
+    "text": "36. U MEN XƯƠNG HÀM\n(Ameloblastoma)\nI. ĐỊNH NGHĨA\nU men xương hàm là u có nguồn gốc từ liên bào tạo men, là u lành tính nhưng có\ntính chất phá hủy và có thể chuyển dạng thành ác tính."
+   },
+   {
+    "ref": "S2",
+    "id": "a1134f9a-5eb3-52a0-a947-9169f1393491",
+    "page": 138,
+    "pages": [
+     138
+    ],
+    "disease_no": 36,
+    "text": "IV. ĐIỀU TRỊ\n1. Nguyên tắc\nPhẫu thuật cắt bỏ triệt để toàn bộ khối u để tránh tái phát.\n2. Điều trị cụ thể\n- Trường hợp u có kích thước nhỏ, chưa phá hủy nhiều xương\n+ Phẫu thuật cắt bỏ u, giữ lại bờ nền xương hàm.\n+ Phục hình răng để phục hồi chức năng ăn nhai.\n- Trường hợp u có kích thước lớn, phá hủy nhiều xương\n+ Phẫu thuật cắt bỏ u và đoạn xương hàm.\n+ Phục hồi đoạn xương cắt bỏ bằng kỹ thuật ghép xương hàm.\n+ Phục hình răng để phục hồi chức năng ăn nhai.\n- Trong một số trường hợp có thể tiến hành phẫu thuật mở thông u men để\nchuẩn bị cho phẫu thuật cắt bỏ triệt để."
+   },
+   {
+    "ref": "S3",
+    "id": "c3fa085d-814e-5957-8490-cfb5df705986",
+    "page": 140,
+    "pages": [
+     140,
+     141
+    ],
+    "disease_no": 37,
+    "text": "1. Nguyên tắc\nPhẫu thuật cắt bỏ triệt để toàn bộ khối u.\n2. Điều trị cụ thể\nPhẫu thuật cắt u và lấy răng ngầm.\n- Vô cảm.\n- Rạch niêm mạc đường ngách tiền đình.\n- Mở xương.\n- Bộc lộ u.\n- Cắt u lấy toàn bộ khối u.\n- Bộc lộ răng ngầm.\n- Lấy răng ngầm.\n- Khâu đóng vết mổ theo lớp giải phẫu."
+   },
+   {
+    "ref": "S4",
+    "id": "28f73265-c6de-5e1a-880d-841acc88c64a",
+    "page": 138,
+    "pages": [
+     138
+    ],
+    "disease_no": 36,
+    "text": "V. TIÊN LƯỢNG VÀ BIẾN CHỨNG\n- Nếu phẫu thuật không triệt để, lấy bỏ toàn bộ u thì có nguy cơ tái phát cao.\n- Nếu không được điều trị thì u gây phá hủy xương hàm nhanh chóng, có thể\ngây gãy xương bệnh lý và xâm lấn mô mềm xung quanh. U men còn có nguy cơ\nchuyển dạng ác tính.\n- Nếu phẫu thuật triệt để lấy bỏ toàn bộ u thì sẽ có tiên lượng tốt."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2498,
+   "completion_tokens": 336,
+   "llm_cost_usd": 0.0002996336
+  },
+  "seconds": 6.34,
+  "error": null
+ },
+ {
+  "query_id": "u03",
+  "question": "Niềng răng bằng khay trong suốt (Invisalign) cho sai khớp cắn loại II thì cần đeo khay bao nhiêu giờ mỗi ngày?",
+  "filter": null,
+  "config": "G0-dense",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "abstain",
+  "answer": "KHÔNG ĐỦ BẰNG CHỨNG.\n\nTài liệu không đề cập đến niềng răng bằng khay trong suốt (Invisalign) cũng như số giờ đeo khay mỗi ngày.\n\nCác nội dung liên quan đến sai khớp cắn loại II trong tài liệu chỉ gồm: định nghĩa các tiểu loại [S1][S2][S3] và điều trị bằng nhổ răng/nắn chỉnh răng, phẫu thuật chỉnh hình xương [S4], hoặc khí cụ chức năng tháo lắp (Monoblock, Twinblock) với thời gian đeo ít nhất 14 giờ/ngày [S5] — đây là khí cụ chức năng, không phải khay trong suốt.",
+  "citations": [],
+  "citation_refs": [],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "khay trong suốt sai khớp cắn loại II đeo bao nhiêu giờ mỗi ngày",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1165.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "fe590835-0703-5d81-83de-9e84411c5764",
+      "page": 75,
+      "disease_no": 17,
+      "score": 0.67694
+     },
+     {
+      "rank": 2,
+      "id": "ba327499-be3c-571f-83a2-d7e9c685996b",
+      "page": 78,
+      "disease_no": 18,
+      "score": 0.66478
+     },
+     {
+      "rank": 3,
+      "id": "19514c42-90ac-54f0-8fa7-63702967b645",
+      "page": 70,
+      "disease_no": 16,
+      "score": 0.66139
+     }
+    ],
+    "added_refs": {
+     "S1": "fe590835-0703-5d81-83de-9e84411c5764",
+     "S2": "ba327499-be3c-571f-83a2-d7e9c685996b",
+     "S3": "19514c42-90ac-54f0-8fa7-63702967b645"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1222
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "điều trị sai khớp cắn loại II khay trong suốt",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1084.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "e3281d0d-f12d-5d19-8f6d-0a65a7a09c88",
+      "page": 64,
+      "disease_no": 14,
+      "score": 0.66699
+     },
+     {
+      "rank": 2,
+      "id": "248ecc9f-c6fd-5234-8c22-047829fefb64",
+      "page": 68,
+      "disease_no": 15,
+      "score": 0.65495
+     },
+     {
+      "rank": 3,
+      "id": "63b8dd9b-4743-5263-8731-9056d003541e",
+      "page": 68,
+      "disease_no": 15,
+      "score": 0.65395
+     }
+    ],
+    "added_refs": {
+     "S4": "e3281d0d-f12d-5d19-8f6d-0a65a7a09c88",
+     "S5": "248ecc9f-c6fd-5234-8c22-047829fefb64"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [
+     "63b8dd9b-4743-5263-8731-9056d003541e"
+    ],
+    "context_chars": 2677
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "khay trong suốt chỉnh nha thời gian đeo mỗi ngày",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1672.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "0e0f92a4-7c81-59b6-9d33-80d45aaa788a",
+      "page": 87,
+      "disease_no": 20,
+      "score": 0.69211
+     },
+     {
+      "rank": 2,
+      "id": "b025fadb-1f23-5439-8b07-e5a8e9f45cc0",
+      "page": 83,
+      "disease_no": 19,
+      "score": 0.68149
+     },
+     {
+      "rank": 3,
+      "id": "1c25cae9-8ad2-54cf-8285-207056d1981f",
+      "page": 93,
+      "disease_no": 21,
+      "score": 0.6795
+     }
+    ],
+    "added_refs": {
+     "S6": "0e0f92a4-7c81-59b6-9d33-80d45aaa788a"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [
+     "b025fadb-1f23-5439-8b07-e5a8e9f45cc0",
+     "1c25cae9-8ad2-54cf-8285-207056d1981f"
+    ],
+    "context_chars": 2955
+   },
+   {
+    "event": "answer",
+    "status": "abstain",
+    "refs": [
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "fe590835-0703-5d81-83de-9e84411c5764",
+    "page": 75,
+    "pages": [
+     75
+    ],
+    "disease_no": 17,
+    "text": "17. SAI KHỚP CẮN LOẠI II TIỂU LOẠI I DO RĂNG\nI. ĐỊNH NGHĨA\nLà tình trạng sai khớp cắn mà ở tư thế cắn trung tâm, múi ngoài gần của răng\nhàm lớn vĩnh viễn thứ nhất hàm trên khớp về phía gần so với rãnh ngoài gần của\nrăng hàm lớn vĩnh viễn thứ nhất hàm dưới, và các răng trước hàm trên ngả trước\nnhưng tương quan xương hai hàm bình thường."
+   },
+   {
+    "ref": "S2",
+    "id": "ba327499-be3c-571f-83a2-d7e9c685996b",
+    "page": 78,
+    "pages": [
+     78
+    ],
+    "disease_no": 18,
+    "text": "18. SAI KHỚP CẮN LOẠI II TIỂU LOẠI II DO RĂNG\nI. ĐỊNH NGHĨA\nLà tình trạng sai khớp cắn mà ở tư thế cắn trung tâm, múi ngoài gần của răng\nhàm lớn vĩnh viễn thứ nhất hàm trên khớp về phía gần so với rãnh ngoài gần của\nrăng hàm lớn vĩnh viễn thứ nhất hàm dưới, độ cắn chìa bình thường, tương quan\nxương hai hàm bình thường nhưng độ cắn phủ tăng."
+   },
+   {
+    "ref": "S3",
+    "id": "19514c42-90ac-54f0-8fa7-63702967b645",
+    "page": 70,
+    "pages": [
+     70
+    ],
+    "disease_no": 16,
+    "text": "16. SAI KHỚP CẮN LOẠI II DO XƯƠNG HAI HÀM\nI. ĐỊNH NGHĨA\nLà tình trạng sai khớp cắn mà ở tư thế cắn trung tâm, múi ngoài gần của răng\nhàm lớn vĩnh viễn thứ nhất hàm trên khớp về phía gần so với rãnh ngoài gần của\nrăng hàm lớn vĩnh viễn thứ nhất hàm dưới, tương quan xương hàm trên nhô ra trước\nvà xương hàm dưới lùi phía sau so với cấu trúc nền sọ."
+   },
+   {
+    "ref": "S4",
+    "id": "e3281d0d-f12d-5d19-8f6d-0a65a7a09c88",
+    "page": 64,
+    "pages": [
+     64
+    ],
+    "disease_no": 14,
+    "text": "- Điều trị bù trừ (ngụy trang)\n+ Nhổ răng tạo khoảng\n+ Sắp xếp kéo lùi các răng trước.\n+ Điều chỉnh tương quan răng hai hàm cho tới khi đạt khớp cắn loại I, ít nhất\nphải đạt được tương quan răng nanh loại I.\n+ Hoàn thiện.\n+ Điều trị duy trì.\n- Phẫu thuật chỉnh hình xương hàm trên: áp dụng trong các trường hợp nặng\nkhông thể điều trị bù trừ bằng nắn chỉnh răng đơn thuần."
+   },
+   {
+    "ref": "S5",
+    "id": "248ecc9f-c6fd-5234-8c22-047829fefb64",
+    "page": 68,
+    "pages": [
+     68
+    ],
+    "disease_no": 15,
+    "text": "2. Điều trị cụ thể\n2.1 Bệnh nhân đang trong thời kỳ tăng trưởng\nĐưa hàm dưới ra trước bằng khí cụ chức năng tháo lắp hoặc gắn chặt.\n- Điều trị với khí cụ chức năng tháo lắp:\n+ Sử dụng khí cụ Monoblock, hoặc khí cụ Twinblock...\n+ Thời gian đeo khí cụ chức năng: ít nhất 14 h/ngày.\n+ Thời gian điều trị với khí cụ chức năng: thường khoảng một năm, cho tới\nkhi đạt tương quan xương hai hàm loại I trên X quang phim sọ nghiêng\n(Cephalometrics).\n- Điều trị bằng khí cụ chức năng gắn chặt:\n+ Gắn mắc cài hai hàm.\n+ Sắp xếp và làm thẳng các răng theo chiều đứng (làm phẳng đường cong\nSpee) và theo chiều ngang.\n+ Sử dụng khí cụ chức năng Forsus, hoặc Twinforce... gắn lên dây cung khi\nđã kết thúc giai đoạn làm đều và xếp thẳng hàng các răng.\n+ Duy trì điều trị với khí cụ chức năng trong thời gian 6-9 tháng sau khi đã đạt\nđược khớp cắn răng nanh loại I.\n+ Hoàn thiện.\n+ Duy trì kết quả."
+   },
+   {
+    "ref": "S6",
+    "id": "0e0f92a4-7c81-59b6-9d33-80d45aaa788a",
+    "page": 87,
+    "pages": [
+     87,
+     88
+    ],
+    "disease_no": 20,
+    "text": "2. Biến chứng\n- Mòn răng, tiêu xương ổ răng, viêm quanh răng, sâu răng…\n- Đau khớp thái dương hàm.\n- Rối loạn chức năng khớp thái dương hàm.\nVI. PHÒNG BỆNH\nKhám răng miệng định kỳ để phát hiện sớm và điều trị kịp thời."
+   }
+  ],
+  "usage": {
+   "llm_calls": 3,
+   "prompt_tokens": 5235,
+   "completion_tokens": 498,
+   "llm_cost_usd": 0.0006799250000000001
+  },
+  "seconds": 9.17,
+  "error": null
+ },
+ {
+  "query_id": "u04",
+  "question": "Bảo hiểm y tế chi trả bao nhiêu phần trăm chi phí cấy ghép Implant thay một răng đã mất?",
+  "filter": null,
+  "config": "G0-dense",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "status": "abstain",
+  "answer": "KHÔNG ĐỦ BẰNG CHỨNG.\n\nTài liệu chỉ có nội dung chuyên môn về phục hình răng bằng Implant (chỉ định, chống chỉ định, các bước phẫu thuật) trong bệnh \"Mất răng từng phần\" [S1], và một số nội dung liên quan khác như cấy trụ Implant cho hàm toàn bộ [S2], biến chứng viêm quanh Implant [S3][S4]. Tài liệu không đề cập đến tỷ lệ phần trăm bảo hiểm y tế chi trả cho chi phí cấy ghép Implant.",
+  "citations": [],
+  "citation_refs": [],
+  "invalid_refs": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "bảo hiểm y tế chi trả chi phí cấy ghép Implant",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1150.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "bf5568be-c4df-539a-bbb6-81e3a8b9fd67",
+      "page": 17,
+      "disease_no": 3,
+      "score": 0.68202
+     },
+     {
+      "rank": 2,
+      "id": "e2df3d49-446d-5dcf-b46f-cacdd1c60888",
+      "page": 12,
+      "disease_no": 2,
+      "score": 0.66559
+     },
+     {
+      "rank": 3,
+      "id": "f70f2178-dd8d-5e28-afdb-8708e13d041f",
+      "page": 184,
+      "disease_no": 52,
+      "score": 0.65461
+     }
+    ],
+    "added_refs": {
+     "S1": "bf5568be-c4df-539a-bbb6-81e3a8b9fd67",
+     "S2": "e2df3d49-446d-5dcf-b46f-cacdd1c60888",
+     "S3": "f70f2178-dd8d-5e28-afdb-8708e13d041f"
+    },
+    "skipped_duplicate": [],
+    "skipped_budget": [],
+    "context_chars": 1330
+   },
+   {
+    "event": "search",
+    "tool": "search_documents",
+    "retriever": "dense",
+    "query": "cấy ghép Implant thay răng đã mất điều trị",
+    "filter": null,
+    "top_k": 3,
+    "ms": 1820.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "36753f15-3481-513a-9946-6c386680de86",
+      "page": 183,
+      "disease_no": 52,
+      "score": 0.74028
+     },
+     {
+      "rank": 2,
+      "id": "e2df3d49-446d-5dcf-b46f-cacdd1c60888",
+      "page": 12,
+      "disease_no": 2,
+      "score": 0.73987
+     },
+     {
+      "rank": 3,
+      "id": "007b82eb-fcb0-5fce-8883-fc28d3cc5947",
+      "page": 11,
+      "disease_no": 2,
+      "score": 0.73676
+     }
+    ],
+    "added_refs": {
+     "S4": "36753f15-3481-513a-9946-6c386680de86",
+     "S5": "007b82eb-fcb0-5fce-8883-fc28d3cc5947"
+    },
+    "skipped_duplicate": [
+     "e2df3d49-446d-5dcf-b46f-cacdd1c60888"
+    ],
+    "skipped_budget": [],
+    "context_chars": 1826
+   },
+   {
+    "event": "answer",
+    "status": "abstain",
+    "refs": [
+     "S1",
+     "S2",
+     "S3",
+     "S4"
+    ],
+    "invalid_refs": []
+   }
+  ],
+  "context": [
+   {
+    "ref": "S1",
+    "id": "bf5568be-c4df-539a-bbb6-81e3a8b9fd67",
+    "page": 17,
+    "pages": [
+     17
+    ],
+    "disease_no": 3,
+    "text": "2.4. Phục hình răng bằng Implant\n- Chỉ định: Tất cả các trường hợp mất răng từng phần.\n- Chống chỉ định\n+ Thiếu xương hàm vùng mất răng.\n+ Các bệnh toàn thân không cho phép.\n+ Có tình trạng nhiễm trùng cấp tính trong khoang miệng.\n- Các bước\n+ Sát khuẩn.\n+ Vô cảm.\n+ Bộc lộ xương hàm vùng cấy ghép.\n+ Bơm rửa.\n+ Đặt Implant.\n+ Đặt mũ phủ Implant hoặc trụ liền thương.\n+ Khâu đóng niêm mạc.\n- 4.2.5. Hàm toàn bộ phủ\n- Chỉ định: Mất răng loại Kennedy V và VI.\n- Kỹ thuật\n- Các bước cơ bản giống hàm toàn bộ."
+   },
+   {
+    "ref": "S2",
+    "id": "e2df3d49-446d-5dcf-b46f-cacdd1c60888",
+    "page": 12,
+    "pages": [
+     12
+    ],
+    "disease_no": 2,
+    "text": "- Các bước\n+ Làm hàm nhựa như phần 2.2.1.\n+ Cấy tối thiểu 2 trụ Implant.\n+ Sửa soạn các trụ Implant.\n+ Sửa soạn nền hàm giả mang phần âm của cúc bấm.\n+ Lắp hàm giả .\n+ Hướng dẫn bệnh nhân cách sử dụng."
+   },
+   {
+    "ref": "S3",
+    "id": "f70f2178-dd8d-5e28-afdb-8708e13d041f",
+    "page": 184,
+    "pages": [
+     184
+    ],
+    "disease_no": 52,
+    "text": "2. Biến chứng\nĐào thải Implant.\nVI. PHÒNG BỆNH\n- Tuân thủ đúng quy trình phẫu thuật đặt Implant và phục hình răng.\n- Hướng dẫn bệnh nhân tăng cường vệ sinh răng miệng, kiểm sóat mảng bám\nrăng.\n- Khám định kỳ để phát hiện tổn thương sớm và điều trị kịp thời, nhất là ở các\ntrường hợp nguy cơ cao như bệnh nhân có tiền sử viêm quanh răng, bệnh nhân mắc\nbệnh tiểu đường, hút thuốc lá, điều trị corticoid kéo dài,…."
+   },
+   {
+    "ref": "S4",
+    "id": "36753f15-3481-513a-9946-6c386680de86",
+    "page": 183,
+    "pages": [
+     183
+    ],
+    "disease_no": 52,
+    "text": "IV. ĐIỀU TRỊ\n1. Nguyên tắc\n- Loại bỏ tác nhân gây bệnh và ổ viêm nhiễm xung quanh Implant.\n- Giảm độ sâu của túi quanh Implant.\n- Ghép xương trong trường hợp tiêu nhiều xương quanh Implant."
+   },
+   {
+    "ref": "S5",
+    "id": "007b82eb-fcb0-5fce-8883-fc28d3cc5947",
+    "page": 11,
+    "pages": [
+     11
+    ],
+    "disease_no": 2,
+    "text": "IV. ĐIỀU TRỊ\n1. Nguyên tắc\nLàm phục hình răng phục hồi lại các răng mất để thiết lập lại chức năng ăn\nnhai và thẩm mỹ cho bệnh nhân. Khác nhau tùy theo phương pháp phục hình mất\nrăng."
+   }
+  ],
+  "usage": {
+   "llm_calls": 2,
+   "prompt_tokens": 2574,
+   "completion_tokens": 299,
+   "llm_cost_usd": 0.00042893399999999996
+  },
+  "seconds": 5.64,
+  "error": null
+ }
+]

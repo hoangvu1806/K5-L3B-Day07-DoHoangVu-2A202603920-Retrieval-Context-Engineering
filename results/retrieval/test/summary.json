@@ -1,0 +1,140 @@
+{
+  "split": "test",
+  "n_questions": 5,
+  "filter": true,
+  "corpus": "data/day6/chunks_B.json (526 chunk, Qdrant day06_rhm_b)",
+  "methods": {
+    "dense": {
+      "retriever": "dense",
+      "hit1": {
+        "n": 4,
+        "N": 5,
+        "rate": 0.8,
+        "text": "4/5"
+      },
+      "evidence_hit3": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0,
+        "text": "5/5"
+      },
+      "hit5": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0,
+        "text": "5/5"
+      },
+      "mrr10": 0.9,
+      "misses_hit3": [],
+      "median_ms": 1235.9,
+      "embedding_api_calls_this_run": 5,
+      "embedding_cost_usd_this_run": 2.4e-05
+    },
+    "bm25-syllable": {
+      "retriever": "bm25-syllable",
+      "hit1": {
+        "n": 4,
+        "N": 5,
+        "rate": 0.8,
+        "text": "4/5"
+      },
+      "evidence_hit3": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0,
+        "text": "5/5"
+      },
+      "hit5": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0,
+        "text": "5/5"
+      },
+      "mrr10": 0.867,
+      "misses_hit3": [],
+      "median_ms": 1.9,
+      "embedding_api_calls_this_run": 0,
+      "embedding_cost_usd_this_run": 0.0
+    },
+    "bm25-word": {
+      "retriever": "bm25-word",
+      "hit1": {
+        "n": 4,
+        "N": 5,
+        "rate": 0.8,
+        "text": "4/5"
+      },
+      "evidence_hit3": {
+        "n": 4,
+        "N": 5,
+        "rate": 0.8,
+        "text": "4/5"
+      },
+      "hit5": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0,
+        "text": "5/5"
+      },
+      "mrr10": 0.85,
+      "misses_hit3": [
+        "n01"
+      ],
+      "median_ms": 2.9,
+      "embedding_api_calls_this_run": 0,
+      "embedding_cost_usd_this_run": 0.0
+    },
+    "bm25-word-title": {
+      "retriever": "bm25-word-title",
+      "hit1": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0,
+        "text": "5/5"
+      },
+      "evidence_hit3": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0,
+        "text": "5/5"
+      },
+      "hit5": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0,
+        "text": "5/5"
+      },
+      "mrr10": 1.0,
+      "misses_hit3": [],
+      "median_ms": 2.8,
+      "embedding_api_calls_this_run": 0,
+      "embedding_cost_usd_this_run": 0.0
+    },
+    "hybrid": {
+      "retriever": "hybrid-rrf(dense+bm25-word-title)",
+      "hit1": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0,
+        "text": "5/5"
+      },
+      "evidence_hit3": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0,
+        "text": "5/5"
+      },
+      "hit5": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0,
+        "text": "5/5"
+      },
+      "mrr10": 1.0,
+      "misses_hit3": [],
+      "median_ms": 116.3,
+      "embedding_api_calls_this_run": 0,
+      "embedding_cost_usd_this_run": 0.0
+    }
+  }
+}

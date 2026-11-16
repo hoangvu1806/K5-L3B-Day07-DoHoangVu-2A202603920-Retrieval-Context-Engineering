@@ -2,3 +2,6 @@
 qdrant-client==1.15.1
 requests==2.34.2
 python-dotenv==1.0.1
+openai==2.41.1
+rank-bm25==0.2.2
+underthesea==8.3.0

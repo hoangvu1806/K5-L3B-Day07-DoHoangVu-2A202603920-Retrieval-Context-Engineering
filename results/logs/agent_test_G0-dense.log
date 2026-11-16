@@ -1,0 +1,8 @@
+n01  answered searches=2 refs=['S2']  70.8s $0.00028 | '**Chỉ định phẫu thuật mở thông nang** đối với nang nhái sàn miệng [S2]:\n\n- Nang có kích th'
+n02  answered searches=2 refs=['S1']  25.6s $0.00018 | 'Cố định hai hàm bằng cung Tiguersted hoặc nút Ivy cần giữ trong thời gian **từ 4–6 tuần** '
+n03  answered searches=3 refs=['S7', 'S4', 'S2']  35.3s $0.00101 | 'Theo tài liệu: viêm tuyến dưới hàm do sỏi ống tuyến nếu **điều trị lấy bỏ sỏi muộn thì tuy'
+n04  answered searches=2 refs=['S4']  27.4s $0.00031 | '**Ca(OH)₂ (calci hydroxid)** được đặt trong ống tủy để trung hòa mô viêm vùng cuống và sát'
+n05  answered searches=2 refs=['S2']   6.3s $0.00030 | '**U men xương hàm kích thước lớn, đã phá hủy nhiều xương — điều trị cụ thể:**\n\n- Phẫu thuậ'
+u03  abstain  searches=3 refs=[]   9.2s $0.00068 | 'KHÔNG ĐỦ BẰNG CHỨNG.\n\nTài liệu không đề cập đến niềng răng bằng khay trong suốt (Invisalig'
+u04  abstain  searches=2 refs=[]   5.6s $0.00043 | 'KHÔNG ĐỦ BẰNG CHỨNG.\n\nTài liệu chỉ có nội dung chuyên môn về phục hình răng bằng Implant ('
+-> results\agent\test\G0-dense

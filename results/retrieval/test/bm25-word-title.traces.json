@@ -1,0 +1,219 @@
+[
+ {
+  "query_id": "n01",
+  "query": "Nang nhái sàn miệng trong trường hợp nào thì chỉ định phẫu thuật mở thông nang?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "0bdf410d-4b1a-5999-ac6b-fa27a2689e77",
+    "page": 109,
+    "disease_no": 26,
+    "score": 24.02113
+   },
+   {
+    "rank": 2,
+    "id": "eb0cbf07-7f54-59b3-b343-65c8c84d3d37",
+    "page": 106,
+    "disease_no": 25,
+    "score": 23.78471
+   },
+   {
+    "rank": 3,
+    "id": "ca53bb83-fed1-5a27-83e6-3aa1b217fcfa",
+    "page": 109,
+    "disease_no": 26,
+    "score": 22.23783
+   },
+   {
+    "rank": 4,
+    "id": "4002aab6-1ae8-5758-8fbc-2e2bb1b865c8",
+    "page": 107,
+    "disease_no": 25,
+    "score": 20.65288
+   },
+   {
+    "rank": 5,
+    "id": "cb52494d-0f91-5303-8623-8da6d320f774",
+    "page": 112,
+    "disease_no": 27,
+    "score": 20.49379
+   }
+  ]
+ },
+ {
+  "query_id": "n02",
+  "query": "Khi cố định hai hàm bằng cung Tiguersted hoặc nút Ivy thì cần giữ cố định trong bao lâu?",
+  "filter": {
+   "disease_no": 54
+  },
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "4ebb2ed6-6f7b-52ab-949b-66232d48cf41",
+    "page": 191,
+    "disease_no": 54,
+    "score": 38.51556
+   },
+   {
+    "rank": 2,
+    "id": "27e72823-1720-5d0a-b640-967350888482",
+    "page": 191,
+    "disease_no": 54,
+    "score": 14.90973
+   },
+   {
+    "rank": 3,
+    "id": "016cfdf5-8962-5e5d-9f51-a6f143406e45",
+    "page": 190,
+    "disease_no": 54,
+    "score": 11.15039
+   },
+   {
+    "rank": 4,
+    "id": "3c1e509d-f334-5842-8e70-9d1ac69b1b04",
+    "page": 190,
+    "disease_no": 54,
+    "score": 5.40872
+   },
+   {
+    "rank": 5,
+    "id": "9cd9c534-53f9-5ed3-9a18-5be5a787b4fa",
+    "page": 190,
+    "disease_no": 54,
+    "score": 4.42321
+   }
+  ]
+ },
+ {
+  "query_id": "n03",
+  "query": "Nếu sỏi ở ống tuyến Wharton được lấy ra muộn thì tuyến dưới hàm sẽ bị ảnh hưởng ra sao?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "32ef6e2a-d1da-5345-94fd-8f67dd11317e",
+    "page": 158,
+    "disease_no": 44,
+    "score": 32.12505
+   },
+   {
+    "rank": 2,
+    "id": "3a4ad1e2-378e-5134-9872-a3207d83bd4b",
+    "page": 156,
+    "disease_no": 44,
+    "score": 28.83703
+   },
+   {
+    "rank": 3,
+    "id": "4b5a94f2-3c80-5ff4-b960-1e98c70afbed",
+    "page": 158,
+    "disease_no": 44,
+    "score": 28.02452
+   },
+   {
+    "rank": 4,
+    "id": "aaf1a9e1-fd9e-5e18-a911-1680703a4e38",
+    "page": 156,
+    "disease_no": 44,
+    "score": 25.0491
+   },
+   {
+    "rank": 5,
+    "id": "a9b4c8ca-9266-5840-b760-b9caebd331df",
+    "page": 157,
+    "disease_no": 44,
+    "score": 22.57282
+   }
+  ]
+ },
+ {
+  "query_id": "n04",
+  "query": "Khi điều trị nội nha răng viêm quanh cuống, chất gì được đặt vào ống tủy để trung hòa mô viêm vùng cuống?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "c01489b8-35f3-5dc3-bc47-64e9648d33ee",
+    "page": 56,
+    "disease_no": 12,
+    "score": 42.5025
+   },
+   {
+    "rank": 2,
+    "id": "0be4e7a8-bbbc-5538-80c8-1f87079edc33",
+    "page": 56,
+    "disease_no": 12,
+    "score": 30.47354
+   },
+   {
+    "rank": 3,
+    "id": "836dbda2-fdfe-5150-8287-15957a64475e",
+    "page": 52,
+    "disease_no": 12,
+    "score": 27.67585
+   },
+   {
+    "rank": 4,
+    "id": "09f0c9d8-e04f-55f0-b59d-62c74285f1fa",
+    "page": 52,
+    "disease_no": 12,
+    "score": 26.379
+   },
+   {
+    "rank": 5,
+    "id": "8790c0da-5420-527e-b1e5-790e9323219b",
+    "page": 56,
+    "disease_no": 12,
+    "score": 24.366
+   }
+  ]
+ },
+ {
+  "query_id": "n05",
+  "query": "U men xương hàm có kích thước lớn, đã phá hủy nhiều xương thì điều trị như thế nào?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "a1134f9a-5eb3-52a0-a947-9169f1393491",
+    "page": 138,
+    "disease_no": 36,
+    "score": 22.79828
+   },
+   {
+    "rank": 2,
+    "id": "48656ff2-85da-5ca0-ad6f-40212e8e00ea",
+    "page": 137,
+    "disease_no": 36,
+    "score": 22.46614
+   },
+   {
+    "rank": 3,
+    "id": "a9d18795-563a-5bc2-b3b1-3135cfb99f0b",
+    "page": 137,
+    "disease_no": 36,
+    "score": 18.36557
+   },
+   {
+    "rank": 4,
+    "id": "91024c47-eb66-5818-8d78-f77ec425fa69",
+    "page": 140,
+    "disease_no": 37,
+    "score": 13.61937
+   },
+   {
+    "rank": 5,
+    "id": "4c559cc3-1d77-53b2-88c5-3c113d6473e6",
+    "page": 137,
+    "disease_no": 36,
+    "score": 13.40836
+   }
+  ]
+ }
+]

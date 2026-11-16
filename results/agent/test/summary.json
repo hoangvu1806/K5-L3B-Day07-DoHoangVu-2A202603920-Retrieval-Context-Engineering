@@ -1,0 +1,109 @@
+{
+  "G0-dense": {
+    "auto": {
+      "runs": 7,
+      "errors": 0,
+      "context_evidence_rate": "5/5 (100%)",
+      "context_evidence_n": 5,
+      "context_misses": [],
+      "answered": 5,
+      "abstained": 2,
+      "search_count_distribution": {
+        "2": 5,
+        "3": 2
+      },
+      "mean_searches": 2.29,
+      "mean_context_chars": 2082,
+      "mean_seconds": 25.74,
+      "median_seconds": 25.63,
+      "total_llm_cost_usd": 0.00318,
+      "mean_prompt_tokens": 3307,
+      "invalid_citation_refs": 0
+    },
+    "labeled": {
+      "cases": 7,
+      "provider_errors": 0,
+      "tool_use": {
+        "n": 7,
+        "N": 7
+      },
+      "grounded_answer": {
+        "0": 0,
+        "1": 0,
+        "2": 5,
+        "N": 5,
+        "mean": 2.0,
+        "sum": 10
+      },
+      "citation_validity": {
+        "n": 7,
+        "N": 7
+      },
+      "answer_citation_coverage": {
+        "n": 5,
+        "N": 5
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 5
+      }
+    }
+  },
+  "G2-hybrid-k5": {
+    "auto": {
+      "runs": 7,
+      "errors": 0,
+      "context_evidence_rate": "5/5 (100%)",
+      "context_evidence_n": 5,
+      "context_misses": [],
+      "answered": 5,
+      "abstained": 2,
+      "search_count_distribution": {
+        "2": 7
+      },
+      "mean_searches": 2,
+      "mean_context_chars": 3051,
+      "mean_seconds": 12.57,
+      "median_seconds": 4.89,
+      "total_llm_cost_usd": 0.00327,
+      "mean_prompt_tokens": 3216,
+      "invalid_citation_refs": 0
+    },
+    "labeled": {
+      "cases": 7,
+      "provider_errors": 0,
+      "tool_use": {
+        "n": 7,
+        "N": 7
+      },
+      "grounded_answer": {
+        "0": 0,
+        "1": 0,
+        "2": 5,
+        "N": 5,
+        "mean": 2.0,
+        "sum": 10
+      },
+      "citation_validity": {
+        "n": 6,
+        "N": 6
+      },
+      "answer_citation_coverage": {
+        "n": 5,
+        "N": 5
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 5
+      }
+    }
+  }
+}

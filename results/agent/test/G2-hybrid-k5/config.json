@@ -1,0 +1,11 @@
+{
+  "name": "G2-hybrid-k5",
+  "retriever": "hybrid",
+  "top_k": 5,
+  "budget_chars": 6000,
+  "max_searches": 3,
+  "model": "deepseek/deepseek-v4.1-flash",
+  "temperature": 0.0,
+  "description": "Hybrid với top-5 và context 6000 ký tự.",
+  "hypothesis": "Hybrid đạt Hit@5 24/24; lấy 5 đoạn mỗi lượt đưa được evidence của các câu hạng 4-5 (d05, d14) vào context, đổi lại tốn token hơn và có thể nhiễu hơn với câu thiếu bằng chứng."
+}

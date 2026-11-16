@@ -2,13 +2,33 @@
 
 > **Bài làm:** Đỗ Hoàng Vũ · 2A202603920 · L3B. Tiếp nối [Day 6](https://github.com/hoangvu1806/K5-L3B-Day06-DoHoangVu-2A202603920-DataIngestionEngineering) (tài liệu Răng Hàm Mặt, QĐ 3108/QĐ-BYT).
 >
-> **Setup**
+> **Setup & chạy tái lập**
 > ```bash
 > pip install -r requirements.txt
 > cp .env.example .env            # điền Qdrant + OpenRouter
 > python scripts/prepare_day6.py  # chunk + benchmark Day 6 -> data/day6/
+> python scripts/verify_benchmark.py
 > python scripts/check_setup.py   # so Qdrant với file, chạy 1 dense search thật
 > PYTHONUTF8=1 python -m unittest discover -s tests -v   # Windows cần UTF-8 mode
+>
+> # Đánh giá retrieval & chạy agent (dev / test)
+> PYTHONUTF8=1 python scripts/eval_retrieval.py --split dev --methods dense bm25-syllable bm25-word bm25-word-title hybrid
+> PYTHONUTF8=1 python scripts/run_agent.py --config G0-dense --split dev
+> PYTHONUTF8=1 python scripts/run_agent.py --config G1-hybrid --split dev
+> PYTHONUTF8=1 python scripts/run_agent.py --config G2-hybrid-k5 --split dev
+> PYTHONUTF8=1 python scripts/write_reviews.py --split dev
+> PYTHONUTF8=1 python scripts/agent_report.py --split dev --configs G0-dense G1-hybrid G2-hybrid-k5
+>
+> # Đánh giá trên test (sau khi chốt cấu hình ở artifacts/selection_decision.json)
+> PYTHONUTF8=1 python scripts/eval_retrieval.py --split test --methods dense bm25-syllable bm25-word bm25-word-title hybrid
+> PYTHONUTF8=1 python scripts/run_agent.py --config G0-dense --split test
+> PYTHONUTF8=1 python scripts/run_agent.py --config G2-hybrid-k5 --split test
+> PYTHONUTF8=1 python scripts/write_reviews.py --split test
+> PYTHONUTF8=1 python scripts/agent_report.py --split test --configs G0-dense G2-hybrid-k5
+>
+> # Web UI chatbot (tùy chọn, cần cài thêm chatbot/requirements.txt)
+> pip install -r chatbot/requirements.txt
+> python -m uvicorn chatbot.app:app --port 8000
 > ```
 > Dữ liệu Day 6: `day06_rhm_a` (547 chunk, cửa sổ 500 ký tự) và `day06_rhm_b` (526 chunk, theo cấu trúc), embedding `google/gemini-embedding-2` 3072 chiều, cosine. Chunk id trong `data/day6/*.json` trùng point id Qdrant. Code Qdrant/embedding lấy nguyên từ Day 6 trong `src/day6/`. `starter/baseline.py` được sửa để so evidence sau khi gộp khoảng trắng và theo danh sách trang của chunk, đúng quy ước benchmark Day 6.
 

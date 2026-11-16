@@ -1,0 +1,319 @@
+[
+ {
+  "query_id": "n01",
+  "query": "Nang nhái sàn miệng trong trường hợp nào thì chỉ định phẫu thuật mở thông nang?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "0bdf410d-4b1a-5999-ac6b-fa27a2689e77",
+    "page": 109,
+    "disease_no": 26,
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25-word-title": 1
+    }
+   },
+   {
+    "rank": 2,
+    "id": "eb0cbf07-7f54-59b3-b343-65c8c84d3d37",
+    "page": 106,
+    "disease_no": 25,
+    "score": 0.03175,
+    "components": {
+     "dense": 4,
+     "bm25-word-title": 2
+    }
+   },
+   {
+    "rank": 3,
+    "id": "cb52494d-0f91-5303-8623-8da6d320f774",
+    "page": 112,
+    "disease_no": 27,
+    "score": 0.03151,
+    "components": {
+     "dense": 2,
+     "bm25-word-title": 5
+    }
+   },
+   {
+    "rank": 4,
+    "id": "71d7f398-54b8-5712-bbb2-b59005243def",
+    "page": 108,
+    "disease_no": 26,
+    "score": 0.0308,
+    "components": {
+     "dense": 3,
+     "bm25-word-title": 7
+    }
+   },
+   {
+    "rank": 5,
+    "id": "1efa0692-07ee-57da-84dc-113a565aba33",
+    "page": 109,
+    "disease_no": 26,
+    "score": 0.03009,
+    "components": {
+     "dense": 5,
+     "bm25-word-title": 8
+    }
+   }
+  ]
+ },
+ {
+  "query_id": "n02",
+  "query": "Khi cố định hai hàm bằng cung Tiguersted hoặc nút Ivy thì cần giữ cố định trong bao lâu?",
+  "filter": {
+   "disease_no": 54
+  },
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "4ebb2ed6-6f7b-52ab-949b-66232d48cf41",
+    "page": 191,
+    "disease_no": 54,
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25-word-title": 1
+    }
+   },
+   {
+    "rank": 2,
+    "id": "27e72823-1720-5d0a-b640-967350888482",
+    "page": 191,
+    "disease_no": 54,
+    "score": 0.032,
+    "components": {
+     "dense": 3,
+     "bm25-word-title": 2
+    }
+   },
+   {
+    "rank": 3,
+    "id": "88416d36-8c93-5a07-9b0f-77d9ab50b18c",
+    "page": 190,
+    "disease_no": 54,
+    "score": 0.03105,
+    "components": {
+     "dense": 2,
+     "bm25-word-title": 7
+    }
+   },
+   {
+    "rank": 4,
+    "id": "016cfdf5-8962-5e5d-9f51-a6f143406e45",
+    "page": 190,
+    "disease_no": 54,
+    "score": 0.03102,
+    "components": {
+     "dense": 6,
+     "bm25-word-title": 3
+    }
+   },
+   {
+    "rank": 5,
+    "id": "3c1e509d-f334-5842-8e70-9d1ac69b1b04",
+    "page": 190,
+    "disease_no": 54,
+    "score": 0.03101,
+    "components": {
+     "dense": 5,
+     "bm25-word-title": 4
+    }
+   }
+  ]
+ },
+ {
+  "query_id": "n03",
+  "query": "Nếu sỏi ở ống tuyến Wharton được lấy ra muộn thì tuyến dưới hàm sẽ bị ảnh hưởng ra sao?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "32ef6e2a-d1da-5345-94fd-8f67dd11317e",
+    "page": 158,
+    "disease_no": 44,
+    "score": 0.03252,
+    "components": {
+     "dense": 2,
+     "bm25-word-title": 1
+    }
+   },
+   {
+    "rank": 2,
+    "id": "4b5a94f2-3c80-5ff4-b960-1e98c70afbed",
+    "page": 158,
+    "disease_no": 44,
+    "score": 0.03227,
+    "components": {
+     "dense": 1,
+     "bm25-word-title": 3
+    }
+   },
+   {
+    "rank": 3,
+    "id": "aaf1a9e1-fd9e-5e18-a911-1680703a4e38",
+    "page": 156,
+    "disease_no": 44,
+    "score": 0.03125,
+    "components": {
+     "dense": 4,
+     "bm25-word-title": 4
+    }
+   },
+   {
+    "rank": 4,
+    "id": "3a4ad1e2-378e-5134-9872-a3207d83bd4b",
+    "page": 156,
+    "disease_no": 44,
+    "score": 0.03105,
+    "components": {
+     "dense": 7,
+     "bm25-word-title": 2
+    }
+   },
+   {
+    "rank": 5,
+    "id": "6893fcb8-ed75-5147-9e75-6c769e5a181f",
+    "page": 156,
+    "disease_no": 44,
+    "score": 0.03102,
+    "components": {
+     "dense": 3,
+     "bm25-word-title": 6
+    }
+   }
+  ]
+ },
+ {
+  "query_id": "n04",
+  "query": "Khi điều trị nội nha răng viêm quanh cuống, chất gì được đặt vào ống tủy để trung hòa mô viêm vùng cuống?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "c01489b8-35f3-5dc3-bc47-64e9648d33ee",
+    "page": 56,
+    "disease_no": 12,
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25-word-title": 1
+    }
+   },
+   {
+    "rank": 2,
+    "id": "0be4e7a8-bbbc-5538-80c8-1f87079edc33",
+    "page": 56,
+    "disease_no": 12,
+    "score": 0.032,
+    "components": {
+     "dense": 3,
+     "bm25-word-title": 2
+    }
+   },
+   {
+    "rank": 3,
+    "id": "8790c0da-5420-527e-b1e5-790e9323219b",
+    "page": 56,
+    "disease_no": 12,
+    "score": 0.03151,
+    "components": {
+     "dense": 2,
+     "bm25-word-title": 5
+    }
+   },
+   {
+    "rank": 4,
+    "id": "836dbda2-fdfe-5150-8287-15957a64475e",
+    "page": 52,
+    "disease_no": 12,
+    "score": 0.03102,
+    "components": {
+     "dense": 6,
+     "bm25-word-title": 3
+    }
+   },
+   {
+    "rank": 5,
+    "id": "09f0c9d8-e04f-55f0-b59d-62c74285f1fa",
+    "page": 52,
+    "disease_no": 12,
+    "score": 0.03033,
+    "components": {
+     "dense": 8,
+     "bm25-word-title": 4
+    }
+   }
+  ]
+ },
+ {
+  "query_id": "n05",
+  "query": "U men xương hàm có kích thước lớn, đã phá hủy nhiều xương thì điều trị như thế nào?",
+  "filter": null,
+  "hit_rank": 1,
+  "top": [
+   {
+    "rank": 1,
+    "id": "a1134f9a-5eb3-52a0-a947-9169f1393491",
+    "page": 138,
+    "disease_no": 36,
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25-word-title": 1
+    }
+   },
+   {
+    "rank": 2,
+    "id": "48656ff2-85da-5ca0-ad6f-40212e8e00ea",
+    "page": 137,
+    "disease_no": 36,
+    "score": 0.03226,
+    "components": {
+     "dense": 2,
+     "bm25-word-title": 2
+    }
+   },
+   {
+    "rank": 3,
+    "id": "28f73265-c6de-5e1a-880d-841acc88c64a",
+    "page": 138,
+    "disease_no": 36,
+    "score": 0.03102,
+    "components": {
+     "dense": 3,
+     "bm25-word-title": 6
+    }
+   },
+   {
+    "rank": 4,
+    "id": "4c559cc3-1d77-53b2-88c5-3c113d6473e6",
+    "page": 137,
+    "disease_no": 36,
+    "score": 0.03077,
+    "components": {
+     "dense": 5,
+     "bm25-word-title": 5
+    }
+   },
+   {
+    "rank": 5,
+    "id": "91024c47-eb66-5818-8d78-f77ec425fa69",
+    "page": 140,
+    "disease_no": 37,
+    "score": 0.02951,
+    "components": {
+     "dense": 12,
+     "bm25-word-title": 4
+    }
+   }
+  ]
+ }
+]
