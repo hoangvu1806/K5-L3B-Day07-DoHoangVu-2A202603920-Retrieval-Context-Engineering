@@ -1,0 +1,694 @@
+[
+  {
+    "id": "d01",
+    "split": "dev",
+    "question": "Khi đã xác định răng khôn hàm dưới mọc lệch thì nên xử trí thế nào, và vì sao?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Nên nhổ bỏ càng sớm càng tốt để không làm mất xương phía xa răng hàm lớn thứ hai.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 9,
+        "pages": [
+          9
+        ],
+        "evidence": "Khi đã xác định được răng khôn hàm dưới mọc lệch thì nên nhổ bỏ càng sớm càng tốt để không làm mất xương phía xa răng hàm lớn thứ hai."
+      }
+    ],
+    "type": "truc_tiep",
+    "filter": null
+  },
+  {
+    "id": "d02",
+    "split": "dev",
+    "question": "Răng khôn mọc lệch đang bị viêm quanh thân răng cấp thì khi nào mới tiến hành nhổ?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Điều trị biến chứng nhiễm trùng trước (kháng sinh, bơm rửa); sau khi hết giai đoạn nhiễm trùng cấp tính mới nhổ răng khôn lệch.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 9,
+        "pages": [
+          9
+        ],
+        "evidence": "Sau khi hết giai đoạn nhiễm trùng cấp tính thì điều trị nhổ răng khôn lệch theo các bước đã trình bày ở mục 4.2.1."
+      }
+    ],
+    "type": "dieu_kien",
+    "filter": null
+  },
+  {
+    "id": "d03",
+    "split": "dev",
+    "question": "Trong sâu răng sữa, môi trường quanh răng có pH bao nhiêu thì gây hủy khoáng mô cứng?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Khi pH dưới 5.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 18,
+        "pages": [
+          18
+        ],
+        "evidence": "Khi môi trường có pH< 5 thì gây ra tổn thương hủy khoáng làm mất mô cứng của răng và gây ra sâu răng."
+      }
+    ],
+    "type": "truc_tiep",
+    "filter": null
+  },
+  {
+    "id": "d04",
+    "split": "dev",
+    "question": "Loại vi khuẩn nào được cho là gây sâu răng sữa mạnh nhất trong các nghiên cứu thực nghiệm?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Streptococcus mutans (tài liệu viết 'Streptococus mutans').",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 18,
+        "pages": [
+          18,
+          40
+        ],
+        "evidence": "Chủng vi khuẩn có khả năng gây sâu răng cao nhất trong nghiên cứu thực nghiệm là Streptococus mutans."
+      }
+    ],
+    "type": "dien_dat_lai",
+    "filter": null
+  },
+  {
+    "id": "d05",
+    "split": "dev",
+    "question": "Khi gõ răng bị viêm tủy răng sữa không hồi phục, gõ dọc và gõ ngang cho kết quả thế nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Gõ dọc đau nhẹ, gõ ngang đau nhiều.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 25,
+        "pages": [
+          25
+        ],
+        "evidence": "Gõ dọc: đau nhẹ. + Gõ ngang: đau nhiều."
+      }
+    ],
+    "type": "truc_tiep",
+    "filter": null
+  },
+  {
+    "id": "d06",
+    "split": "dev",
+    "question": "Vì sao nghiệm pháp thử tủy ở trẻ em bị viêm tủy răng sữa không hồi phục lại không đáng tin cậy?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Vì trẻ đang đau sẽ rất cảnh giác và sợ hãi khi phản ứng với bất kỳ kích thích nào.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 25,
+        "pages": [
+          25
+        ],
+        "evidence": "ở trẻ em không có giá trị chắc chắn vì trẻ em đang đau sẽ rất cảnh giác và sợ hãi khi phản ứng lại với bất kì kích thích nào."
+      }
+    ],
+    "type": "ngoai_le",
+    "filter": null
+  },
+  {
+    "id": "d07",
+    "split": "dev",
+    "question": "Khi điều trị bằng Headgear, lực kéo mỗi bên và thời gian đeo trong ngày là bao nhiêu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Lực kéo 350–450 gram mỗi bên; đeo ít nhất 14 giờ/ngày.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 64,
+        "pages": [
+          64
+        ],
+        "evidence": "Lực kéo Headgear mỗi bên: 350- 450gram. + Thời gian đeo Headgear trong ngày: ít nhất 14 h/ngày."
+      }
+    ],
+    "type": "metadata_filter",
+    "filter": {
+      "disease_no": 14
+    }
+  },
+  {
+    "id": "d08",
+    "split": "dev",
+    "question": "Khi thăm khám, dấu hiệu nào giúp phân biệt với áp xe tuyến dưới hàm?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Áp xe tuyến dưới hàm có dấu hiệu chảy mủ qua lỗ ống Wharton khi thăm khám.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 122,
+        "pages": [
+          122
+        ],
+        "evidence": "Áp xe tuyến dưới hàm: dấu hiệu chảy mủ qua lỗ ống Wharton khi thăm khám."
+      }
+    ],
+    "type": "metadata_filter",
+    "filter": {
+      "disease_no": 31
+    }
+  },
+  {
+    "id": "d09",
+    "split": "dev",
+    "question": "Khi kết hợp xương bằng nẹp vít, đường rạch ngách tiền đình hàm trên cách ranh giới lợi dính bao nhiêu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Khoảng 3 mm.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 196,
+        "pages": [
+          196
+        ],
+        "evidence": "Đường rạch ngách tiền đình hàm trên cách ranh giới lợi dính khoảng 3 mm để kết hợp xương ở trụ gò má và trụ hàm trên."
+      }
+    ],
+    "type": "metadata_filter",
+    "filter": {
+      "disease_no": 55
+    }
+  },
+  {
+    "id": "d10",
+    "split": "dev",
+    "question": "Bịt mũi bệnh nhân gãy xương hàm trên mà hơi thở thoát ra đằng miệng thì gợi ý tổn thương ở đâu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Gãy mỏm khẩu cái và vòm khẩu cái.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 194,
+        "pages": [
+          194
+        ],
+        "evidence": "Gãy mỏm khẩu cái và vòm khẩu cái + Chảy máu miệng, máu mũi, sặc khi ăn. + Bịt mũi khi bệnh nhân thở hơi thoát ra ở miệng."
+      }
+    ],
+    "type": "dien_dat_lai",
+    "filter": null
+  },
+  {
+    "id": "d11",
+    "split": "dev",
+    "question": "Bệnh quai bị do loại virus nào gây ra?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Virus thuộc nhóm Paramyxo virus.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 151,
+        "pages": [
+          151
+        ],
+        "evidence": "Bệnh do virus thuộc nhóm Paramyxo virus gây ra."
+      }
+    ],
+    "type": "truc_tiep",
+    "filter": null
+  },
+  {
+    "id": "d12",
+    "split": "dev",
+    "question": "Viêm tuyến mang tai do virus hay để lại biến chứng gì nhất?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Viêm tinh hoàn (viêm buồng trứng thì hiếm gặp).",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 152,
+        "pages": [
+          152
+        ],
+        "evidence": "Viêm tinh hoàn: là biến chứng hay gặp. - Viêm buồng trứng: hiếm gặp."
+      }
+    ],
+    "type": "dien_dat_lai",
+    "filter": null
+  },
+  {
+    "id": "d13",
+    "split": "dev",
+    "question": "Thuốc nào thường là lựa chọn đầu tiên khi điều trị nội khoa đau dây thần kinh V?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Carbamazepine; có thể thay bằng Oxcarbazepine hoặc gabapentin để giảm tác dụng phụ.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 168,
+        "pages": [
+          168
+        ],
+        "evidence": "Carbamazepine thường là lựa chọn đầu tiên khi điều trị đau thần kinh V, có thể thay thế bằng Oxcarbazepine hoặc gabapentin để giảm tác dụng phụ."
+      }
+    ],
+    "type": "truc_tiep",
+    "filter": null
+  },
+  {
+    "id": "d14",
+    "split": "dev",
+    "question": "Đau dây thần kinh V không rõ nguyên nhân thì khi nào được chỉ định điều trị ngoại khoa?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Khi không xác định được nguyên nhân và điều trị nội khoa thất bại.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 168,
+        "pages": [
+          168
+        ],
+        "evidence": "Chỉ định: khi không xác định được nguyên nhân và điều trị nội khoa thất bại."
+      }
+    ],
+    "type": "dieu_kien",
+    "filter": null
+  },
+  {
+    "id": "d15",
+    "split": "dev",
+    "question": "Trong tài liệu, MTA là viết tắt của gì và là vật liệu gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Mineral Trioxide Aggregate: hỗn hợp xi măng Portland tinh chế và Bismuth oxit, chứa lượng nhỏ SiO2, CaO, MgO, K2SO4, Na2SO4.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "evidence": "MTA (Mineral Trioxide Aggregate): một hỗn hợp của xi măng Porland tinh chế và Bismuth oxit"
+      }
+    ],
+    "type": "phan_mo_dau",
+    "filter": null
+  },
+  {
+    "id": "d16",
+    "split": "dev",
+    "question": "Trẻ bị khe hở môi cần đạt cân nặng bao nhiêu thì đủ điều kiện phẫu thuật?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Từ 6 kg trở lên (kèm xét nghiệm máu đủ điều kiện).",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 100,
+        "pages": [
+          100
+        ],
+        "evidence": "Điều kiện phẫu thuật + Cân nặng: từ 6kg trở lên. + Xét nghiệm máu: đủ điều kiện cho phép."
+      }
+    ],
+    "type": "dieu_kien",
+    "filter": null
+  },
+  {
+    "id": "d17",
+    "split": "dev",
+    "question": "U máu ở trẻ nhỏ thường xuất hiện lúc nào và diễn tiến theo thời gian ra sao?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Xuất hiện trong những tuần đầu sau sinh, phát triển nhanh trong những tháng đầu, sau đó dừng phát triển và thoái triển.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 144,
+        "pages": [
+          144
+        ],
+        "evidence": "thường xuất hiện trong những tuần đầu sau khi sinh, phát triển nhanh chóng trong những tháng đầu, sau đó dừng phát triển và thoái triển."
+      }
+    ],
+    "type": "dien_dat_lai",
+    "filter": null
+  },
+  {
+    "id": "d18",
+    "split": "dev",
+    "question": "Ai là chủ biên của tài liệu hướng dẫn này?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "PGS.TS. Nguyễn Thị Xuyên (đồng chủ biên: GS.TS. Trịnh Đình Hải, PGS.TS. Lương Ngọc Khuê).",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 3,
+        "pages": [
+          3
+        ],
+        "evidence": "Chủ biên PGS.TS. Nguyễn Thị Xuyên"
+      }
+    ],
+    "type": "phan_mo_dau",
+    "filter": null
+  },
+  {
+    "id": "t01",
+    "split": "dev",
+    "question": "Khi nào thì rạch dẫn lưu ổ áp xe theo đường trong miệng?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Khi áp xe tiến triển về phía niêm mạc miệng.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 119,
+        "pages": [
+          119
+        ],
+        "evidence": "Chỉ định: khi áp xe tiến triển về phía niêm mạc miệng."
+      }
+    ],
+    "type": "metadata_filter",
+    "filter": {
+      "disease_no": 30
+    },
+    "note": "test Day 6, chuyển sang dev vì kết quả đã được xem ở Day 6"
+  },
+  {
+    "id": "t02",
+    "split": "dev",
+    "question": "Ở thể sai khớp cắn này, độ cắn chìa và độ cắn phủ thay đổi như thế nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Độ cắn chìa bình thường; độ cắn phủ tăng, mức độ tùy từng trường hợp.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 78,
+        "pages": [
+          78
+        ],
+        "evidence": "Độ cắn chìa bình thường. - Độ cắn phủ tăng, mức độ tăng cao tùy từng trường hợp."
+      }
+    ],
+    "type": "metadata_filter",
+    "filter": {
+      "disease_no": 18
+    },
+    "note": "test Day 6, chuyển sang dev vì kết quả đã được xem ở Day 6"
+  },
+  {
+    "id": "t03",
+    "split": "dev",
+    "question": "Trong viêm quanh Implant, xương bị tiêu đến mức nào thì nên tháo Implant ra?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Khi xương mất quá 1/2 chiều dài Implant: nên tháo Implant, phát triển xương tại chỗ rồi chờ đặt lại.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 184,
+        "pages": [
+          184
+        ],
+        "evidence": "Nếu xương bị mất quá ½ chiều dài của Implant thì tốt nhất nên tháo Implant ra, phát triển xương tại chỗ và chờ để có thể đặt lại Implant"
+      }
+    ],
+    "type": "dieu_kien",
+    "filter": null,
+    "note": "test Day 6, chuyển sang dev vì kết quả đã được xem ở Day 6"
+  },
+  {
+    "id": "t04",
+    "split": "dev",
+    "question": "Viêm tuyến nước bọt mang tai mạn tính trong trường hợp nào phải mổ, và mổ như thế nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Khi tuyến đã xơ hóa, không còn chức năng: phẫu thuật cắt toàn bộ tuyến mang tai, bảo tồn thần kinh VII.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 154,
+        "pages": [
+          154
+        ],
+        "evidence": "Chỉ định: Khi tuyến xơ hóa, không còn chức năng. b. Điều trị bằng phẫu thuật cắt toàn bộ tuyến mang tai, bảo tồn thần kinh VII."
+      }
+    ],
+    "type": "dien_dat_lai",
+    "filter": null,
+    "note": "test Day 6, chuyển sang dev vì kết quả đã được xem ở Day 6"
+  },
+  {
+    "id": "t05",
+    "split": "dev",
+    "question": "Dính khớp thái dương hàm ở mức độ nào thì chỉ cần điều trị bảo tồn, và điều trị bằng cách nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Mức độ 1: hướng dẫn tập há miệng bằng dụng cụ banh miệng, tập vận động xương hàm dưới.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 200,
+        "pages": [
+          200
+        ],
+        "evidence": "Các trường hợp dính khớp ở mức độ 1: Hướng dẫn bệnh nhân tập há miệng bằng dụng cụ banh miệng, tập vận động xương hàm dưới."
+      }
+    ],
+    "type": "dieu_kien",
+    "filter": null,
+    "note": "test Day 6, chuyển sang dev vì kết quả đã được xem ở Day 6"
+  },
+  {
+    "id": "t06",
+    "split": "dev",
+    "question": "Quyết định ban hành tài liệu hướng dẫn này có hiệu lực từ khi nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Kể từ ngày ký ban hành (Quyết định 3108/QĐ-BYT ký ngày 28/7/2015).",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 1,
+        "pages": [
+          1
+        ],
+        "evidence": "Điều 3. Quyết định này có hiệu lực kể từ ngày ký ban hành."
+      }
+    ],
+    "type": "phan_mo_dau",
+    "filter": null,
+    "note": "test Day 6, chuyển sang dev vì kết quả đã được xem ở Day 6"
+  },
+  {
+    "id": "n01",
+    "split": "test",
+    "question": "Nang nhái sàn miệng trong trường hợp nào thì chỉ định phẫu thuật mở thông nang?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Khi nang có kích thước lớn gây chèn ép và ảnh hưởng đến chức năng, hoặc nang lớn mà tình trạng toàn thân của bệnh nhân không cho phép phẫu thuật kéo dài.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 109,
+        "pages": [
+          109
+        ],
+        "evidence": "Nang có kích thước lớn gây chèn ép và ảnh hưởng đến chức năng. + Nang có kích thước lớn và tình trạng toàn thân của bệnh nhân không cho phép phẫu thuật kéo dài."
+      }
+    ],
+    "type": "dieu_kien",
+    "filter": null,
+    "disease_no": 26
+  },
+  {
+    "id": "n02",
+    "split": "test",
+    "question": "Khi cố định hai hàm bằng cung Tiguersted hoặc nút Ivy thì cần giữ cố định trong bao lâu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Từ 4 đến 6 tuần.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 191,
+        "pages": [
+          191
+        ],
+        "evidence": "cố định hai hàm bằng cung Tiguersted hoặc nút Ivy trong thời gian từ 4- 6 tuần"
+      }
+    ],
+    "type": "metadata_filter",
+    "filter": {
+      "disease_no": 54
+    },
+    "disease_no": 54
+  },
+  {
+    "id": "n03",
+    "split": "test",
+    "question": "Nếu sỏi ở ống tuyến Wharton được lấy ra muộn thì tuyến dưới hàm sẽ bị ảnh hưởng ra sao?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Tuyến dưới hàm dễ bị viêm mạn và xơ hóa, dẫn đến phải cắt bỏ tuyến.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 158,
+        "pages": [
+          158
+        ],
+        "evidence": "Viêm tuyến dưới hàm do sỏi ống tuyến nếu điều trị lấy bỏ sỏi muộn thì tuyến dưới hàm dễ viêm mạn xơ hóa, dẫn đến phải cắt bỏ tuyến."
+      }
+    ],
+    "type": "dien_dat_lai",
+    "filter": null,
+    "disease_no": 44
+  },
+  {
+    "id": "n04",
+    "split": "test",
+    "question": "Khi điều trị nội nha răng viêm quanh cuống, chất gì được đặt vào ống tủy để trung hòa mô viêm vùng cuống?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Ca(OH)2 (canxi hydroxit), vừa trung hòa mô viêm vùng cuống vừa sát khuẩn hệ thống ống tủy.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 57,
+        "pages": [
+          56,
+          57
+        ],
+        "evidence": "Đặt Ca(OH)2 trong ống tủy để trung hòa mô viêm vùng cuống, sát khuẩn hệ thống ống tủy."
+      }
+    ],
+    "type": "truc_tiep",
+    "filter": null,
+    "disease_no": 12
+  },
+  {
+    "id": "n05",
+    "split": "test",
+    "question": "U men xương hàm có kích thước lớn, đã phá hủy nhiều xương thì điều trị như thế nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Phẫu thuật cắt bỏ u cùng đoạn xương hàm, phục hồi đoạn xương cắt bỏ bằng ghép xương hàm, rồi phục hình răng để phục hồi ăn nhai.",
+    "gold": [
+      {
+        "source_id": "byt-rhm-3108-2015",
+        "page": 138,
+        "pages": [
+          138
+        ],
+        "evidence": "Phẫu thuật cắt bỏ u và đoạn xương hàm. + Phục hồi đoạn xương cắt bỏ bằng kỹ thuật ghép xương hàm."
+      }
+    ],
+    "type": "dieu_kien",
+    "filter": null,
+    "disease_no": 36
+  },
+  {
+    "id": "u01",
+    "split": "dev",
+    "question": "Khi tẩy trắng răng bị nhiễm màu tetracycline thì nên dùng hydrogen peroxide nồng độ bao nhiêu?",
+    "absence_reason": "Tài liệu chỉ ghi 'Có thể tiến hành tẩy trắng răng khi răng bị nhiễm màu' (trang 47, bệnh 10), không nêu thuốc, nồng độ hay quy trình tẩy trắng.",
+    "near_miss": {
+      "page": 47,
+      "text": "Có thể tiến hành tẩy trắng răng khi răng bị nhiễm màu."
+    },
+    "absence_check": {
+      "keywords": [
+        "peroxide",
+        "peroxid",
+        "carbamide",
+        "nồng độ"
+      ],
+      "allowed_hits": {
+        "nồng độ": "trang 144, nồng độ estradiol trong u máu, không liên quan"
+      }
+    },
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "u02",
+    "split": "dev",
+    "question": "Bệnh nấm miệng do Candida ở trẻ nhỏ được điều trị bằng thuốc gì?",
+    "absence_reason": "Tài liệu không có bệnh nấm miệng; từ 'nấm' chỉ xuất hiện dưới dạng 'nấm mốc từ gạo, lạc' trong nguyên nhân ung thư (trang 170, 174, 178).",
+    "near_miss": {
+      "page": 170,
+      "text": "Các nấm mốc từ gạo, lạc..."
+    },
+    "absence_check": {
+      "keywords": [
+        "candida",
+        "nấm miệng",
+        "tưa lưỡi",
+        "nystatin",
+        "fluconazol"
+      ],
+      "allowed_hits": {}
+    },
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "u03",
+    "split": "test",
+    "question": "Niềng răng bằng khay trong suốt (Invisalign) cho sai khớp cắn loại II thì cần đeo khay bao nhiêu giờ mỗi ngày?",
+    "absence_reason": "Tài liệu chỉ nói về Headgear và khí cụ chức năng (đeo ít nhất 14 h/ngày, trang 64, 68, 72); không có khay trong suốt. Trả lời '14 giờ' là gán nhầm sang khí cụ khác.",
+    "near_miss": {
+      "page": 64,
+      "text": "Thời gian đeo Headgear trong ngày: ít nhất 14 h/ngày."
+    },
+    "absence_check": {
+      "keywords": [
+        "invisalign",
+        "khay",
+        "aligner",
+        "máng trong suốt"
+      ],
+      "allowed_hits": {}
+    },
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "u04",
+    "split": "test",
+    "question": "Bảo hiểm y tế chi trả bao nhiêu phần trăm chi phí cấy ghép Implant thay một răng đã mất?",
+    "absence_reason": "Tài liệu không có thông tin chi phí hay mức chi trả; 'Bảo hiểm Xã hội Việt Nam' chỉ xuất hiện trong mục Nơi nhận của Quyết định (trang 1).",
+    "near_miss": {
+      "page": 1,
+      "text": "Bảo hiểm Xã hội Việt Nam (để phối hợp)"
+    },
+    "absence_check": {
+      "keywords": [
+        "chi phí",
+        "chi trả",
+        "phần trăm",
+        "bảo hiểm y tế"
+      ],
+      "allowed_hits": {}
+    },
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  }
+]
