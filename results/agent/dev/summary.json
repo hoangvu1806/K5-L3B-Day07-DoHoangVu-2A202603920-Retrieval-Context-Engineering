@@ -24,6 +24,38 @@
       "total_llm_cost_usd": 0.01233,
       "mean_prompt_tokens": 3018,
       "invalid_citation_refs": 0
+    },
+    "labeled": {
+      "cases": 26,
+      "provider_errors": 0,
+      "tool_use": {
+        "n": 26,
+        "N": 26
+      },
+      "grounded_answer": {
+        "0": 2,
+        "1": 0,
+        "2": 22,
+        "N": 24,
+        "mean": 1.8333333333333333,
+        "sum": 44
+      },
+      "citation_validity": {
+        "n": 35,
+        "N": 35
+      },
+      "answer_citation_coverage": {
+        "n": 22,
+        "N": 22
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 2,
+        "N": 24
+      }
     }
   },
   "G1-hybrid": {
@@ -50,6 +82,38 @@
       "total_llm_cost_usd": 0.01192,
       "mean_prompt_tokens": 3110,
       "invalid_citation_refs": 0
+    },
+    "labeled": {
+      "cases": 26,
+      "provider_errors": 0,
+      "tool_use": {
+        "n": 26,
+        "N": 26
+      },
+      "grounded_answer": {
+        "0": 1,
+        "1": 0,
+        "2": 23,
+        "N": 24,
+        "mean": 1.9166666666666667,
+        "sum": 46
+      },
+      "citation_validity": {
+        "n": 36,
+        "N": 37
+      },
+      "answer_citation_coverage": {
+        "n": 23,
+        "N": 23
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 1,
+        "N": 24
+      }
     }
   },
   "G2-hybrid-k5": {
@@ -73,6 +137,38 @@
       "total_llm_cost_usd": 0.01376,
       "mean_prompt_tokens": 3596,
       "invalid_citation_refs": 0
+    },
+    "labeled": {
+      "cases": 26,
+      "provider_errors": 0,
+      "tool_use": {
+        "n": 26,
+        "N": 26
+      },
+      "grounded_answer": {
+        "0": 0,
+        "1": 0,
+        "2": 24,
+        "N": 24,
+        "mean": 2.0,
+        "sum": 48
+      },
+      "citation_validity": {
+        "n": 39,
+        "N": 39
+      },
+      "answer_citation_coverage": {
+        "n": 24,
+        "N": 24
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 24
+      }
     }
   }
 }

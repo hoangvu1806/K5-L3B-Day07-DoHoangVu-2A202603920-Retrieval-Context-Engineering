@@ -1,0 +1,273 @@
+[
+ {
+  "query_id": "d01",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng và đủ; S6 (tiên lượng) hỗ trợ ý bảo vệ răng 7.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d02",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng như G1.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d03",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng như G1.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d04",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng, như G1.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d05",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng như G1.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d06",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d07",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d08",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d09",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng khoảng 3 mm.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d10",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: gãy mỏm khẩu cái và vòm khẩu cái.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d11",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng như G1.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d12",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d13",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng Carbamazepine, thay bằng Oxcarbazepine hoặc gabapentin.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d14",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d15",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d16",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng 6 kg, phân biệt đúng 10 kg của khe hở vòm miệng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d17",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d18",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng, nhờ top-5 lấy được trang 3.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t01",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: khi áp xe tiến triển về phía niêm mạc miệng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t02",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng, có cả ý mức độ tùy trường hợp.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t03",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t04",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t05",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t06",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "u01",
+  "citation_support": [],
+  "reason": "Từ chối đúng, không đưa con số tẩy trắng. Lưu ý: tài liệu có 'Ôxy già 3%' để súc miệng (bệnh 8); G0 nêu đúng là không dùng cho tẩy trắng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "abstention_correct": true
+ },
+ {
+  "query_id": "u02",
+  "citation_support": [],
+  "reason": "Từ chối đúng: tài liệu không có nấm miệng Candida, không gợi ý thuốc ngoài tài liệu.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "abstention_correct": true
+ }
+]

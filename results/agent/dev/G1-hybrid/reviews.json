@@ -1,0 +1,270 @@
+[
+ {
+  "query_id": "d01",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng và đủ, trích đúng đoạn nguyên tắc điều trị.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d02",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng: điều trị nhiễm trùng (kháng sinh, bơm rửa) rồi mới nhổ [S6].",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d03",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng pH < 5 [S2], phân biệt đúng với pH < 5,5 của bệnh sâu răng [S3].",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d04",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng. S2 (bệnh sâu răng, tr. 40) có cùng câu về S. mutans (đã đối chiếu text).",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d05",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng; S2 là bảng chẩn đoán phân biệt tr. 26 có cùng thông tin.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d06",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d07",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d08",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d09",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng khoảng 3 mm.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d10",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: gãy mỏm khẩu cái và vòm khẩu cái.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d11",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng; S1 hỗ trợ ý lây qua nước bọt.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d12",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d13",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng Carbamazepine, thay bằng Oxcarbazepine hoặc gabapentin.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d14",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Đúng; S1 dùng cho ý phân biệt trường hợp có nguyên nhân.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d15",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d16",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng 6 kg, phân biệt đúng 10 kg của khe hở vòm miệng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d17",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d18",
+  "citation_support": [],
+  "reason": "Từ chối nhầm do budget context: lượt 2 lấy được đoạn chủ biên (tr. 3) ở hạng 1 nhưng bị bỏ vì lượt 1 đã nạp đoạn Quyết định dài, dùng 2232/3000 ký tự.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 0
+ },
+ {
+  "query_id": "t01",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: khi áp xe tiến triển về phía niêm mạc miệng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t02",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t03",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t04",
+  "citation_support": [
+   true,
+   false
+  ],
+  "reason": "Đúng; S3 (u hỗn hợp tuyến mang tai) được trích chỉ để nói là bệnh khác, không hỗ trợ ý trả lời nên tính là citation không hỗ trợ.",
+  "needs_human_check": true,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t05",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Đúng; S6 và S3 hỗ trợ ý phụ.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t06",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "u01",
+  "citation_support": [],
+  "reason": "Từ chối đúng, không đưa con số tẩy trắng. Lưu ý: tài liệu có 'Ôxy già 3%' để súc miệng (bệnh 8); G0 nêu đúng là không dùng cho tẩy trắng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "abstention_correct": true
+ },
+ {
+  "query_id": "u02",
+  "citation_support": [],
+  "reason": "Từ chối đúng: tài liệu không có nấm miệng Candida, không gợi ý thuốc ngoài tài liệu.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "abstention_correct": true
+ }
+]

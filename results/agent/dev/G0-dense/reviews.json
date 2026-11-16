@@ -1,0 +1,267 @@
+[
+ {
+  "query_id": "d01",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Đúng: nhổ càng sớm càng tốt để không mất xương phía xa răng 7 [S1]. S2, S3 hỗ trợ ý phụ.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d02",
+  "citation_support": [],
+  "reason": "Từ chối nhầm: dense không lấy được đoạn 'b. Răng khôn lệch có biến chứng' (tr. 9) qua 3 lượt.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 0
+ },
+ {
+  "query_id": "d03",
+  "citation_support": [],
+  "reason": "Từ chối nhầm: chỉ thấy pH < 5,5 của bệnh sâu răng (tr. 40), không lấy được đoạn nguyên nhân sâu răng sữa (tr. 18, pH < 5).",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 0
+ },
+ {
+  "query_id": "d04",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng Streptococcus mutans [S1].",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d05",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng gõ dọc đau nhẹ, gõ ngang đau nhiều [S3]; S1 hỗ trợ ý so sánh viêm tủy có hồi phục.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d06",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: trẻ đang đau rất cảnh giác, sợ hãi.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d07",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng 350–450 g mỗi bên, ít nhất 14 h/ngày.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d08",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: chảy mủ qua lỗ ống Wharton.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d09",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng khoảng 3 mm.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d10",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: gãy mỏm khẩu cái và vòm khẩu cái.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d11",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng Paramyxo virus.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d12",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng viêm tinh hoàn; S2 chỉ dùng để nói đó là biến chứng của bệnh mạn tính, dùng đúng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d13",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng Carbamazepine, thay bằng Oxcarbazepine hoặc gabapentin.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d14",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Đúng: không rõ nguyên nhân và nội khoa thất bại [S4]; lượt search thứ 3 lấy được đoạn này.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d15",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Đúng tên và thành phần MTA; S2, S3 hỗ trợ ý công dụng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d16",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng 6 kg, phân biệt đúng 10 kg của khe hở vòm miệng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d17",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Đúng và đủ các giai đoạn.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "d18",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng PGS.TS. Nguyễn Thị Xuyên và hai đồng chủ biên.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t01",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: khi áp xe tiến triển về phía niêm mạc miệng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t02",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: cắn chìa bình thường, cắn phủ tăng. Câu 'không nêu con số' chấp nhận được.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t03",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng quá 1/2 chiều dài Implant; S2 hỗ trợ mức dưới 2 mm.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t04",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng chỉ định và cách mổ; S2 chỉ để xác nhận đúng bệnh.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t05",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng mức độ 1, tập há miệng bằng dụng cụ banh miệng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t06",
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng: kể từ ngày ký, 28/7/2015 (Điều 3 nằm trong đoạn được trích).",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "u01",
+  "citation_support": [],
+  "reason": "Từ chối đúng, không đưa con số tẩy trắng. Lưu ý: tài liệu có 'Ôxy già 3%' để súc miệng (bệnh 8); G0 nêu đúng là không dùng cho tẩy trắng.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "abstention_correct": true
+ },
+ {
+  "query_id": "u02",
+  "citation_support": [],
+  "reason": "Từ chối đúng: tài liệu không có nấm miệng Candida, không gợi ý thuốc ngoài tài liệu.",
+  "needs_human_check": false,
+  "labeled_by": "Claude (soạn), học viên duyệt câu gắn cờ",
+  "abstention_correct": true
+ }
+]

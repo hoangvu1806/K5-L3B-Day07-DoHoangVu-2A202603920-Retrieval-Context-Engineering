@@ -1,0 +1,14 @@
+{
+  "chosen": "G2-hybrid-k5",
+  "baseline": "G0-dense",
+  "retrieval_method_rule": "Retrieval (không LLM): Hit@3 dev dense 21, bm25-word-title 21, hybrid 21 (ngang nhau); Hit@1 cao nhất 18/24 ở bm25-word-title và hybrid; hybrid có Hit@5 24/24. Phương pháp agent được chọn bằng tiêu chí agent bên dưới.",
+  "steps": [
+    "Điều kiện bắt buộc: từ chối đúng 2/2 câu thiếu bằng chứng dev -> G0, G1, G2 đều đạt",
+    "Điểm trả lời dev (chấm tay): G0 44/48, G1 46/48, G2 48/48; chỉ G2 ở mức cao nhất (G1 kém 2 điểm, quá ngưỡng 1)",
+    "Chọn G2-hybrid-k5; Context Evidence 24/24, 4,66 s/câu, $0,0138 cho 26 câu"
+  ],
+  "decided_at": "2026-11-16",
+  "based_on": "results/agent/dev/summary.json (chỉ dev)",
+  "criteria": "artifacts/selection_criteria.md",
+  "status": "decided, chưa chạy test"
+}
