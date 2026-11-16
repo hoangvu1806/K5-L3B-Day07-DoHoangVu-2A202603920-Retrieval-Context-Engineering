@@ -1,5 +1,17 @@
 # Day 7 — Agentic RAG
 
+> **Bài làm:** Đỗ Hoàng Vũ · 2A202603920 · L3B. Tiếp nối [Day 6](https://github.com/hoangvu1806/K5-L3B-Day06-DoHoangVu-2A202603920-DataIngestionEngineering) (tài liệu Răng Hàm Mặt, QĐ 3108/QĐ-BYT).
+>
+> **Setup**
+> ```bash
+> pip install -r requirements.txt
+> cp .env.example .env            # điền Qdrant + OpenRouter
+> python scripts/prepare_day6.py  # chunk + benchmark Day 6 -> data/day6/
+> python scripts/check_setup.py   # so Qdrant với file, chạy 1 dense search thật
+> PYTHONUTF8=1 python -m unittest discover -s tests -v   # Windows cần UTF-8 mode
+> ```
+> Dữ liệu Day 6: `day06_rhm_a` (547 chunk, cửa sổ 500 ký tự) và `day06_rhm_b` (526 chunk, theo cấu trúc), embedding `google/gemini-embedding-2` 3072 chiều, cosine. Chunk id trong `data/day6/*.json` trùng point id Qdrant. Code Qdrant/embedding lấy nguyên từ Day 6 trong `src/day6/`. `starter/baseline.py` được sửa để so evidence sau khi gộp khoảng trắng và theo danh sách trang của chunk, đúng quy ước benchmark Day 6.
+
 **Bài cá nhân · Python 3.11+ · tiếp nối Day 6**
 
 Dùng embedding và vector store từ Day 6 để xây một agent biết tìm bằng chứng, trả lời có nguồn và nhận biết khi không đủ thông tin. Bạn tự chọn kiến trúc, số tool và cách tổ chức retrieval.

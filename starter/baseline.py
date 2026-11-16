@@ -47,8 +47,19 @@ def validate(chunks, questions):
                 raise ValueError(f"question {q['id']}: gold không nằm trọn trong chunk đúng nguồn/trang")
 
 
+def _ws(text):
+    # Day 6 benchmark: evidence được so sau khi gộp mọi khoảng trắng thành một dấu cách.
+    return re.sub(r'\s+', ' ', text).strip()
+
+
+def _pages(chunk):
+    # Chunk structure-aware (Day 6 strategy B) có thể trải qua nhiều trang PDF.
+    return set(chunk.get('metadata', {}).get('pages') or [chunk['page']])
+
+
 def hit(chunk, gold):
-    return any(chunk['source_id'] == g['source_id'] and chunk['page'] == g['page'] and g['evidence'] in chunk['text'] for g in gold)
+    return any(chunk['source_id'] == g['source_id'] and g['page'] in _pages(chunk)
+               and _ws(g['evidence']) in _ws(chunk['text']) for g in gold)
 
 
 class TfidfIndex:
